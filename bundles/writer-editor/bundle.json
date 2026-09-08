@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "identity": {
     "key": "writer_editor",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "displayName": "Writer & Editor",
     "description": "Improves documents and turns resource libraries into accurate, publishable, findable collections.",
     "kind": "functional"
@@ -54,6 +54,13 @@
       "capabilityIds": ["writer.resource.review", "writer.resource.metadata"],
       "triggers": ["edit this ministry resource", "review this document", "prepare this resource for the website", "generate metadata for this resource"],
       "outcome": "A voice-preserving editorial proposal plus structured publication metadata, with changes kept separate from execution."
+    },
+    {
+      "id": "writer.skill.no_ai_slop",
+      "path": "./plugins/lead-emergence-writer-editor/skills/no-ai-slop/",
+      "capabilityIds": ["writer.resource.review"],
+      "triggers": ["remove AI slop from this draft", "make this sound less like AI", "preserve my voice while editing this", "is this AI slop", "audit this draft for AI writing patterns"],
+      "outcome": "A minimum-change edit that removes recognizable AI-writing patterns while preserving the writer's voice, or a pattern-by-pattern detection report without unsupported authorship claims."
     }
   ],
   "workflows": [
