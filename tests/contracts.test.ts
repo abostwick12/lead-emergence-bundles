@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { BundleRegistry } from "@lead-emergence/bundle-registry";
 import { loadArtifacts } from "./fixtures";
@@ -24,6 +26,15 @@ describe("Bundle Contract", () => {
     const registry = new BundleRegistry();
     for (const artifact of loadArtifacts()) registry.register(artifact);
     expect(registry.list()).toHaveLength(6);
+  });
+
+  it("keeps every declared skill backed by an installable SKILL.md", () => {
+    const root = process.cwd();
+    for (const artifact of loadArtifacts()) {
+      for (const skill of artifact.manifest.skills) {
+        expect(existsSync(join(root, skill.path, "SKILL.md"))).toBe(true);
+      }
+    }
   });
 
   it("keeps presentation in a separate declarative artifact", () => {

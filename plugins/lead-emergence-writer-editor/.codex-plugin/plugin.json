@@ -1,24 +1,26 @@
 {
   "name": "lead-emergence-writer-editor",
-  "version": "0.1.0",
-  "description": "Voice-preserving editorial, resource, and publishing-readiness workflows.",
+  "version": "0.1.1",
+  "description": "Voice-preserving editorial, resource, publishing-readiness, and AI-pattern cleanup workflows.",
   "author": {
     "name": "Lead Emergence",
     "url": "https://github.com/abostwick12"
   },
   "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
   "repository": "https://github.com/abostwick12/lead-emergence-bundles",
-  "keywords": ["writing", "editing", "resources", "metadata", "publishing"],
+  "keywords": ["writing", "editing", "voice", "resources", "metadata", "publishing", "ai-slop"],
   "skills": "./skills/",
   "interface": {
     "displayName": "Lead Emergence Writer & Editor",
     "shortDescription": "Improve resources without losing the author's voice.",
-    "longDescription": "Review supplied resources, preserve voice, and propose structured editorial and publishing metadata without executing website changes.",
+    "longDescription": "Review supplied resources, preserve voice, remove recognizable AI-writing patterns, and propose structured editorial and publishing metadata without executing website changes.",
     "developerName": "Lead Emergence",
     "category": "Productivity",
     "capabilities": ["Read", "Propose"],
     "defaultPrompt": [
       "Review this resource and preserve its voice.",
+      "Remove AI-slop patterns from this draft while preserving my voice.",
+      "Audit this draft for AI-writing patterns without rewriting it.",
       "Prepare this resource for web publishing.",
       "Propose metadata for this document."
     ],
