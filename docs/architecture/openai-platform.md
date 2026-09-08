@@ -63,3 +63,12 @@ ChatGPT plugin assumptions for this repository.
   optional local companion.
 - Whether the optional Finances plugin exposes a suitably scoped personal
   portfolio context. General investment research cannot depend on it.
+# P2 authentication verification — 2026-09-08
+
+Rechecked [plugin authentication](https://developers.openai.com/plugins/build/auth)
+and [MCP server guidance](https://developers.openai.com/plugins/build/mcp-server).
+The Workspace integration retains OAuth discovery, authorization-code/PKCE,
+per-request token/entitlement verification, explicit tool schemas, and truthful
+read-only annotations. Real local OAuth and HTTP MCP tests pass; an installed
+ChatGPT/Codex host connection is not yet validated. No app identifier or
+undeployed server was fabricated in the plugin manifest.

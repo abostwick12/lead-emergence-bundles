@@ -17,6 +17,12 @@ Create a conflict-free Workspace integration branch after a fresh ownership
 check. Prove Writer navigation/widget/tool entitlement parity for User A vs
 User B, removal without deployment, and cross-tenant denial.
 
+Local implementation and real loopback OAuth/MCP integration are now validated
+on the isolated Workspace branch. The Writer skill routes to those read-only
+tools when connected. Installed ChatGPT/Codex host acceptance and the approved
+preview/consent integration remain open; see
+[the P2 handoff](architecture/workspace-p2-handoff.md).
+
 ## P3 — Wix resource workflow
 
 Add canonical resource inventory, taxonomy, metadata, duplicates, link checks,
