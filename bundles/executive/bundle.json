@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0",
+  "identity": {
+    "key": "executive",
+    "version": "0.1.0",
+    "displayName": "Executive",
+    "description": "Turns commitments, priorities, decisions, and permitted cross-bundle signals into a concise operating view.",
+    "kind": "functional"
+  },
+  "experience": {
+    "promise": "Know what deserves attention and leave with a small, defensible next-action list.",
+    "firstRunOutcome": "A source-linked brief that identifies the highest-value next moves without exposing unrelated private content.",
+    "timeToFirstValueMinutes": 8,
+    "successSignals": [
+      { "id": "executive.signal.brief_accepted", "description": "The user accepts, edits, or acts on at least one brief recommendation." },
+      { "id": "executive.signal.followup_recovered", "description": "The workflow surfaces a commitment or follow-up the user would otherwise have revisited manually." }
+    ],
+    "qualityGates": {
+      "evidenceRequired": true,
+      "provenanceRequired": true,
+      "mutationConfirmationRequired": true
+    }
+  },
+  "capabilities": [
+    {
+      "id": "executive.brief",
+      "version": "0.1.0",
+      "description": "Prepare an evidence-linked attention brief from authorized task metadata.",
+      "domain": "executive",
+      "operations": ["read", "propose"],
+      "taskMetadataShareable": true
+    },
+    {
+      "id": "executive.review",
+      "version": "0.1.0",
+      "description": "Run a weekly review of priorities, commitments, decisions, and follow-up.",
+      "domain": "executive",
+      "operations": ["read", "propose"],
+      "taskMetadataShareable": true
+    },
+    {
+      "id": "executive.coordination",
+      "version": "0.1.0",
+      "description": "Coordinate explicitly permitted task-level metadata across bundles.",
+      "domain": "executive",
+      "operations": ["read", "propose"],
+      "taskMetadataShareable": true
+    }
+  ],
+  "skills": [
+    {
+      "id": "executive.skill.daily_brief",
+      "path": "./plugins/lead-emergence-executive/skills/executive-daily-brief/",
+      "capabilityIds": ["executive.brief", "executive.coordination"],
+      "triggers": ["prepare my daily brief", "what deserves my attention", "review my commitments"],
+      "outcome": "A concise, evidence-linked brief with reasons, due dates when known, and user-controlled next actions."
+    }
+  ],
+  "workflows": [
+    {
+      "id": "executive.workflow.daily_brief",
+      "version": "0.1.0",
+      "name": "Daily attention brief",
+      "capabilityIds": ["executive.brief", "executive.coordination"],
+      "providerRequirementIds": [],
+      "inputScopes": ["executive.priorities", "cross_bundle.task_metadata"],
+      "outputScopes": ["executive.attention_items"],
+      "mode": "propose",
+      "evidenceRequired": true,
+      "targetUserMinutes": 5
+    }
+  ],
+  "providerRequirements": [],
+  "appRequirements": [],
+  "permissions": {
+    "dataScopes": ["executive.priorities", "executive.commitments", "executive.decisions"],
+    "contextScopes": ["executive.profile", "executive.review_preferences"],
+    "crossDomainAccess": [
+      { "targetDomain": "writing", "dataClass": "task_metadata", "operation": "read" },
+      { "targetDomain": "ministry", "dataClass": "task_metadata", "operation": "read" },
+      { "targetDomain": "nonprofit", "dataClass": "task_metadata", "operation": "read" },
+      { "targetDomain": "investing", "dataClass": "task_metadata", "operation": "read" }
+    ]
+  },
+  "automations": [],
+  "attentionTypes": [
+    {
+      "id": "executive.attention.commitment_due",
+      "description": "A confirmed commitment is due or overdue.",
+      "defaultPriority": "high",
+      "evidenceRequired": true
+    }
+  ],
+  "uiManifestPath": "./bundles/executive/ui-manifest.json",
+  "distribution": {
+    "pluginName": "lead-emergence-executive",
+    "marketplacePath": "./.agents/plugins/marketplace.json"
+  }
+}

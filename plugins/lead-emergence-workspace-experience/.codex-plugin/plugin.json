@@ -1,0 +1,27 @@
+{
+  "name": "lead-emergence-workspace-experience",
+  "version": "0.1.0",
+  "description": "User-controlled workspace composition from entitled bundle manifests.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": ["workspace", "dashboard", "navigation", "attention", "personalization"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lead Emergence Workspace Experience",
+    "shortDescription": "Compose a focused workspace from entitled bundles.",
+    "longDescription": "Recommend a useful Lead Emergence workspace layout while leaving every persistent navigation change under user control.",
+    "developerName": "Lead Emergence",
+    "category": "Productivity",
+    "capabilities": ["Read", "Interactive"],
+    "defaultPrompt": [
+      "What deserves my attention?",
+      "Recommend a better workspace layout.",
+      "Help organize my entitled workspaces."
+    ],
+    "brandColor": "#173B3F"
+  }
+}

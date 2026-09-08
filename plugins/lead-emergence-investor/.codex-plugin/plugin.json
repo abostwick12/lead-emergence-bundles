@@ -1,0 +1,27 @@
+{
+  "name": "lead-emergence-investor",
+  "version": "0.1.0",
+  "description": "Evidence-balanced public-market and investment-thesis research.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": ["investing", "markets", "sec-filings", "thesis", "scenarios"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lead Emergence Investor",
+    "shortDescription": "Research what changed and how it affects a thesis.",
+    "longDescription": "Review lawful public evidence and clearly separate fact, interpretation, thesis, scenario, and prediction.",
+    "developerName": "Lead Emergence",
+    "category": "Productivity",
+    "capabilities": ["Read", "Propose"],
+    "defaultPrompt": [
+      "Review my investment thesis.",
+      "What changed for this company?",
+      "Analyze this SEC filing."
+    ],
+    "brandColor": "#355C7D"
+  }
+}

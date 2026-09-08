@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0",
+  "bundleKey": "executive",
+  "dashboardWidgets": [
+    {
+      "id": "executive.widget.attention_brief",
+      "label": "Executive attention brief",
+      "order": 10,
+      "type": "attention_brief",
+      "capabilityId": "executive.brief",
+      "attentionTypes": ["executive.attention.commitment_due"],
+      "emptyStateId": "executive.empty.brief"
+    }
+  ],
+  "primaryNavigation": [],
+  "secondaryNavigation": [],
+  "quickActions": [
+    {
+      "id": "executive.action.daily_brief",
+      "label": "Prepare daily brief",
+      "order": 10,
+      "workflowId": "executive.workflow.daily_brief",
+      "capabilityId": "executive.brief"
+    }
+  ],
+  "searchProviders": [],
+  "commandPaletteActions": [
+    {
+      "id": "executive.command.daily_brief",
+      "label": "Prepare daily brief",
+      "order": 10,
+      "workflowId": "executive.workflow.daily_brief",
+      "capabilityId": "executive.brief"
+    }
+  ],
+  "notificationTypes": [],
+  "emptyStates": [
+    {
+      "id": "executive.empty.brief",
+      "title": "Your brief is ready to learn from real work",
+      "description": "Add a priority or commitment, or permit task-level signals from another bundle.",
+      "actionId": "executive.action.daily_brief"
+    }
+  ],
+  "bundleSettings": []
+}
