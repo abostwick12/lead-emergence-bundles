@@ -40,8 +40,13 @@ performs real user approval and then calls the existing activation RPC. It does
 not certify hosted consent or Entry handoff. Reconcile that work with its owner
 and use an authorized non-production preview before host acceptance.
 
-Workspace is currently a public GitHub repository. Do not push the vendored
-private platform sources there without an explicit publication decision.
+On 2026-09-08, after the local proof, the user explicitly approved publication
+of the vendored platform sources to the public Workspace integration branch.
+The reusable bundle repository remains private; this is not permission to
+change repository visibility or submit a plugin to a public marketplace.
+Previously published source cannot be recalled by later making a repository
+private. Future paid access belongs in server-side authorization, not source
+visibility. The branch publication does not close the host/preview gate.
 No main branch was modified or merged. No production data, hosted migration,
 provider connection, paid infrastructure, or public plugin submission occurred.
 
