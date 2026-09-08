@@ -10,7 +10,7 @@ not measured client value. This checklist prevents those substitutions.
 
 | Bundle | Implemented foundation | Required before client shipment |
 | --- | --- | --- |
-| Writer & Editor | Real native library, source-led review, text/Markdown import, immutable proposals, explicit user approval, source/metadata revision history, approval-only MCP proposal flow | Confirmed writing profile; practical classification/duplicate/related-resource workflow; link evidence; export/publishing preparation; authorized read-only Wix proof before any Wix mutation; representative-library pilot |
+| Writer & Editor | Real native library, source-led review, text/Markdown import, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search and evidence-led related/duplicate candidates | Confirmed writing profile and taxonomy; link evidence; export/publishing preparation; authorized read-only Wix proof before any Wix mutation; representative-library pilot |
 | Ministry | Valid declarative bundle, source-layered research skill, provenance/policy contract | Private client-owned theological profile; research projects, source layers and bibliography; searchable sermon/teaching archive; no inferred belief promotion; authorized optional Logos proof only for supported operations |
 | Nonprofit Founder | Valid generic bundle and founder-next-moves skill | Native roadmap, milestones, partner/volunteer follow-up, meeting/action workflow; source-first regulatory and grant research with dates and uncertainty; clinical/PHI boundary tests; no automatic outreach |
 | Investor | Valid bundle and evidence-led thesis-review skill | Native watchlists, theses, catalysts, supporting/challenging evidence, public-filings and scenario workflow; freshness/lag warnings and corrections; no personal account requirement or trade execution |
@@ -31,6 +31,9 @@ changes, or automatic website publishing.
   desktop and mobile-emulated Chrome against an optimized local app.
 - [x] Actual loopback OAuth/PKCE/MCP: assistant proposal succeeds; approval fails
   even via direct RPC; revoked connection and bundle access fail closed.
+- [x] Writer reload/lost-response recovery, two-tab conflicts, explicit stale-draft
+  comparison and approval-backed related metadata pass in optimized desktop/mobile.
+- [x] Unfinished drafts denied to real OAuth assistant credentials even via direct RPC.
 - [ ] Implement all six promised native workflows and their domain-private storage.
 - [ ] Prove negative cross-domain operations for every implemented bundle pair.
 - [ ] Pilot with a small authorized, representative resource/project dataset.
@@ -55,10 +58,17 @@ Backend entitlements—not repository visibility—must enforce paid capabilitie
 
 ## Most recent evidence
 
-Writer P3 native revision milestone is documented in Workspace at
-\`docs/architecture/writer-approved-revisions.md\` and
-\`docs/testing/test-evidence.md\`. It adds 19 focused unit tests to the prior
-107-test suite. Native API acceptance includes concurrent approvals, idempotent
-retries, stale rejection, direct-RPC validation and original retention beyond ten
-revisions. The browser save-failure response is deliberately injected; all
-successful save/approval/reload operations use the real isolated database.
+Writer P4 recovery/discovery is documented in Workspace at
+`docs/architecture/writer-recovery-and-discovery.md` and
+`docs/testing/test-evidence.md`. Workspace has 145 unit tests; 312 local
+PostgreSQL assertions across ten suites; nine API/OAuth/MCP groups; ten revision
+groups; seven draft/discovery groups; and 16 optimized desktop/mobile browser
+tests. All successful operations use fictional accounts and the real isolated
+database. Save failures and lost responses are deliberately injected.
+
+All 22 migrations replayed locally. The hosted-only Gate A preflight references
+shared ministry tables intentionally absent from this isolated database; it
+does not constitute deployed proof and must be run by the authorized owner
+in its intended environment. Source validation remains six plugins/six skills
+plus 20 reusable-platform tests. No installed-host or representative-client
+value claim is made.
