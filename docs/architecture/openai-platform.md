@@ -95,6 +95,15 @@ Every operation retains server-side identity/capability checks. Native approval
 cannot silently upgrade assistant-extracted facts or changed source evidence.
 No marketplace identity, registered app ID or installed plugin is fabricated.
 
+The resulting Investor implementation exercises actual loopback registration,
+consent, PKCE and fourteen HTTP MCP tools. Four tools propose private records;
+canonical save, approval/rejection and private history remain native-only.
+Changed source evidence demotes dependent confirmations; exact retries normalize
+against the immutable base. The one public reader has explicit open-world
+metadata, fixed destinations, current access checks and shared request budgets.
+One real SEC request was declined; no live-provider success or installed-host
+proof is claimed. See the Investor native contract and client-readiness ledger.
+
 ## Ministry native/connected implementation — 2026-09-08
 
 Rechecked [MCP server guidance](https://developers.openai.com/plugins/build/mcp-server).

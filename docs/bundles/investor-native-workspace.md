@@ -1,6 +1,6 @@
 # Investor native research workspace — implementation contract
 
-Implementation in progress, 2026-09-08. Not client shipment or installed-host proof.
+Native implementation checkpoint, 2026-09-09. Not client shipment or installed-host proof.
 
 Four independent record types support the intended research loop: watchlists,
 company theses, filing reviews and market briefs. Native data stays private to
@@ -25,12 +25,17 @@ or cross-domain private-record access is implied.
 
 ## Public-source path
 
-The proposed native SEC lookup accepts only a public ten-digit CIK and bounded
-form/count filters. It must use a fixed SEC host, timeout/size bounds, shared
+The implemented native SEC lookup accepts only a public ten-digit CIK and bounded
+form/count filters. It uses a fixed SEC host, timeout/size bounds, shared
 rate control and per-request authority, including a recheck after fetching.
 It returns recent filer-submission metadata and coverage limits, not a full
 filing analysis, issuer-wide insider feed, current price or continuous monitor.
 A lookup does not import canonical research without user review.
+
+One actual public lookup through the isolated preview was declined by SEC with
+HTTP 403. The app returned an honest unavailable state without findings, retry
+or identity rotation. Live upstream success remains unverified. Manual research
+and metadata-fixture UI tests are distinct from real public-provider proof.
 
 Authoritative requirements inspected on 2026-09-08:
 
@@ -59,7 +64,8 @@ access was attempted. Public research remains independent of it.
 
 ## Verification and release boundary
 
-Reusable contracts and local structural tests do not prove hosted persistence,
-native UI, live upstream success, installed ChatGPT/Codex behavior or client value.
-Source evidence and release notes must report those stages separately. The
+Workspace now implements private persistence, native research screens and actual
+loopback OAuth/MCP/native parity. These local proofs do not establish hosted
+persistence, live upstream success, installed ChatGPT/Codex behavior or client
+value. Source evidence and release notes report those stages separately. The
 twelve-minute first-value estimate remains a design target until measured.
