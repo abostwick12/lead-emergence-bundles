@@ -131,3 +131,19 @@ or booking. The revised skill distinguishes missing tools, unsaved drafts,
 proposals and actual execution. P9a proves native database operations locally;
 app HTTP/MCP and installed-host proof remain pending;
 no package app ID, marketplace update, install or provider connection was added.
+
+## Executive connected implementation — 2026-09-09
+
+P9b applies the [official MCP server guidance](https://developers.openai.com/plugins/build/mcp-server)
+to seventeen focused Executive tools: five list/get/propose groups and two
+metadata-only coordination reads. Five proposal tools are the only writes;
+none can grant source sharing, approve canonical work, book or send anything.
+Strict bounded schemas and truthful private/read-only annotations accompany
+live authorization in every handler. Annotations do not grant authority.
+
+Actual local OAuth consent, PKCE and HTTP MCP pass against fictional accounts,
+including source withdrawal, current-entitlement revocation and disconnect.
+Native approval preserves inference labels. Installed ChatGPT/Codex discovery,
+tool selection and update/removal are separate, still-unproven release gates.
+No new OpenAI app ID, package install, provider connection or submission was
+invented to stand in for those tests. No OpenAI model API runtime was added.

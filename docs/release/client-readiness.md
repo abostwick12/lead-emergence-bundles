@@ -14,8 +14,8 @@ not measured client value. This checklist prevents those substitutions.
 | Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; six scoped connected tools | Representative theological/source evaluation; rich archive ingestion and large-library ergonomics; installed-host, deployed recovery and first-use value acceptance; authorized optional Logos proof only for supported operations |
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; crash/autosave recovery; installed-host and deployed privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; crash/autosave recovery and large-library ergonomics; installed-host and deployed release acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
-| Executive | Five native database record kinds, private versions/proposals, exact-revision confirmation, default-off source permissions and a current-authority metadata-only reference reader; reusable brief/scheduling logic and revised skill | Native editors/source controls, daily/weekly first-value flow, attention aggregation/coverage, app HTTP/MCP/browser proof, approved automation lifecycle and meaningful-change notifications |
-| Workspace Experience | Entitlement-based Writing, Ministry, Nonprofit and Investor navigation/widgets, capability-scoped navigation metadata, private routes, live access-removal behavior, reusable declarative composer and a dedicated mobile navigation header | Contributions from remaining bundles; cross-domain search; useful command palette; connection/notification center; user-owned pin/hide/reorder/default preferences; approval-only AI layout changes |
+| Executive | Five native record editors; private versions/proposals and saved handoffs; explicit default-off source controls; metadata-only attention with coverage; seventeen scoped connected tools | Nested task/catalyst attention and complete source discovery; full-period weekly outcomes; availability scheduling UI; approved automation/notification lifecycle; crash recovery; installed-host, representative utility and deployed release acceptance |
+| Workspace Experience | Entitlement-based Writing, Ministry, Nonprofit, Investor and Executive navigation/widgets; capability-scoped private routes and live access removal; declarative composer and mobile navigation header | Cross-domain search and quick-action consumers; useful command palette; connection/notification center; user-owned pin/hide/reorder/default preferences; approval-only AI layout changes and cross-bundle recovery |
 
 Build the remaining native work without waiting on optional provider accounts.
 Do not replace missing integrations with fabricated data or claim planned tools
@@ -153,3 +153,22 @@ screenshots were inspected. Shared UX acceptance must still check secondary
 sticky controls with the mobile header. Executive and remaining Experience
 implementation are next; all-six
 shipment readiness remains NOT READY TO SHIP.
+
+P9b now enables Executive's five native editors, source controls, record-level
+attention and seventeen focused HTTP MCP tools through the shared host. Final
+fictional local proof: 28 fresh migrations; seven native and ten Executive
+connected groups; 495 PostgreSQL assertions across fifteen suites; 250 Workspace
+unit tests; 32 schema/policy tests; and all 76 optimized desktop/mobile journeys
+(sixteen Executive plus the existing sixty). The full connected regression of
+the other four bundles also passes. Source remains 64 tests and six plugin/six
+skill validations; Workspace verifies its 26-file export at source
+ff7d7c29a1e856818d828f6fa821718642463c20.
+
+See Workspace's P9b evidence ledger and Executive implementation/runbook for
+precise boundaries and corrected test attempts. Source sharing is explicit and
+default-off, source bodies remain excluded, and withdrawal/revocation is checked
+live. Attention currently covers parent records, not nested tasks or complete
+weekly activity. Scheduling UI, approved recurring work, meaningful-change
+notifications, remaining shared Experience/recovery and representative/deployed
+acceptance are still open. The full goal remains active; none of the six bundles
+is yet cleared for client shipment.
