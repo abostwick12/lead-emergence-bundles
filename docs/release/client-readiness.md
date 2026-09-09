@@ -11,11 +11,11 @@ not measured client value. This checklist prevents those substitutions.
 | Bundle | Implemented foundation | Required before client shipment |
 | --- | --- | --- |
 | Writer & Editor | Real native library, source-led review, text/Markdown import, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search, evidence-led related/duplicate candidates, confirmed writing preferences, approval-backed preferred taxonomy and saved-revision publication packets | Rich file ingestion and metadata workflows; link evidence; authorized read-only Wix proof before any Wix mutation; representative-library and user-value pilot; installed-host and shared release acceptance |
-| Ministry | Valid declarative bundle, source-layered research skill, provenance/policy contract | Private client-owned theological profile; research projects, source layers and bibliography; searchable sermon/teaching archive; no inferred belief promotion; authorized optional Logos proof only for supported operations |
+| Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; six scoped connected tools | Representative theological/source evaluation; rich archive ingestion and large-library ergonomics; installed-host, deployed recovery and first-use value acceptance; authorized optional Logos proof only for supported operations |
 | Nonprofit Founder | Valid generic bundle and founder-next-moves skill | Native roadmap, milestones, partner/volunteer follow-up, meeting/action workflow; source-first regulatory and grant research with dates and uncertainty; clinical/PHI boundary tests; no automatic outreach |
 | Investor | Valid bundle and evidence-led thesis-review skill | Native watchlists, theses, catalysts, supporting/challenging evidence, public-filings and scenario workflow; freshness/lag warnings and corrections; no personal account requirement or trade execution |
 | Executive | Valid coordination bundle, daily-brief skill, shared scoped-policy tests | Native commitments/decisions and daily/weekly brief; task-metadata-only attention aggregation with source permissions; approved automation lifecycle and meaningful-change notifications |
-| Workspace Experience | Entitlement-based Writing navigation/widget, private routes, live access-removal behavior, reusable declarative composer | Contributions from all implemented bundles; cross-domain search; useful command palette; connection/notification center; user-owned pin/hide/reorder/default preferences; approval-only AI layout changes |
+| Workspace Experience | Entitlement-based Writing and Ministry navigation/widgets, private routes, live access-removal behavior, reusable declarative composer | Contributions from remaining bundles; cross-domain search; useful command palette; connection/notification center; user-owned pin/hide/reorder/default preferences; approval-only AI layout changes |
 
 Build the remaining native work without waiting on optional provider accounts.
 Do not replace missing integrations with fabricated data or claim planned tools
@@ -90,3 +90,18 @@ and six preparation groups; 24 optimized desktop/mobile browser tests. Initial
 selector and back-link accessibility issues were corrected. Local loading times
 varied substantially; slow-network timeout recovery, first-use polish and
 representative responsiveness/value testing remain release gates.
+
+P6 adds Ministry manifest 0.2.0, client-owned domain contracts and six scoped
+connected tools through Workspace. Current local proof: 24 fresh migrations,
+174 Workspace unit tests, 32 schema/policy tests, 330 PostgreSQL assertions,
+ten Ministry API/OAuth/MCP groups and the complete existing Writer regression.
+All 34 final optimized desktop/mobile browser cases pass, including explicit
+bundle consent disclosure. Four synthetic Ministry success screenshots were
+inspected. Reusable source has 28 tests and six plugin/six skill validations.
+
+See Workspace docs/architecture/ministry-native-workspace.md and the P6 section
+of docs/testing/test-evidence.md. The profile starts unset; native confirmation
+does not promote inferred positions, and prior sermons do not establish current
+belief. Optional libraries, installed hosts, representative research quality,
+large-library ergonomics, first-use value, Ministry crash/autosave recovery and
+deployed privacy/retention remain open. Native Nonprofit Founder is next.

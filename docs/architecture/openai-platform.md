@@ -72,3 +72,18 @@ per-request token/entitlement verification, explicit tool schemas, and truthful
 read-only annotations. Real local OAuth and HTTP MCP tests pass; an installed
 ChatGPT/Codex host connection is not yet validated. No app identifier or
 undeployed server was fabricated in the plugin manifest.
+
+## Ministry native/connected implementation — 2026-09-08
+
+Rechecked [MCP server guidance](https://developers.openai.com/plugins/build/mcp-server).
+Six focused Ministry tools use strict inputs and outputs with explicit private
+read/proposal semantics. Only the proposal tool is marked as a write. Tool
+annotations are descriptive, not authorization: every invocation uses current
+server-derived ownership and capability checks. Current theological context may
+be read by an authorized assistant; confirmation, history and final proposal
+approval remain direct-user operations enforced in the database.
+
+Real loopback registration, consent, PKCE and HTTP MCP/native parity are proven
+locally. This is not an installed-host test or marketplace release. The plugin
+remains a skill adapter; no invented app ID, provider connection or deployable
+MCP endpoint was added to its package.
