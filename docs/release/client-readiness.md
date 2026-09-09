@@ -136,7 +136,10 @@ The actual public SEC lookup was declined with HTTP 403; the app returned an
 honest unavailable state without findings, retry or evasion. A fixture-based UI
 import is not live-provider proof. Optional Finances remains metadata-only and
 unconnected. No personal account, installed host, hosted migration or client
-research was accessed. Shared UX acceptance must still check secondary sticky
-controls with the mobile header and make claim review states clear in compact
-summaries. Executive and remaining Experience implementation are next; all-six
+research was accessed. Investor confirmation labels are now at least 15 pixels,
+and compact claim summaries expose review state. All fourteen Investor optimized
+desktop/mobile cases passed again after that refinement; four final synthetic
+screenshots were inspected. Shared UX acceptance must still check secondary
+sticky controls with the mobile header. Executive and remaining Experience
+implementation are next; all-six
 shipment readiness remains NOT READY TO SHIP.
