@@ -10,7 +10,7 @@ not measured client value. This checklist prevents those substitutions.
 
 | Bundle | Implemented foundation | Required before client shipment |
 | --- | --- | --- |
-| Writer & Editor | Real native library, source-led review, text/Markdown import, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search and evidence-led related/duplicate candidates | Confirmed writing profile and taxonomy; link evidence; export/publishing preparation; authorized read-only Wix proof before any Wix mutation; representative-library pilot |
+| Writer & Editor | Real native library, source-led review, text/Markdown import, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search, evidence-led related/duplicate candidates, confirmed writing preferences, approval-backed preferred taxonomy and saved-revision publication packets | Rich file ingestion and metadata workflows; link evidence; authorized read-only Wix proof before any Wix mutation; representative-library and user-value pilot; installed-host and shared release acceptance |
 | Ministry | Valid declarative bundle, source-layered research skill, provenance/policy contract | Private client-owned theological profile; research projects, source layers and bibliography; searchable sermon/teaching archive; no inferred belief promotion; authorized optional Logos proof only for supported operations |
 | Nonprofit Founder | Valid generic bundle and founder-next-moves skill | Native roadmap, milestones, partner/volunteer follow-up, meeting/action workflow; source-first regulatory and grant research with dates and uncertainty; clinical/PHI boundary tests; no automatic outreach |
 | Investor | Valid bundle and evidence-led thesis-review skill | Native watchlists, theses, catalysts, supporting/challenging evidence, public-filings and scenario workflow; freshness/lag warnings and corrections; no personal account requirement or trade execution |
@@ -72,3 +72,21 @@ does not constitute deployed proof and must be run by the authorized owner
 in its intended environment. Source validation remains six plugins/six skills
 plus 20 reusable-platform tests. No installed-host or representative-client
 value claim is made.
+
+P5 adds `writer.profile` and read-only publication preparation to Writer manifest
+0.3.0. Current confirmed writing context is shareable with an authorized Writer
+assistant; profile confirmation and private recovery history remain native-only.
+Publication packets exclude unfinished drafts, profile notes and stored
+file/provider identifiers, but users must review canonical text for private
+content before sharing. No source fetch or website publishing is implied.
+
+See Workspace `docs/architecture/writer-preferences-and-publication.md` and the
+P5 section of `docs/testing/test-evidence.md` for final verification outcomes.
+This is a native implementation checkpoint, not a shipment authorization.
+
+P5 verification: 23 fresh local migrations; 161 Workspace unit tests; 312 local
+PostgreSQL assertions; eleven API/OAuth/MCP groups; ten revision, seven discovery
+and six preparation groups; 24 optimized desktop/mobile browser tests. Initial
+selector and back-link accessibility issues were corrected. Local loading times
+varied substantially; slow-network timeout recovery, first-use polish and
+representative responsiveness/value testing remain release gates.
