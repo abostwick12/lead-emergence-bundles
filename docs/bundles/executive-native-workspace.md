@@ -1,14 +1,15 @@
 # Executive native coordination — implementation in progress
 
 Updated 2026-09-09. **All six bundles remain NOT READY TO SHIP.**
-P9c has historical local connected evidence. P9d exact-task navigation and P9e
-recorded weekly outcomes are new source progress, not connected client proof.
+P9f adds resumable availability planning and verifies the P9d/P9e/P9f database
+and connected assistant work against fictional accounts. All 116 optimized browser
+journeys pass; the final mobile spacing refinement passes all 28 affected cases.
 
-Executive 0.4.0 retains BundleContract 1.0 and UIManifestContract 1.0.
+Executive 0.5.0 retains BundleContract 1.0 and UIManifestContract 1.0.
 Workspace imports 28 allowlisted files pinned to source revision
-9776d8979ab8739b1a9d9ee10dfc981591c7f6e8. The host owns native pages, identity,
+f9f4614afb947ada637ba170ceb7890ac91ad495. This repository owns reusable contracts,
+rules and assistant guidance. The existing Workspace owns native pages, identity,
 live entitlement, private storage, guarded tools and operational deployment.
-This source repository owns reusable contracts, rules and assistant guidance.
 
 ## Native work and source boundaries
 
@@ -19,75 +20,106 @@ Original revisions remain privately retained; downloads contain saved work.
 Failed saves retain on-screen edits, not crash/autosave recovery.
 
 All foreign sharing starts empty. Existing record grants expose six metadata
-fields. Task-metadata-v1 requires a separately confirmed, supported task scope,
+fields. Task-metadata-v1 requires a separately confirmed supported task scope,
 adds six fixed fields and never silently expands an old record permission.
-Explicit references combine source capability, parent kind/ID/revision and an
-optional item kind/ID. Current access is checked on every read. No supplied
-tenant ID authorizes access. Private manuscript, belief, research, contact and
-task-evidence bodies are not copied into source projections.
+References combine capability, parent kind/ID/revision and an optional item
+kind/ID. Every read checks current access. Private manuscript, belief, research,
+contact and task-evidence bodies are excluded from source projections.
 
-Attention has 22 record/task coverage scopes, exact totals and bounded pages.
+Attention has 22 record/task scopes, exact totals and bounded pages.
 Unavailable/unshared counts are null. Source discovery uses title-only queries
-within one explicit scope, with stable identity cursors beyond the first fifty.
-Pages recheck current access; neither endpoint promises a frozen snapshot.
-Parent/task cues can both appear; grouping redundant cues remains a refinement.
+within an explicit scope, with stable identity cursors beyond the first fifty.
+Access and current state remain live; neither read promises a frozen snapshot.
+Parent/task cue grouping remains a refinement.
 
-P9d host source links now target the exact on-screen task for ten mappings,
-expanding and focusing only that authorized editor's child. Malformed, missing
-or historical-only targets do not select other work or save anything.
-Its 26 desktop/mobile cases are collected, not executed. Signed-out return paths
-still deliberately discard fragments.
+P9d source links target the exact on-screen task for ten mappings, expanding
+and focusing only that authorized editor's child. Invalid, missing or historical
+targets do not select other work or save anything. Signed-out return paths
+deliberately discard fragments.
 
-## Recorded weekly outcomes — P9e, connected verification pending
+## Recorded weekly outcomes — P9e
 
-The new reusable weekly contract classifies recorded, corrected and withdrawn
+The reusable weekly contract classifies recorded, corrected and withdrawn
 outcomes from retained Executive revisions. Ordinary note edits are omitted.
 Completions, decisions/reversals, held meetings, reviewed briefs and completed
 actions stay distinct. Removed completed actions remain historical withdrawals.
 Recorded time determines inclusion in one to seven inclusive local dates;
-a user's backdated completion/decision date is labeled separately.
+backdated reported completion/decision dates are labeled separately.
 
-The host migration derives identity and review admission, then independently
-rechecks coordination, brief and review access. It emits only fixed event
-metadata, current revision/state/presence and three-scope coverage. Private audit
-bodies, other domains' histories, pending proposals and provider records are
-excluded. Results have bounded 1–50 pages, exact matching totals and a
-microsecond-preserving recorded-time cutoff. Current access/status and late
-commits can change pages; a cutoff is not a frozen transaction snapshot.
+The host derives identity and review admission, then independently checks
+coordination, brief and review access. It emits fixed event metadata, current
+revision/state/presence and three-scope coverage. Private audit bodies, other
+domains' histories, pending proposals and providers are excluded. Pages contain
+1–50 events, exact matching totals and a microsecond-preserving recorded-time
+cutoff. Live access/status and late commits can change pages.
 
-A native panel explains coverage and historical versus current state. Preparation
-creates an unsaved, inferred review with at most twenty current parent links from
-the first page, generic coverage prose and no copied private event titles.
-The user must interpret the evidence and explicitly save. Chosen time zones
-persist; older reviews without a zone remain compatible and disclose their
-browser-zone fallback. New reviews default to a seven-day period.
+A native panel distinguishes historical/current state and empty/failed reads.
+Preparation creates an unsaved inferred review with at most twenty current
+parent links from the first page and generic coverage prose. Users interpret
+the evidence and explicitly save. Chosen zones persist; older unzoned reviews
+remain compatible and disclose fallback. New periods default to seven days.
 
-Twenty Executive MCP tools include five sets of list/get/propose, two attention
-reads, source discovery, reference resolution and the narrow weekly-history read.
-Only five proposal tools write. Canonical saves, approval, permission changes and
-full revision history remain native-only. Annotations do not replace admission.
-Assistant skill guidance now routes bounded weekly requests to this read,
-discloses partial coverage and never equates recorded status with verified value.
+## Resumable reviewed availability — P9f
+
+Meetings optionally retain a private strict availability snapshot: offered/free/
+busy instant windows, source, check time, duration, buffer, zone and reviewed
+participants. Earlier meetings remain valid. Historical snapshots remain readable
+without becoming fresh by reopening them. Native removal requires an exact save;
+old revisions retain their original copy.
+
+The engine merges adjacent/overlapping windows, applies boundary and conflict
+buffers, subtracts busy intervals and returns at most three chronological
+five-minute-grid alternatives. Submillisecond boundaries round conservatively.
+No overlap is an explicit result. Every offered alternative must work for all
+required attendees; separate people's offers are not collective availability.
+
+Native entry handles time-zone gaps and repeated hours explicitly and preserves
+untouched saved instant precision. Context/window edits invalidate checks and
+results. Choosing a time rechecks freshness, participant/duration/zone agreement
+and feasibility, then marks the unsaved meeting inferred and not agreed.
+Users can retain reviewed availability without choosing a time. Independent
+manual-time and planner drafts block save until applied/discarded. Closing the
+planner does not discard edits; controls cannot accidentally submit the form.
+
+Twenty scoped MCP tools still contain only five proposal writes. Authorized
+Executive meeting reads/proposals include the snapshot; consent discloses this.
+Attention and weekly metadata exclude it. Canonical save, approval, permissions
+and full history remain native-only. No tool books, sends or notifies.
+Skill-creation guidance kept the assistant's instructions aligned with explicit
+user review, snapshot/context checks and the proposal-only boundary.
 
 ## Evidence and release boundary
 
-Current source: 90 tests in 10 files and typecheck PASS. Six plugins and six skills
-validate. Current host: 275 unit tests, 32 schema-policy checks, 249 runtime
-boundaries, typecheck, lint and optimized build PASS. SQL-schema/rule parity is
-checked statically, not by replaying migration 30.
+Source: 105 tests in 11 files, typecheck, six plugin and six skill validations
+PASS. Host: 281 units, 32 schema-policy checks, 251 runtime boundaries, typecheck,
+lint and optimized build PASS. All 28 transformed exports/hashes match the pin.
 
-P9c's real fictional-user database/HTTP/OAuth/MCP and desktop/mobile evidence is
-historical. It does not establish the new weekly projection or P9d navigation.
-New tests are written for native history/date/privacy/revocation behavior,
-rollback-only SQL privileges/classifiers, actual HTTP/MCP parity and six weekly
-desktop/mobile cases. They have NOT RUN: Docker's local startup socket is
-inaccessible. No socket removal, reset or repair was performed without approval.
+Docker was already available on a read-only recheck. No repair/reset was
+performed. The isolated stack restored its existing 29-migration fictional
+database; migrations 30 and 31 applied successfully without a reset. This is
+upgrade proof, not a fresh 31-migration replay. All 16 auth identities were
+fictional, with no non-fictional accounts.
 
-See Workspace docs/testing/test-evidence.md, docs/architecture/
-executive-native-workspace.md and docs/runbooks/executive-local-proof.md.
-Remaining: connected P9d/P9e proof; complete availability scheduling UI;
-approved recurring lifecycle and meaningful-change notifications; shared
-Workspace Experience, crash recovery, representative utility and installed-host,
-deployed privacy/retention and commercial acceptance.
-No hosted migration, deployment, provider/client connection, installed-plugin
-update or marketplace submission is implied.
+Real native results: eight Executive foundation, seven task and five weekly
+groups PASS; 588 PostgreSQL assertions across 18 rollback-only suites PASS.
+Actual Executive HTTP/OAuth/PKCE/MCP: thirteen groups PASS, including private
+availability, narrow weekly parity, live revocation and disconnection.
+All other domain connected regressions PASS (79 total connected groups across
+Executive and the seven existing suites).
+
+Ten desktop/mobile component-browser cases PASS against actual meeting
+components with no account or fake API. In-memory remount is not persistence
+proof. Four synthetic component images were reviewed and mobile guidance
+shortened with disclosures. The separate optimized 116-case connected browser
+run passed in 5.7 minutes, zero retries. Screen review then caught a task-title
+clearance issue under the sticky mobile header. After its isolated spacing fix,
+all 28 affected navigation cases passed again (1.0 minute), with clearance
+assertions and final viewport inspection. The full 116 were not repeated after
+that spacing-only change; the final component rerun passed all ten cases.
+
+Remaining: approved recurring lifecycle and meaningful-change notifications;
+grouped attention; shared Workspace Experience consumers/preferences; crash
+recovery; representative quality/utility, installed-host, optional provider and
+deployed privacy/retention/commercial acceptance. Local success is not client
+readiness. No hosted migration, main merge, production deployment, provider/client
+connection, installed-plugin change or marketplace submission is included.

@@ -14,7 +14,7 @@ not measured client value. This checklist prevents those substitutions.
 | Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; six scoped connected tools | Representative theological/source evaluation; rich archive ingestion and large-library ergonomics; installed-host, deployed recovery and first-use value acceptance; authorized optional Logos proof only for supported operations |
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; crash/autosave recovery; installed-host and deployed privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; crash/autosave recovery and large-library ergonomics; installed-host and deployed release acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
-| Executive | Five native editors; recoverable proposals/versions and saved handoffs; separately confirmed record/task source controls; paged attention and full paged source discovery; exact task references; nineteen scoped connected tools | Full-period weekly outcomes; availability scheduling UI; approved automation/notification lifecycle; exact-child navigation; crash recovery; installed-host, representative utility and deployed release acceptance |
+| Executive | Five native editors; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved recurring/notification lifecycle; grouped attention; crash recovery; authorized provider proof before booking; installed-host, representative utility and deployed release acceptance |
 | Workspace Experience | Entitlement-based Writing, Ministry, Nonprofit, Investor and Executive navigation/widgets; capability-scoped private routes and live access removal; declarative composer and mobile navigation header | Cross-domain search and quick-action consumers; useful command palette; connection/notification center; user-owned pin/hide/reorder/default preferences; approval-only AI layout changes and cross-bundle recovery |
 
 Build the remaining native work without waiting on optional provider accounts.
@@ -194,3 +194,38 @@ approved recurring/notification lifecycle, exact-child navigation and redundant
 cue grouping, crash recovery, shared Experience consumers/preferences and
 representative/deployed/installed-host release gates. All six remain NOT READY
 TO SHIP. Source publication is not production deployment or client acceptance.
+
+P9d/P9e/P9f now implement exact task navigation, recorded weekly outcomes and
+resumable user-reviewed availability planning (Executive 0.5.0). Docker was
+already working on recheck; no engine repair or database reset was performed.
+The retained 29-migration fictional database restored, then migrations 30/31
+applied successfully. This is upgrade proof, not a fresh 31-migration replay.
+
+Current real isolated proof: 588 PostgreSQL assertions in 18 rollback-only
+suites; eight Executive foundation, seven task and five weekly native groups;
+thirteen actual Executive HTTP/OAuth/PKCE/MCP groups; all other connected
+regressions (79 connected groups total). Source: 105 tests, six plugin/six skill
+validations. Host: 281 units, 32 schema checks, 251 boundaries, typecheck, lint
+and optimized build. All 28 transformed exports/hashes match source
+f9f4614afb947ada637ba170ceb7890ac91ad495.
+
+Ten account-free component-browser cases pass, without a fake API or database.
+The initial full browser run found an ambiguous nonprofit heading selector and
+a real Investor hidden-Catalysts navigation bug; both were corrected. All 28
+corrected exact-task navigation cases pass. All 116 optimized
+desktop/mobile all-bundle journeys pass in 5.7 minutes, zero retries. After the
+final mobile spacing refinement, all 28 affected cases passed again, with actual
+sticky-header clearance checks and visual review. Read Workspace's P9f ledger
+for final outcomes and limitations.
+
+Availability stays private to admitted Executive meeting reads/proposals,
+saved downloads and native history; attention/weekly metadata excludes it.
+Reopening does not refresh checks, proposals never claim booking/agreement,
+and native exact confirmation remains required. Source skill guidance now
+follows the real retained-availability and user-check workflow.
+
+The next implementation slice is shared Workspace Experience controls/consumers
+for all bundles, followed by remaining recurring/notification, ingestion,
+recovery and representative/deployed/installed-host gates. No client/provider
+account, hosted deployment, marketplace publication or commercial launch is
+implied. All six remain NOT READY TO SHIP.
