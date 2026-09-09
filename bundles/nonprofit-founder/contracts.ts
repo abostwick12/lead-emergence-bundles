@@ -67,7 +67,8 @@ export const meetingRecord = z.object({
   }
 });
 export const sourceUrl = z.string().url().max(2000).refine(raw => {
-  const u = new URL(raw); return ["https:", "http:"].includes(u.protocol) && !u.username && !u.password;
+  try { const u = new URL(raw); return ["https:", "http:"].includes(u.protocol) && !u.username && !u.password; }
+  catch { return false; }
 }, "Use an HTTP(S) source URL without credentials.");
 export const nonprofitSource = z.object({
   id, title: required(500), authority: required(500), authorityType: z.enum(["government", "grantmaker", "primary_organization", "secondary"]),

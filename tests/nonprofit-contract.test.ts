@@ -31,6 +31,8 @@ describe("Reusable Nonprofit Founder contracts", () => {
  });
  it("bounds inputs and requires real source fields instead of promoting an unsourced conclusion", () => {
   expect(nonprofitResearch.safeParse(research).success).toBe(true);
+  for(const url of ["","not a URL","https://","https://example.org:invalid/"])
+   expect(nonprofitSource.safeParse({...source,url}).success).toBe(false);
   for(const fields of [{uncertainty: ""}, {professionalReview: ""}, {jurisdiction: ""}, {sources: [source,source]}, {status: "compliant"}, {epistemicState: "certified"}, {status: "reviewed",sources: []}])
    expect(nonprofitResearch.safeParse({...research,...fields}).success).toBe(false);
   for(const fields of [{url: "javascript:alert(1)"}, {url: "https://someone:password@example.org/"}, {retrievedDate: "2026-02-30"}, {finding: ""}, {effectiveDate: "yesterday"}, {authorityType: "ai"}])

@@ -37,6 +37,8 @@ describe("Reusable Ministry domain contract", () => {
   expect(researchProject.safeParse({ ...p, notes: [{ ...p.notes[0], epistemicState: "inferred" }] }).success).toBe(true);
  });
  it("bounds excerpts and refuses invented source layers or executable URLs", () => {
+  for (const url of ["", "not a URL", "https://", "https://example.org:invalid/"])
+   expect(researchSource.safeParse({ ...source, url }).success).toBe(false);
   for (const fields of [{ excerpt: "x".repeat(8001) }, { layer: "financial_context" }, { reference: "" }, { url: "javascript:alert(1)" }, { url: "https://user:secret@example.com/" }, { sourceDate: "2026-02-30" }])
    expect(researchSource.safeParse({ ...source, ...fields }).success).toBe(false);
  });
