@@ -1,21 +1,60 @@
 {
   "schemaVersion": "1.0",
   "bundleKey": "nonprofit_founder",
-  "workspaceRoute": { "route": "/workspace/nonprofit", "label": "Nonprofit" },
+  "workspaceRoute": {
+    "route": "/workspace/nonprofit",
+    "label": "Nonprofit"
+  },
   "primaryNavigation": [
-    { "id": "nonprofit.nav.home", "label": "Nonprofit", "route": "/workspace/nonprofit", "icon": "heart-handshake", "order": 40 }
+    {
+      "id": "nonprofit.nav.home",
+      "label": "Nonprofit",
+      "route": "/workspace/nonprofit",
+      "icon": "heart-handshake",
+      "order": 40
+    }
   ],
   "secondaryNavigation": [
-    { "id": "nonprofit.nav.partners", "label": "Partners", "route": "/workspace/nonprofit/partners", "icon": "users", "order": 40 }
+    {
+      "id": "nonprofit.nav.roadmaps",
+      "label": "Roadmaps",
+      "route": "/workspace/nonprofit/plan",
+      "icon": "flag",
+      "order": 41
+    },
+    {
+      "id": "nonprofit.nav.partners",
+      "label": "People & partnerships",
+      "route": "/workspace/nonprofit/partner",
+      "icon": "users",
+      "order": 42
+    },
+    {
+      "id": "nonprofit.nav.meetings",
+      "label": "Meetings",
+      "route": "/workspace/nonprofit/meeting",
+      "icon": "calendar",
+      "order": 43
+    },
+    {
+      "id": "nonprofit.nav.research",
+      "label": "Research",
+      "route": "/workspace/nonprofit/research",
+      "icon": "search",
+      "order": 44
+    }
   ],
   "dashboardWidgets": [
     {
       "id": "nonprofit.widget.followups",
-      "label": "Founder follow-ups",
+      "label": "Founder next moves",
       "order": 40,
       "type": "attention_queue",
-      "capabilityId": "nonprofit.partners",
-      "attentionTypes": ["nonprofit.attention.partner_followup"],
+      "capabilityId": "nonprofit.roadmap",
+      "attentionTypes": [
+        "nonprofit.attention.partner_followup",
+        "nonprofit.attention.next_move"
+      ],
       "emptyStateId": "nonprofit.empty.followups"
     }
   ],
@@ -30,11 +69,40 @@
   ],
   "searchProviders": [
     {
-      "id": "nonprofit.search.operations",
-      "label": "Nonprofit operations",
+      "id": "nonprofit.search.plan",
+      "label": "Roadmaps",
       "order": 40,
+      "capabilityId": "nonprofit.roadmap",
+      "resultTypes": [
+        "nonprofit.result.plan"
+      ]
+    },
+    {
+      "id": "nonprofit.search.partner",
+      "label": "People & partnerships",
+      "order": 41,
       "capabilityId": "nonprofit.partners",
-      "resultTypes": ["nonprofit.result.partner", "nonprofit.result.milestone", "nonprofit.result.research"]
+      "resultTypes": [
+        "nonprofit.result.partner"
+      ]
+    },
+    {
+      "id": "nonprofit.search.meeting",
+      "label": "Meetings",
+      "order": 42,
+      "capabilityId": "nonprofit.meetings",
+      "resultTypes": [
+        "nonprofit.result.meeting"
+      ]
+    },
+    {
+      "id": "nonprofit.search.research",
+      "label": "Nonprofit research",
+      "order": 43,
+      "capabilityId": "nonprofit.regulatory_research",
+      "resultTypes": [
+        "nonprofit.result.research"
+      ]
     }
   ],
   "commandPaletteActions": [

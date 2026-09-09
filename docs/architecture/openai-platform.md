@@ -73,6 +73,18 @@ read-only annotations. Real local OAuth and HTTP MCP tests pass; an installed
 ChatGPT/Codex host connection is not yet validated. No app identifier or
 undeployed server was fabricated in the plugin manifest.
 
+## Nonprofit tool contract review — 2026-09-08
+
+Rechecked [official MCP server guidance](https://developers.openai.com/plugins/build/mcp-server).
+Focused list, read and proposal tools will use explicit bounded schemas and
+per-request server authorization. Read-only/private-workspace annotations must
+describe actual behavior; they do not replace authorization or native approval.
+Research source recording does not itself browse the internet. The skill may
+use separately available public research tools without sending private records.
+No new plugin app identifier, installed-plugin change or public submission is
+part of this native implementation. The missing build-chatgpt-app skill remains
+covered by official documentation and available authoring/validation guidance.
+
 ## Ministry native/connected implementation — 2026-09-08
 
 Rechecked [MCP server guidance](https://developers.openai.com/plugins/build/mcp-server).
