@@ -69,6 +69,21 @@ See `docs/bundles/workspace-experience-native-search.md` and the Workspace
 ledger and limitations. This does not complete the remaining six-bundle
 shipment gates or establish measured client value.
 
+## P11a large-library search checkpoint
+
+The native host now prepares saved-text previews only for the selected page.
+With 15,000 fictional owner records and 500 other-owner controls, all eleven
+before/after response fingerprints match (excluding retrieval timestamps).
+The broad first-page median moved from 707.5 ms to 174.2 ms locally; this is
+not a production SLA or representative client-value result. The same 16
+native scopes and model-denial boundary remain in place.
+
+All 34 migrations replay from a new named local database; 650 security
+assertions pass on fresh and upgraded databases. No portable contract or
+manifest version changes in P11a. See the host
+`docs/testing/workspace-search-scale-acceptance.md` for final browser,
+publication, raw timing and remaining-gate evidence.
+
 ## Earlier milestone evidence
 
 Writer P4 recovery/discovery is documented in Workspace at

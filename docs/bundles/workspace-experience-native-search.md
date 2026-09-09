@@ -30,6 +30,15 @@ Host evidence belongs in docs/testing/workspace-search-acceptance.md and
 docs/architecture/workspace-saved-search.md in the Workspace repository.
 P11 also proves a clean 33-migration local replay and 650 database assertions.
 
+P11a adds host-only page-bound preview preparation, preserving all sixteen
+scopes and the existing portable request/result contract. A controlled
+15,000-record owner library plus 500 foreign controls has identical
+before/after response hashes across eleven query cases. It is synthetic
+scale evidence, not representative retrieval quality or measured time saved.
+The host scale ledger records 34 fresh migrations, security regression and
+the final optimized browser result. Source export pin and versions remain
+unchanged.
+
 Still required: shared attention and connection/notification consumers;
 grounded approval-only layout recommendations; representative source quality
 and measured first-use value; installed-host, deployed recovery/privacy and
