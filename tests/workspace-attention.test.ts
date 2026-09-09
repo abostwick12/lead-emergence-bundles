@@ -1,4 +1,5 @@
 import {describe,it,expect} from "vitest";
+import {readFileSync} from "node:fs";
 import {admittedAttentionScopes,attentionSources,attentionReferenceKey,attentionSourceRoute,nativeAttentionInput,nativeAttentionCatalog,nativeAttentionItem,nativeAttentionResult} from "../bundles/workspace-experience/attention";
 const id="10000000-0000-4000-8000-000000000001",child="20000000-0000-4000-8000-000000000001";
 const caps=["workspace.attention",...attentionSources.map(s=>s.capabilityId)];
@@ -6,6 +7,14 @@ const record={capabilityId:"writer.resource.library",kind:"resource",documentId:
 const item=()=>({id:attentionReferenceKey(record),source:record,title:"Fictional saved writing",priority:"normal",dueDate:null,reason:"Draft awaits review",state:"draft",evidence:"Saved draft; revision 1.",action:"Open the original",sourceUpdatedAt:"2026-09-09T12:00:00Z",sourceReviewState:null,parentTitle:null,owner:null,nextAction:null,dateState:null,openPrerequisites:0});
 const result=()=>({schemaVersion:"1.0",workspaceId:id,authorityRevision:"verified",asOfDate:"2026-09-09",retrievedAt:"2026-09-09T12:00:00Z",bundleKey:null,priority:null,offset:0,total:1,overallTotal:1,coverage:[{capabilityId:"writer.resource.library",level:"record",total:1}],groups:[{bundleKey:"writer_editor",priority:"normal",total:1}],items:[item()]});
 describe("native user attention contract",()=>{
+ it("describes the implemented saved-work widget without a false all-clear",()=>{
+  const ui=JSON.parse(readFileSync("bundles/workspace-experience/ui-manifest.json","utf8"));
+  const manifest=JSON.parse(readFileSync("bundles/workspace-experience/bundle.json","utf8"));
+  expect(ui.dashboardWidgets[0].attentionTypes).toEqual(["workspace.attention.saved_work"]);
+  expect(manifest.attentionTypes.some((t:{id:string})=>t.id==="workspace.attention.saved_work")).toBe(true);
+  expect(ui.emptyStates[0].description).toContain("not an all-clear");
+  expect(ui.emptyStates[0].actionId).toBeUndefined();
+ });
  it("admits thirteen record and nine task scopes only with Experience attention",()=>{
   expect(admittedAttentionScopes(caps)).toHaveLength(22);expect(admittedAttentionScopes(caps.slice(1))).toEqual([]);
   expect(admittedAttentionScopes(["workspace.attention","writer.resource.library"])).toEqual([{capabilityId:"writer.resource.library",level:"record"}]);

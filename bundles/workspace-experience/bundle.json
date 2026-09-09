@@ -88,6 +88,12 @@
   "automations": [],
   "attentionTypes": [
     {
+      "id": "workspace.attention.saved_work",
+      "description": "A native saved-record or task cue derived from current admitted metadata, with its reason and original source link; not verified urgency or a sent reminder.",
+      "defaultPriority": "normal",
+      "evidenceRequired": true
+    },
+    {
       "id": "workspace.attention.connection_required",
       "description": "An entitled workflow needs a provider connection or reauthorization before it can run.",
       "defaultPriority": "normal",
