@@ -1,21 +1,65 @@
 {
   "schemaVersion": "1.0",
   "bundleKey": "investor",
-  "workspaceRoute": { "route": "/workspace/investing", "label": "Investing" },
+  "workspaceRoute": {
+    "route": "/workspace/investing",
+    "label": "Investing"
+  },
   "primaryNavigation": [
-    { "id": "investor.nav.home", "label": "Investing", "route": "/workspace/investing", "icon": "chart-candlestick", "order": 50 }
+    {
+      "id": "investor.nav.home",
+      "label": "Investing",
+      "route": "/workspace/investing",
+      "icon": "chart-candlestick",
+      "order": 50,
+      "capabilityId": "investor.company_research"
+    }
   ],
   "secondaryNavigation": [
-    { "id": "investor.nav.watchlist", "label": "Watchlists", "route": "/workspace/investing/watchlists", "icon": "list", "order": 50 }
+    {
+      "id": "investor.nav.watchlist",
+      "label": "Watchlists",
+      "route": "/workspace/investing/watchlist",
+      "icon": "list",
+      "order": 50,
+      "capabilityId": "investor.company_research"
+    },
+    {
+      "id": "investor.nav.thesis",
+      "label": "Theses & companies",
+      "route": "/workspace/investing/thesis",
+      "icon": "chart-candlestick",
+      "order": 51,
+      "capabilityId": "investor.thesis"
+    },
+    {
+      "id": "investor.nav.filing",
+      "label": "Filing reviews",
+      "route": "/workspace/investing/filing",
+      "icon": "file-text",
+      "order": 52,
+      "capabilityId": "investor.filings"
+    },
+    {
+      "id": "investor.nav.brief",
+      "label": "Market briefs",
+      "route": "/workspace/investing/brief",
+      "icon": "newspaper",
+      "order": 53,
+      "capabilityId": "investor.company_research"
+    }
   ],
   "dashboardWidgets": [
     {
       "id": "investor.widget.thesis_changes",
-      "label": "Material thesis changes",
+      "label": "Research that needs attention",
       "order": 50,
       "type": "attention_queue",
       "capabilityId": "investor.thesis",
-      "attentionTypes": ["investor.attention.thesis_change"],
+      "attentionTypes": [
+        "investor.attention.thesis_change",
+        "investor.attention.research_review"
+      ],
       "emptyStateId": "investor.empty.thesis_changes"
     }
   ],
@@ -34,7 +78,11 @@
       "label": "Investment research",
       "order": 50,
       "capabilityId": "investor.company_research",
-      "resultTypes": ["investor.result.company", "investor.result.filing", "investor.result.thesis"]
+      "resultTypes": [
+        "investor.result.company",
+        "investor.result.filing",
+        "investor.result.thesis"
+      ]
     }
   ],
   "commandPaletteActions": [
@@ -58,8 +106,8 @@
   "emptyStates": [
     {
       "id": "investor.empty.thesis_changes",
-      "title": "No material thesis change is supported",
-      "description": "No change is a valid result. Review a thesis when new evidence or a catalyst appears.",
+      "title": "Start with one useful research question",
+      "description": "No saved research needs attention here yet. This is not a live market scan or proof of no material change.",
       "actionId": "investor.action.review_thesis"
     }
   ],

@@ -85,6 +85,16 @@ No new plugin app identifier, installed-plugin change or public submission is
 part of this native implementation. The missing build-chatgpt-app skill remains
 covered by official documentation and available authoring/validation guidance.
 
+## Investor native tool review — 2026-09-08
+
+Rechecked [official MCP server guidance](https://developers.openai.com/plugins/build/mcp-server).
+The Investor contract separates private list/read/propose tools from a bounded
+public SEC lookup. The public lookup needs truthful open-world metadata and
+shared rate control; private research tools do not browse sources implicitly.
+Every operation retains server-side identity/capability checks. Native approval
+cannot silently upgrade assistant-extracted facts or changed source evidence.
+No marketplace identity, registered app ID or installed plugin is fabricated.
+
 ## Ministry native/connected implementation — 2026-09-08
 
 Rechecked [MCP server guidance](https://developers.openai.com/plugins/build/mcp-server).
