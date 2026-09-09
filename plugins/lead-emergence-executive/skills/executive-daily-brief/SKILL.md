@@ -53,9 +53,27 @@ No matching saved-record signals is not proof that all work is complete or that
 nothing materially changed. Do not infer market, inbox or calendar monitoring.
 A revoked source is an access change, never evidence that its work was resolved.
 
-For a weekly review, use the explicit inclusive period, inspect relevant saved
-Executive records, and distinguish recorded outcomes from open commitments.
-The current attention list alone is not a complete history of the week.
+For a weekly review, use `executive_weekly_outcomes` when available with one to
+seven inclusive local dates and an explicit named time zone. It requires current
+weekly-review access and separately checks each Executive source capability.
+It reads a fixed projection of retained saved revisions, not full private audit
+bodies or other bundles' history. Otherwise, work from supplied evidence and
+state that historical coverage could not be checked.
+
+Keep `recordedThrough` unchanged when paging. Every page rechecks current
+access; the cutoff is not a frozen snapshot. Count recorded changes, not unique
+accomplishments: the same work can be completed, corrected and reopened.
+`recordedAt` is the saved-revision time. `reportedDate` is a user-recorded
+completion or decision date and can fall outside the week. A planned meeting
+time is not proof of when it actually occurred. Preserve inferred review states,
+corrections, reversals, withdrawn outcomes and current status.
+
+Use historical revisions for provenance, then fetch current revisions before
+proposing edits. Removed actions can remain in historical outcomes; open their
+parent to inspect saved history instead of inventing a current task. Native
+draft preparation links current parent records without copying outcome titles.
+State first-page/reference limits. Combine this historical view with current
+attention for unresolved work; neither alone proves a complete week's activity.
 
 ## Preserve user control
 
