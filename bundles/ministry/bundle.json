@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "identity": {
     "key": "ministry",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "displayName": "Ministry",
     "description": "Supports source-aware biblical, theological, sermon, and teaching research without assigning beliefs to the user.",
     "kind": "functional"
@@ -23,6 +23,14 @@
   },
   "capabilities": [
     {
+      "id": "ministry.profile",
+      "version": "0.1.0",
+      "description": "Read client-owned theological preferences and let only the client confirm their configuration without promoting inferred positions.",
+      "domain": "ministry",
+      "operations": ["read", "execute"],
+      "taskMetadataShareable": false
+    },
+    {
       "id": "ministry.research",
       "version": "0.1.0",
       "description": "Research biblical, textual, academic, historical, and denominational sources in explicit layers.",
@@ -33,17 +41,17 @@
     {
       "id": "ministry.teaching",
       "version": "0.1.0",
-      "description": "Prepare sermon and teaching material from authorized research and confirmed preferences.",
+      "description": "Prepare sermon and teaching material, save client-authored research and explicitly approve assistant proposals.",
       "domain": "ministry",
-      "operations": ["read", "propose"],
+      "operations": ["read", "propose", "execute"],
       "taskMetadataShareable": true
     },
     {
       "id": "ministry.archive",
       "version": "0.1.0",
-      "description": "Search and organize permitted sermon and teaching archives.",
+      "description": "Search and organize the client's private sermon and teaching archive, preserving prior revisions.",
       "domain": "ministry",
-      "operations": ["read", "propose"],
+      "operations": ["read", "propose", "execute"],
       "taskMetadataShareable": true
     }
   ],

@@ -14,7 +14,7 @@
       "label": "Upcoming teaching",
       "order": 30,
       "type": "attention_queue",
-      "capabilityId": "ministry.teaching",
+      "capabilityId": "ministry.research",
       "attentionTypes": ["ministry.attention.teaching_due"],
       "emptyStateId": "ministry.empty.teaching"
     }
