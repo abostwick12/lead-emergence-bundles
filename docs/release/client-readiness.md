@@ -15,7 +15,7 @@ not measured client value. This checklist prevents those substitutions.
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; crash/autosave recovery; installed-host and deployed privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; crash/autosave recovery and large-library ergonomics; installed-host and deployed release acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
 | Executive | Five native editors; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved recurring/notification lifecycle; grouped attention; crash recovery; authorized provider proof before booking; installed-host, representative utility and deployed release acceptance |
-| Workspace Experience | Entitlement-based Writing, Ministry, Nonprofit, Investor and Executive navigation/widgets; capability-scoped private routes and live access removal; declarative composer and mobile navigation header | Cross-domain search and quick-action consumers; useful command palette; connection/notification center; user-owned pin/hide/reorder/default preferences; approval-only AI layout changes and cross-bundle recovery |
+| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority | Scoped search and quick-action consumers; useful command palette; connection/notification center; grounded approval-only AI layout proposals; representative/installed/deployed and shared recovery acceptance |
 
 Build the remaining native work without waiting on optional provider accounts.
 Do not replace missing integrations with fabricated data or claim planned tools
@@ -229,3 +229,32 @@ for all bundles, followed by remaining recurring/notification, ingestion,
 recovery and representative/deployed/installed-host gates. No client/provider
 account, hosted deployment, marketplace publication or commercial launch is
 implied. All six remain NOT READY TO SHIP.
+
+## P10 — user-owned Workspace Experience layout
+
+Workspace Experience 0.2.0 is the sixth ordinary assigned native bundle.
+User-confirmed pins, hidden items, ordering, starting workspace, preview,
+version recovery, exact retries, stale-tab protection and dormant access
+choices are implemented. A layout save keeps domain editor authority
+unchanged. Actual OAuth clients cannot read or write native preferences.
+
+Source: 120 tests, typecheck, six plugin and six skill validators. Host: 290
+units, 32 schema checks, 256 boundaries, typecheck, lint and optimized build
+with 53 static pages. The retained fictional database upgraded to migration
+32 without reset; 628 PostgreSQL assertions across 19 suites pass. This is not
+fresh replay of all 32 migrations.
+
+Real connected proof: 12 layout HTTP/RPC groups, three all-six OAuth/MCP
+boundary groups and 13 Executive connected regression groups pass. All 130
+optimized desktop/mobile journeys pass in 8.6 minutes with zero retries.
+A further two-viewport focused run checks refreshed hidden-link removal and
+ordering before final screenshots. All 31 source exports/hash checks match
+ad6c41da1d3b822b459ebb27e55113cc3e10ee80.
+
+The Workspace Designer skill was aligned with actual native confirmation and
+recovery; it cannot claim model-side persistence. Remaining shared work:
+scoped search, useful commands/quick actions, grounded advisory layout
+proposals, connection/notification consumers, recurring lifecycle, ingestion
+and recovery gaps. Representative value, installed-host, deployed/commercial
+and approved migration gates remain required. **All six remain NOT READY TO
+SHIP.** See Workspace's `docs/testing/workspace-layout-acceptance.md`.
