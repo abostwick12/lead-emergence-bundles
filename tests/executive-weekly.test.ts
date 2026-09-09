@@ -83,7 +83,8 @@ describe("Recorded Executive weekly outcomes", () => {
  it("builds an unsaved, bounded review without permanently copying private outcome titles", () => {
   const draft = prepareExecutiveWeeklyReview(report);
   expect(executiveSchemas.weekly_review.safeParse(draft).success).toBe(true);
-  expect(draft).toMatchObject({periodStart: report.periodStart, periodEnd: report.periodEnd, state: "draft", reviewState: "inferred", actions: []});
+  expect(draft).toMatchObject({periodStart: report.periodStart, periodEnd: report.periodEnd, timeZone: report.timeZone, state: "draft", reviewState: "inferred", actions: []});
+  expect(executiveSchemas.weekly_review.safeParse({...draft,timeZone:"not/a/zone"}).success).toBe(false);
   expect(draft.references[0].revision).toBe(3);
   expect(JSON.stringify(draft)).not.toContain("PRIVATE_OUTCOME_TITLE");
   expect(JSON.stringify(draft)).not.toContain("PRIVATE_PARENT_TITLE");

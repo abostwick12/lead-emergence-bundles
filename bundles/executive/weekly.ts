@@ -128,6 +128,7 @@ export function prepareExecutiveWeeklyReview(raw: unknown) {
   const draft = emptyExecutiveData("weekly_review", report.periodEnd);
   if (draft.recordType !== "weekly_review") throw new Error("Expected a weekly review.");
   draft.periodStart = report.periodStart;
+  draft.timeZone = report.timeZone;
   draft.title = "Weekly review — " + report.periodEnd;
   draft.focus = "What changed, what did I learn, and what should happen next?";
   const parents = new Map<string, z.infer<typeof executiveReference>>();
