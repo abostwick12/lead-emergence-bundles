@@ -64,6 +64,7 @@ describe("entitlement-derived bundle composition", () => {
     expect(reverse).toEqual(forward);
     expect(forward.primaryNavigation.map((item) => item.label)).toEqual([
       "Home",
+      "Executive",
       "Writing",
       "Ministry",
       "Nonprofit",

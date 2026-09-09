@@ -14,7 +14,7 @@ not measured client value. This checklist prevents those substitutions.
 | Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; six scoped connected tools | Representative theological/source evaluation; rich archive ingestion and large-library ergonomics; installed-host, deployed recovery and first-use value acceptance; authorized optional Logos proof only for supported operations |
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; crash/autosave recovery; installed-host and deployed privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; crash/autosave recovery and large-library ergonomics; installed-host and deployed release acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
-| Executive | Valid coordination bundle, daily-brief skill, shared scoped-policy tests | Native commitments/decisions and daily/weekly brief; task-metadata-only attention aggregation with source permissions; approved automation lifecycle and meaningful-change notifications |
+| Executive | Five native database record kinds, private versions/proposals, exact-revision confirmation, default-off source permissions and a current-authority metadata-only reference reader; reusable brief/scheduling logic and revised skill | Native editors/source controls, daily/weekly first-value flow, attention aggregation/coverage, app HTTP/MCP/browser proof, approved automation lifecycle and meaningful-change notifications |
 | Workspace Experience | Entitlement-based Writing, Ministry, Nonprofit and Investor navigation/widgets, capability-scoped navigation metadata, private routes, live access-removal behavior, reusable declarative composer and a dedicated mobile navigation header | Contributions from remaining bundles; cross-domain search; useful command palette; connection/notification center; user-owned pin/hide/reorder/default preferences; approval-only AI layout changes |
 
 Build the remaining native work without waiting on optional provider accounts.
@@ -122,6 +122,16 @@ hosted migration, installed-plugin update or external provider action occurred.
 The subsequent P8 Investor implementation is described below. Executive
 orchestration and the remaining Workspace Experience work are next. All-six
 shipment readiness remains NOT READY TO SHIP.
+
+P9a adds Executive's contract/persistence foundation, not its finished native
+experience. Seven real native RPC groups and 67 Executive database assertions
+pass after a fresh 27-migration replay; the complete database regression is now
+488 assertions across fourteen suites. Reusable source has 64 tests including
+seventeen Executive cases; the existing Workspace has 217 passing unit tests.
+The host has not enabled Executive navigation or tools and remains pinned to its
+P8 runtime export. Source references are permission-checked live, sharing starts
+empty, and full private source bodies are excluded from the projection. Complete
+attention, UI/HTTP/MCP and automation before claiming Executive readiness.
 
 P8 implements the Investor native research slice, four independent record kinds,
 evidence/catalyst/scenario rules, private revisions and native-only decisions.

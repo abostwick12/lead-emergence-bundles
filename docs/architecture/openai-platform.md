@@ -118,3 +118,16 @@ Real loopback registration, consent, PKCE and HTTP MCP/native parity are proven
 locally. This is not an installed-host test or marketplace release. The plugin
 remains a skill adapter; no invented app ID, provider connection or deployable
 MCP endpoint was added to its package.
+
+## Executive implementation in progress — 2026-09-09
+
+Rechecked [MCP server guidance](https://developers.openai.com/plugins/build/mcp-server).
+Executive source contracts preserve focused record operations, strict inputs and
+outputs, descriptive safety metadata and server-enforced authorization. Native
+source-sharing consent is distinct from source entitlement and from canonical
+record confirmation. A task-metadata projection must not return full domain
+content. Scheduling from explicit availability does not imply a calendar read
+or booking. The revised skill distinguishes missing tools, unsaved drafts,
+proposals and actual execution. P9a proves native database operations locally;
+app HTTP/MCP and installed-host proof remain pending;
+no package app ID, marketplace update, install or provider connection was added.
