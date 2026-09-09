@@ -15,7 +15,7 @@ not measured client value. This checklist prevents those substitutions.
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; crash/autosave recovery; installed-host and deployed privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; crash/autosave recovery and large-library ergonomics; installed-host and deployed release acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
 | Executive | Five native editors; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved recurring/notification lifecycle; grouped attention; crash recovery; authorized provider proof before booking; installed-host, representative utility and deployed release acceptance |
-| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority | Scoped search and quick-action consumers; useful command palette; connection/notification center; grounded approval-only AI layout proposals; representative/installed/deployed and shared recovery acceptance |
+| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette | Shared attention and connection/notification center; grounded approval-only AI layout proposals; representative/installed/deployed and shared recovery acceptance |
 
 Build the remaining native work without waiting on optional provider accounts.
 Do not replace missing integrations with fabricated data or claim planned tools
@@ -56,7 +56,20 @@ paid infrastructure, publish marketplace listings, or connect client accounts.
 The Workspace repository is public; reusable bundle source remains private.
 Backend entitlements—not repository visibility—must enforce paid capabilities.
 
-## Most recent evidence
+## P11 discovery checkpoint
+
+Workspace Experience 0.3.0 now provides native-user-only saved-work search and
+concrete quick-action consumers. Portable source: 134 tests and six plugin/six
+skill validations. A fresh local Workspace database replays all 33 migrations
+and passes 650 security assertions. Actual all-six OAuth credentials cannot
+access native shared search through either HTTP or direct RPC.
+
+See `docs/bundles/workspace-experience-native-search.md` and the Workspace
+`docs/testing/workspace-search-acceptance.md` for the final browser/publication
+ledger and limitations. This does not complete the remaining six-bundle
+shipment gates or establish measured client value.
+
+## Earlier milestone evidence
 
 Writer P4 recovery/discovery is documented in Workspace at
 `docs/architecture/writer-recovery-and-discovery.md` and

@@ -1,5 +1,8 @@
 # Workspace Experience — native user-owned layout
 
+Historical P10 checkpoint. P11 search and quick-action progress is documented
+in [native discovery](workspace-experience-native-search.md).
+
 Workspace Experience 0.2.0 uses Bundle Contract 1.0, UI Manifest Contract 1.0
 and its strict Layout Schema 1.0. Source implementation:
 `bundles/workspace-experience/layout.ts`. **Not a client shipment release.**
