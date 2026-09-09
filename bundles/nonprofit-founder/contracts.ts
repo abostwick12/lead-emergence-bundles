@@ -126,8 +126,8 @@ export const nonprofitProposal = z.object({
 }).strict().superRefine(checkKind);
 export type NonprofitProposal = z.infer<typeof nonprofitProposal>;
 export const nonprofitDecision = z.object({
-  proposalId: id, expectedRevision: z.number().int().nonnegative(), decision: z.enum(["approve", "reject"]), confirmAdministrative: z.literal(true)
-}).strict();
+  proposalId: id, expectedRevision: z.number().int().nonnegative(), decision: z.enum(["approve", "reject"]), confirmAdministrative: z.boolean()
+}).strict().refine(d => d.decision === "reject" || d.confirmAdministrative, "Confirm administrative-only content before approving.");
 export const nonprofitDecisionResult = z.object({document: nonprofitDocument.nullable(), proposal: nonprofitProposal}).strict();
 export const nonprofitHistory = z.object({revisions: z.array(nonprofitDocument).max(10)}).strict();
 export const nonprofitSearch = z.object({

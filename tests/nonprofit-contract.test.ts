@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { emptyNonprofitData, founderPlan, meetingRecord, newFounderAction, nonprofitDocument, nonprofitProposalInput, nonprofitResearch, nonprofitSave, nonprofitSource, partnerRecord } from "../bundles/nonprofit-founder/contracts";
+import { emptyNonprofitData, founderPlan, meetingRecord, newFounderAction, nonprofitDecision, nonprofitDocument, nonprofitProposalInput, nonprofitResearch, nonprofitSave, nonprofitSource, partnerRecord } from "../bundles/nonprofit-founder/contracts";
 const id = "83000000-0000-4000-8000-000000000001", other = "83000000-0000-4000-8000-000000000002";
 const plan = {...emptyNonprofitData.plan, title: "Fictional community project"};
 const source = {id, title: "Fictional agency material", authority: "Fictional authority", authorityType: "government", url: "https://example.org/fictional-evidence", reference: "Test only, not legal guidance", jurisdiction: "Fictional jurisdiction", retrievedDate: "2026-09-08", effectiveDate: null, sourceDate: null, finding: "A recorded test finding."};
@@ -50,6 +50,8 @@ describe("Reusable Nonprofit Founder contracts", () => {
    expect(meetingRecord.safeParse({...m,...fields}).success).toBe(false);
  });
  it("keeps source content and interpretation separate and returns typed records", () => {
+  expect(nonprofitDecision.safeParse({proposalId:id,expectedRevision:0,decision:"reject",confirmAdministrative:false}).success).toBe(true);
+  expect(nonprofitDecision.safeParse({proposalId:id,expectedRevision:0,decision:"approve",confirmAdministrative:false}).success).toBe(false);
   const d = {id,kind: "research",revision: 1,data: research,origin: "assistant",createdAt: "2026-09-08T00:00:00Z",updatedAt: "2026-09-08T00:00:00Z"};
   expect(nonprofitDocument.safeParse(d).success).toBe(true);
   expect(nonprofitDocument.safeParse({...d,kind: "plan"}).success).toBe(false);
