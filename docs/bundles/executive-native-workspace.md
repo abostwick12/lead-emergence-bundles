@@ -1,68 +1,86 @@
 # Executive native coordination — implementation in progress
 
-Updated 2026-09-09. **Not client-ready.** P9b now has real Workspace pages and
-connected tools; this does not close the full Executive or six-bundle goal.
+Updated 2026-09-09. **Not client-ready.** P9c extends P9b's real Workspace
+pages and connected tools with individual-task consent and complete paged source
+discovery. It does not close the full Executive or six-bundle goal.
 
-The reusable source defines five distinct records: commitments, decisions,
-meeting plans, daily briefs and weekly reviews. Bundle version 0.2.0 retains
-Bundle Contract 1.0 and UI Manifest Contract 1.0. Workspace imports a pinned,
-26-file allowlist at ff7d7c29a1e856818d828f6fa821718642463c20 and registers
-Executive in its entitlement-based composer and MCP server.
+Executive 0.3.0 retains Bundle Contract 1.0 and UI Manifest Contract 1.0.
+Workspace imports 27 allowlisted files at source revision
+28d6b4cb876a37709e899526f7087a596b3aec67, including reusable attention contracts.
+Five records remain distinct: commitments, decisions, meeting plans, daily briefs
+and weekly reviews. Their original formats remain valid.
 
 ## Implemented source and host
 
-Native saves and proposal decisions require exact-record confirmation and the
-current base revision. Source references hold capability, kind, identifier and
-revision only. Cross-bundle metadata sharing starts off; the native source page
-requires an explicit current selection and explains that titles can be sensitive.
-Live server checks require source sharing and current source entitlement.
-No manuscript, theological profile, research finding, patient record, personal
-account or provider credential belongs in the metadata projection.
+Native exact-record confirmation and expected revisions govern canonical saves
+and proposal decisions. Changed assistant content remains inferred after approval.
+Private source sharing begins empty and is checked with current entitlement on
+every invocation. No submitted tenant ID authorizes a read.
 
-Pure source logic prepares an unsaved, coverage-aware brief without copying
-task titles or private bodies into durable text. It distinguishes changed
-attention from access changes and refuses no-change conclusions from unavailable
-or truncated sources. Assistant changes retain inference labels through native
-approval. Native pages add five focused editors, revision/proposal review,
-original recovery, saved-only handoffs and explicit changed/unavailable links.
+Old record references expose six metadata fields. Individual task references add
+an optional item kind/ID and retain their parent revision. A task edit/deletion
+can make the link changed/unavailable; multiple tasks can coexist with their
+parent link. Brief preparation stores exact references, not copied task titles,
+owners, next steps or private bodies. Existing saved notes remain user-owned.
 
-Workspace's read-only attention projection has thirteen coverage states, exact
-matching counts and at most fifty priority-ordered cues. It reads parent-record
-metadata only. The picker currently exposes this first page, not complete source
-search. Weekly preparation explicitly does not claim a complete historical
-account. Nested tasks, milestones, catalysts and actual full-period outcomes
-remain implementation work.
+Individual foreign tasks require a new, separately confirmed task-metadata-v1
+permission. The six supported foreign scopes are Nonprofit roadmap, partners and
+meetings, plus Investor company research, thesis and filings. Executive's own
+admitted actions need no cross-domain consent. The fixed twelve-field task
+projection adds parent title, owner, next action, priority, catalyst date certainty
+and an unfinished-prerequisite count to the old six-field envelope.
 
-The 17 Executive MCP tools comprise five sets of list/get/propose plus attention
-and reference resolution. Only the five proposal tools write. Native canonical
-save, approval/history, source-sharing changes and external execution are not
-assistant tools. Tool annotations never replace per-invocation authorization.
+Old record grants never expand automatically. A legacy permission update retains
+task grants only for retained record sources; removing and re-adding a record
+does not restore its tasks. Native UI explains the sensitive fields and resets
+both confirmations after a selection changes. Task-only withdrawal is supported.
 
-Scheduling source logic computes candidate instants only from explicit, recently
-checked availability, offered windows and busy intervals, with bounded buffers
-and a named display zone. It neither reads calendars nor books meetings. Native
-meeting-time entry handles nonexistent/repeated local hours and clears reported
-agreement after timing or participant edits, but the full availability workflow
-is still absent. No recurring scheduler or notification worker is active.
+The enhanced attention API has 22 explicit record/task coverage scopes, exact
+matching totals and bounded pages. Unavailable/unshared counts are null. Open
+actions remain visible after a meeting is held/completed; terminal tasks and
+paused/archived/cancelled parents are omitted. Catalyst dates are stated metadata,
+not independently verified events or live-market evidence.
+
+Source discovery searches titles within one explicit capability/level and uses
+stable identity cursors, including future and completed tasks outside attention.
+Every page rechecks current access. Concurrent changes may affect pages; no
+frozen snapshot or complete activity history is claimed. Native links currently
+open the parent record, not an auto-expanded child. Related parent/task cues
+can both appear; grouping redundant cues remains a pre-shipment refinement.
+
+Nineteen Executive MCP tools include five sets of list/get/propose, legacy
+record attention, enhanced record/task attention, source discovery and reference
+resolution. Only five proposal tools write. Canonical saves, source-permission
+changes, approval/history and external execution remain native-only or unavailable.
+Annotations do not replace live authorization.
+
+Scheduling source logic uses only explicit recently checked availability,
+offered/busy windows, buffers and a named zone. Native time entry handles repeated
+and nonexistent local hours, but full availability UI and recurring execution
+remain unimplemented. No provider or installed-plugin update was performed.
 
 ## Evidence and release boundary
 
-Seventeen Executive behavioral source cases pass alongside the existing 47
-tests. Five generated base schemas and ten source definitions match trusted SQL.
-Workspace now exercises actual native HTTP, local OAuth/PKCE and HTTP MCP,
-including four-domain private-text canaries, source withdrawal, live source
-revocation, capability removal and disconnect. Desktop/mobile browser journeys
-cover failed saves, confirmation reset, ambiguity, evidence, original recovery
-and proposal conflicts.
+The reusable source has 71 passing tests, including 24 Executive cases. All six
+plugins and six skills validate. Five replayed database schemas exactly match
+the pinned reusable source. Native task acceptance covers ten mappings, explicit
+consent, exact retries/conflicts, six/twelve-field privacy, source paging beyond
+fifty tasks, changed/deleted links, old-grant behavior and live revocation.
 
-Use Workspace docs/testing/test-evidence.md for final P9b counts and the complete
-regression receipt; docs/architecture/executive-native-workspace.md explains
-scope and docs/runbooks/executive-local-proof.md makes it reproducible. These are
-fictional-account local checks, not installed-host or representative client proof.
+Workspace exercises real fictional-user HTTP, OAuth/PKCE and MCP. The new tools
+page 52 tasks, preserve exact proposed links through native approval and stop
+returning task metadata on task-only withdrawal. Source search never examines
+private evidence bodies. Desktop/mobile proof includes a source link beyond the
+fiftieth task and separate source/task controls.
 
-Remaining: nested attention and complete source discovery; full weekly outcomes;
-availability scheduling UI; approved recurring work and meaningful-change
-notifications; shared Workspace Experience and crash/autosave recovery; installed
-host, representative utility, deployed privacy/retention and commercial gates.
+Use Workspace docs/testing/test-evidence.md for final P9c counts and corrected
+attempts, docs/architecture/executive-native-workspace.md for scope and
+docs/runbooks/executive-local-proof.md for reproducible local verification.
+These are fictional-account local tests, not installed-host or client-value proof.
+
+Remaining: full-period weekly outcomes; availability scheduling UI; approved
+recurring work and meaningful-change notifications; exact-child navigation;
+shared Workspace Experience and crash/autosave recovery; installed host,
+representative utility, deployed privacy/retention and commercial gates.
 All six remain NOT READY TO SHIP. No hosted migration, deployment, installed
-plugin change, client/provider connection or marketplace submission is implied.
+plugin change, provider/client connection or marketplace submission is implied.

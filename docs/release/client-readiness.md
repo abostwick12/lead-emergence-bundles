@@ -14,7 +14,7 @@ not measured client value. This checklist prevents those substitutions.
 | Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; six scoped connected tools | Representative theological/source evaluation; rich archive ingestion and large-library ergonomics; installed-host, deployed recovery and first-use value acceptance; authorized optional Logos proof only for supported operations |
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; crash/autosave recovery; installed-host and deployed privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; crash/autosave recovery and large-library ergonomics; installed-host and deployed release acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
-| Executive | Five native record editors; private versions/proposals and saved handoffs; explicit default-off source controls; metadata-only attention with coverage; seventeen scoped connected tools | Nested task/catalyst attention and complete source discovery; full-period weekly outcomes; availability scheduling UI; approved automation/notification lifecycle; crash recovery; installed-host, representative utility and deployed release acceptance |
+| Executive | Five native editors; recoverable proposals/versions and saved handoffs; separately confirmed record/task source controls; paged attention and full paged source discovery; exact task references; nineteen scoped connected tools | Full-period weekly outcomes; availability scheduling UI; approved automation/notification lifecycle; exact-child navigation; crash recovery; installed-host, representative utility and deployed release acceptance |
 | Workspace Experience | Entitlement-based Writing, Ministry, Nonprofit, Investor and Executive navigation/widgets; capability-scoped private routes and live access removal; declarative composer and mobile navigation header | Cross-domain search and quick-action consumers; useful command palette; connection/notification center; user-owned pin/hide/reorder/default preferences; approval-only AI layout changes and cross-bundle recovery |
 
 Build the remaining native work without waiting on optional provider accounts.
@@ -172,3 +172,25 @@ weekly activity. Scheduling UI, approved recurring work, meaningful-change
 notifications, remaining shared Experience/recovery and representative/deployed
 acceptance are still open. The full goal remains active; none of the six bundles
 is yet cleared for client shipment.
+
+P9c adds separately confirmed task-metadata-v1 permission, exact task references,
+22-scope paged attention and full title-only source discovery. Legacy record
+grants stay six-field and never expand automatically; task grants require the
+selected parent record source and current entitlement. Nineteen scoped tools
+retain only five proposal writes. Brief preparation preserves live links without
+copying task metadata into durable prose.
+
+Final fictional local proof: 29 fresh migrations; seven Executive foundation
+and seven task native groups; twelve actual HTTP/OAuth/PKCE/MCP groups; 542
+PostgreSQL assertions across sixteen suites; 254 Workspace units; 32 schema tests;
+all 80 optimized desktop/mobile cases pass without retries (20 Executive plus
+60 existing cases, final completion in 11.1 minutes). All other connected bundle regressions pass.
+Source has 71 tests plus six plugin/six skill validations. All 27 exported files
+match source revision 28d6b4cb876a37709e899526f7087a596b3aec67 exactly.
+
+Four final synthetic task-link/task-attention card images were visually reviewed.
+Remaining: full-period weekly outcomes, explicit availability scheduling,
+approved recurring/notification lifecycle, exact-child navigation and redundant
+cue grouping, crash recovery, shared Experience consumers/preferences and
+representative/deployed/installed-host release gates. All six remain NOT READY
+TO SHIP. Source publication is not production deployment or client acceptance.
