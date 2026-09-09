@@ -11,8 +11,7 @@
       "label": "Investing",
       "route": "/workspace/investing",
       "icon": "chart-candlestick",
-      "order": 50,
-      "capabilityId": "investor.company_research"
+      "order": 50
     }
   ],
   "secondaryNavigation": [
