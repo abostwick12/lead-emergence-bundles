@@ -39,7 +39,8 @@ The host scale ledger records 34 fresh migrations, security regression and
 the final optimized browser result. Source export pin and versions remain
 unchanged.
 
-Still required: shared attention and connection/notification consumers;
+P12 adds native shared attention; see workspace-experience-native-attention.md.
+Still required: connection/notification consumers;
 grounded approval-only layout recommendations; representative source quality
 and measured first-use value; installed-host, deployed recovery/privacy and
 commercial release acceptance. Do not enable a planned capability just

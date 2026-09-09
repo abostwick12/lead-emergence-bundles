@@ -19,6 +19,14 @@ ChatGPT plugin assumptions for this repository.
 | [Build plugins](https://learn.chatgpt.com/docs/build-plugins) | Local marketplaces are the supported authoring/test path before universal-directory publication. |
 | [GitHub plugin management](https://learn.chatgpt.com/docs/enterprise/plugin-management) | Workspace admins can import public or private GitHub marketplace repositories and sync them. .agents/plugins/marketplace.json is supported at the selected root or path. Workspace admins configure access and required apps; import does not grant app access or connect accounts. |
 
+## P12 native attention boundary — retrieved 2026-09-09
+
+Rechecked [official authentication guidance](https://developers.openai.com/plugins/build/auth).
+Servers must validate token signature, issuer, audience, expiry and scopes;
+installation and declared metadata are not authorization. P12 keeps shared
+attention native-only, with actual OAuth denial at HTTP and database boundaries.
+No OpenAI protocol, model runtime, package connection or installed-host claim changes.
+
 ## Confirmed decisions
 
 1. .agents/plugins/marketplace.json is the correct private-beta repository
