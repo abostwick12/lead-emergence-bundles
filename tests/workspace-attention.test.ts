@@ -15,7 +15,8 @@ describe("native user attention contract",()=>{
  });
  it("requires a safe date and exact bounded page",()=>{
   expect(nativeAttentionInput.parse({asOfDate:"2026-09-09",authorityRevision:"r"}).offset).toBe(0);
-  for(const patch of [{asOfDate:"2026-02-30"},{asOfDate:"9999-12-25"},{offset:1},{offset:10025},{bundleKey:"private_profile"},{priority:"urgent"},{workspaceId:id}]){
+  expect(nativeAttentionInput.parse({asOfDate:"2026-09-09",authorityRevision:"r",offset:10025}).offset).toBe(10025);
+  for(const patch of [{asOfDate:"2026-02-30"},{asOfDate:"9999-12-25"},{offset:1},{offset:2147483025},{bundleKey:"private_profile"},{priority:"urgent"},{workspaceId:id}]){
    expect(nativeAttentionInput.safeParse({asOfDate:"2026-09-09",authorityRevision:"r",...patch}).success).toBe(false);
   }
  });

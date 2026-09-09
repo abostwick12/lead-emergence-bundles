@@ -20,7 +20,7 @@ const scope=z.object({capabilityId:z.string(),level:z.enum(["record","task"])}).
 export const nativeAttentionInput=z.object({
  asOfDate:isoDate,authorityRevision:z.string().min(1).max(200),
  bundleKey:attentionBundleKey.nullable().default(null),priority:attentionPriority.nullable().default(null),
- offset:z.number().int().min(0).max(10000).multipleOf(25).default(0)
+ offset:z.number().int().min(0).max(2147483000).multipleOf(25).default(0)
 }).strict();
 const reference=z.object({capabilityId:z.string(),kind:z.string(),documentId:z.string().uuid(),revision:z.number().int().positive(),
  item:z.object({kind:z.enum(attentionTaskKinds),id:z.string().uuid()}).strict().optional()}).strict().superRefine((r,ctx)=>{
@@ -57,7 +57,7 @@ export const nativeAttentionCatalog=z.object({workspaceId:z.string().uuid(),auth
 export const nativeAttentionResult=z.object({
  schemaVersion:z.literal("1.0"),workspaceId:z.string().uuid(),authorityRevision:z.string().min(1).max(200),
  asOfDate:isoDate,retrievedAt:z.iso.datetime({offset:true}),bundleKey:attentionBundleKey.nullable(),priority:attentionPriority.nullable(),
- offset:z.number().int().min(0).max(10000).multipleOf(25),total:z.number().int().nonnegative(),overallTotal:z.number().int().nonnegative(),
+ offset:z.number().int().min(0).max(2147483000).multipleOf(25),total:z.number().int().nonnegative(),overallTotal:z.number().int().nonnegative(),
  coverage:z.array(scope.extend({total:z.number().int().nonnegative()}).strict()).max(22),
  groups:z.array(z.object({bundleKey:attentionBundleKey,priority:attentionPriority,total:z.number().int().positive()}).strict()).max(15),
  items:z.array(nativeAttentionItem).max(25)
