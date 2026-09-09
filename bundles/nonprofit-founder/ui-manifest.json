@@ -11,7 +11,8 @@
       "label": "Nonprofit",
       "route": "/workspace/nonprofit",
       "icon": "heart-handshake",
-      "order": 40
+      "order": 40,
+      "capabilityId": "nonprofit.roadmap"
     }
   ],
   "secondaryNavigation": [
@@ -20,28 +21,32 @@
       "label": "Roadmaps",
       "route": "/workspace/nonprofit/plan",
       "icon": "flag",
-      "order": 41
+      "order": 41,
+      "capabilityId": "nonprofit.roadmap"
     },
     {
       "id": "nonprofit.nav.partners",
       "label": "People & partnerships",
       "route": "/workspace/nonprofit/partner",
       "icon": "users",
-      "order": 42
+      "order": 42,
+      "capabilityId": "nonprofit.partners"
     },
     {
       "id": "nonprofit.nav.meetings",
       "label": "Meetings",
       "route": "/workspace/nonprofit/meeting",
       "icon": "calendar",
-      "order": 43
+      "order": 43,
+      "capabilityId": "nonprofit.meetings"
     },
     {
       "id": "nonprofit.nav.research",
       "label": "Research",
       "route": "/workspace/nonprofit/research",
       "icon": "search",
-      "order": 44
+      "order": 44,
+      "capabilityId": "nonprofit.regulatory_research"
     }
   ],
   "dashboardWidgets": [

@@ -27,6 +27,11 @@ describe("Bundle Contract", () => {
   });
 
   it("keeps presentation in a separate declarative artifact", () => {
+    const artifact = loadArtifacts().find(item => item.manifest.identity.key === "nonprofit_founder")!;
+    expect(artifact.uiManifest.secondaryNavigation.every(item => item.capabilityId)).toBe(true);
+    expect(() => new BundleRegistry().register({...artifact, uiManifest: {...artifact.uiManifest,
+      primaryNavigation: [{...artifact.uiManifest.primaryNavigation[0], capabilityId: "investor.private"}]
+    }})).toThrow(/unknown capability/);
     for (const artifact of loadArtifacts()) {
       expect(artifact.manifest.uiManifestPath).toMatch(/ui-manifest\.json$/);
       expect(JSON.stringify(artifact.uiManifest)).not.toMatch(/React|component/i);
