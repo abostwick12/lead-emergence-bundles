@@ -1,86 +1,93 @@
 # Executive native coordination — implementation in progress
 
-Updated 2026-09-09. **Not client-ready.** P9c extends P9b's real Workspace
-pages and connected tools with individual-task consent and complete paged source
-discovery. It does not close the full Executive or six-bundle goal.
+Updated 2026-09-09. **All six bundles remain NOT READY TO SHIP.**
+P9c has historical local connected evidence. P9d exact-task navigation and P9e
+recorded weekly outcomes are new source progress, not connected client proof.
 
-Executive 0.3.0 retains Bundle Contract 1.0 and UI Manifest Contract 1.0.
-Workspace imports 27 allowlisted files at source revision
-28d6b4cb876a37709e899526f7087a596b3aec67, including reusable attention contracts.
-Five records remain distinct: commitments, decisions, meeting plans, daily briefs
-and weekly reviews. Their original formats remain valid.
+Executive 0.4.0 retains BundleContract 1.0 and UIManifestContract 1.0.
+Workspace imports 28 allowlisted files pinned to source revision
+9776d8979ab8739b1a9d9ee10dfc981591c7f6e8. The host owns native pages, identity,
+live entitlement, private storage, guarded tools and operational deployment.
+This source repository owns reusable contracts, rules and assistant guidance.
 
-## Implemented source and host
+## Native work and source boundaries
 
-Native exact-record confirmation and expected revisions govern canonical saves
-and proposal decisions. Changed assistant content remains inferred after approval.
-Private source sharing begins empty and is checked with current entitlement on
-every invocation. No submitted tenant ID authorizes a read.
+Commitments, decisions, meeting plans, daily briefs and weekly reviews remain
+distinct. Exact-record confirmation and expected revisions govern canonical
+saves and proposal decisions. Approved assistant content remains inferred.
+Original revisions remain privately retained; downloads contain saved work.
+Failed saves retain on-screen edits, not crash/autosave recovery.
 
-Old record references expose six metadata fields. Individual task references add
-an optional item kind/ID and retain their parent revision. A task edit/deletion
-can make the link changed/unavailable; multiple tasks can coexist with their
-parent link. Brief preparation stores exact references, not copied task titles,
-owners, next steps or private bodies. Existing saved notes remain user-owned.
+All foreign sharing starts empty. Existing record grants expose six metadata
+fields. Task-metadata-v1 requires a separately confirmed, supported task scope,
+adds six fixed fields and never silently expands an old record permission.
+Explicit references combine source capability, parent kind/ID/revision and an
+optional item kind/ID. Current access is checked on every read. No supplied
+tenant ID authorizes access. Private manuscript, belief, research, contact and
+task-evidence bodies are not copied into source projections.
 
-Individual foreign tasks require a new, separately confirmed task-metadata-v1
-permission. The six supported foreign scopes are Nonprofit roadmap, partners and
-meetings, plus Investor company research, thesis and filings. Executive's own
-admitted actions need no cross-domain consent. The fixed twelve-field task
-projection adds parent title, owner, next action, priority, catalyst date certainty
-and an unfinished-prerequisite count to the old six-field envelope.
+Attention has 22 record/task coverage scopes, exact totals and bounded pages.
+Unavailable/unshared counts are null. Source discovery uses title-only queries
+within one explicit scope, with stable identity cursors beyond the first fifty.
+Pages recheck current access; neither endpoint promises a frozen snapshot.
+Parent/task cues can both appear; grouping redundant cues remains a refinement.
 
-Old record grants never expand automatically. A legacy permission update retains
-task grants only for retained record sources; removing and re-adding a record
-does not restore its tasks. Native UI explains the sensitive fields and resets
-both confirmations after a selection changes. Task-only withdrawal is supported.
+P9d host source links now target the exact on-screen task for ten mappings,
+expanding and focusing only that authorized editor's child. Malformed, missing
+or historical-only targets do not select other work or save anything.
+Its 26 desktop/mobile cases are collected, not executed. Signed-out return paths
+still deliberately discard fragments.
 
-The enhanced attention API has 22 explicit record/task coverage scopes, exact
-matching totals and bounded pages. Unavailable/unshared counts are null. Open
-actions remain visible after a meeting is held/completed; terminal tasks and
-paused/archived/cancelled parents are omitted. Catalyst dates are stated metadata,
-not independently verified events or live-market evidence.
+## Recorded weekly outcomes — P9e, connected verification pending
 
-Source discovery searches titles within one explicit capability/level and uses
-stable identity cursors, including future and completed tasks outside attention.
-Every page rechecks current access. Concurrent changes may affect pages; no
-frozen snapshot or complete activity history is claimed. Native links currently
-open the parent record, not an auto-expanded child. Related parent/task cues
-can both appear; grouping redundant cues remains a pre-shipment refinement.
+The new reusable weekly contract classifies recorded, corrected and withdrawn
+outcomes from retained Executive revisions. Ordinary note edits are omitted.
+Completions, decisions/reversals, held meetings, reviewed briefs and completed
+actions stay distinct. Removed completed actions remain historical withdrawals.
+Recorded time determines inclusion in one to seven inclusive local dates;
+a user's backdated completion/decision date is labeled separately.
 
-Nineteen Executive MCP tools include five sets of list/get/propose, legacy
-record attention, enhanced record/task attention, source discovery and reference
-resolution. Only five proposal tools write. Canonical saves, source-permission
-changes, approval/history and external execution remain native-only or unavailable.
-Annotations do not replace live authorization.
+The host migration derives identity and review admission, then independently
+rechecks coordination, brief and review access. It emits only fixed event
+metadata, current revision/state/presence and three-scope coverage. Private audit
+bodies, other domains' histories, pending proposals and provider records are
+excluded. Results have bounded 1–50 pages, exact matching totals and a
+microsecond-preserving recorded-time cutoff. Current access/status and late
+commits can change pages; a cutoff is not a frozen transaction snapshot.
 
-Scheduling source logic uses only explicit recently checked availability,
-offered/busy windows, buffers and a named zone. Native time entry handles repeated
-and nonexistent local hours, but full availability UI and recurring execution
-remain unimplemented. No provider or installed-plugin update was performed.
+A native panel explains coverage and historical versus current state. Preparation
+creates an unsaved, inferred review with at most twenty current parent links from
+the first page, generic coverage prose and no copied private event titles.
+The user must interpret the evidence and explicitly save. Chosen time zones
+persist; older reviews without a zone remain compatible and disclose their
+browser-zone fallback. New reviews default to a seven-day period.
+
+Twenty Executive MCP tools include five sets of list/get/propose, two attention
+reads, source discovery, reference resolution and the narrow weekly-history read.
+Only five proposal tools write. Canonical saves, approval, permission changes and
+full revision history remain native-only. Annotations do not replace admission.
+Assistant skill guidance now routes bounded weekly requests to this read,
+discloses partial coverage and never equates recorded status with verified value.
 
 ## Evidence and release boundary
 
-The reusable source has 71 passing tests, including 24 Executive cases. All six
-plugins and six skills validate. Five replayed database schemas exactly match
-the pinned reusable source. Native task acceptance covers ten mappings, explicit
-consent, exact retries/conflicts, six/twelve-field privacy, source paging beyond
-fifty tasks, changed/deleted links, old-grant behavior and live revocation.
+Current source: 90 tests in 10 files and typecheck PASS. Six plugins and six skills
+validate. Current host: 275 unit tests, 32 schema-policy checks, 249 runtime
+boundaries, typecheck, lint and optimized build PASS. SQL-schema/rule parity is
+checked statically, not by replaying migration 30.
 
-Workspace exercises real fictional-user HTTP, OAuth/PKCE and MCP. The new tools
-page 52 tasks, preserve exact proposed links through native approval and stop
-returning task metadata on task-only withdrawal. Source search never examines
-private evidence bodies. Desktop/mobile proof includes a source link beyond the
-fiftieth task and separate source/task controls.
+P9c's real fictional-user database/HTTP/OAuth/MCP and desktop/mobile evidence is
+historical. It does not establish the new weekly projection or P9d navigation.
+New tests are written for native history/date/privacy/revocation behavior,
+rollback-only SQL privileges/classifiers, actual HTTP/MCP parity and six weekly
+desktop/mobile cases. They have NOT RUN: Docker's local startup socket is
+inaccessible. No socket removal, reset or repair was performed without approval.
 
-Use Workspace docs/testing/test-evidence.md for final P9c counts and corrected
-attempts, docs/architecture/executive-native-workspace.md for scope and
-docs/runbooks/executive-local-proof.md for reproducible local verification.
-These are fictional-account local tests, not installed-host or client-value proof.
-
-Remaining: full-period weekly outcomes; availability scheduling UI; approved
-recurring work and meaningful-change notifications; exact-child navigation;
-shared Workspace Experience and crash/autosave recovery; installed host,
-representative utility, deployed privacy/retention and commercial gates.
-All six remain NOT READY TO SHIP. No hosted migration, deployment, installed
-plugin change, provider/client connection or marketplace submission is implied.
+See Workspace docs/testing/test-evidence.md, docs/architecture/
+executive-native-workspace.md and docs/runbooks/executive-local-proof.md.
+Remaining: connected P9d/P9e proof; complete availability scheduling UI;
+approved recurring lifecycle and meaningful-change notifications; shared
+Workspace Experience, crash recovery, representative utility and installed-host,
+deployed privacy/retention and commercial acceptance.
+No hosted migration, deployment, provider/client connection, installed-plugin
+update or marketplace submission is implied.
