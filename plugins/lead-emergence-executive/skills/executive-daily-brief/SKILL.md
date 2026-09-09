@@ -103,6 +103,21 @@ zone and actual instants through daylight-saving transitions. A candidate time
 still requires agreement. A changed AI-proposed time cannot retain a claim of
 user-reported agreement.
 
+Native meeting plans can retain an optional availability snapshot: explicit
+offered, available and known-busy instant windows, source, checkedAt, duration,
+buffer, display zone and the participants it was reviewed for. It is user-
+supplied coordination data, not a connected calendar. Do not invent a calendar
+check or carry checked confirmation forward after changing its underlying input.
+Keep historical snapshots as evidence; recheck within 24 hours before suggesting
+a new time, and re-evaluate if participants, duration or zone changed.
+
+The native planner compares merged available/offered windows, respects known
+conflicts and buffers, and presents at most three proposed options. Choosing one
+still requires exact native save and agreement; it does not send an invitation.
+Assistants preserve the full current meeting through the proposal-only workflow.
+Private availability windows must not enter cross-bundle attention or weekly
+outcome projections, invitation text or a public export without explicit review.
+
 Keep actions linked to the meeting outcome. External invitations, outreach,
 scheduled automations, notification rules and persistent layout changes each
 need their own current, exact user approval and a supported execution path.
