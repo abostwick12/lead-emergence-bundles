@@ -34,10 +34,14 @@ No public search receives private operational content by default.
 
 - Reusable domain schema and structural/hostile contract tests: implemented.
 - Source plugin skill: updated to the intended native tool contract.
-- Native persistence, API, MCP and UI: in implementation on the separate
-  Workspace-owned integration branch, not released or client-ready.
-- Real isolated OAuth, cross-client/domain, revocation, concurrency and browser
-  acceptance: required before marking the native slice validated.
+- Native persistence, API, thirteen focused MCP tools and UI: implemented on
+  the separate Workspace-owned integration branch, not released or client-ready.
+- Real isolated OAuth, cross-client/domain denial, revocation, exact retries,
+  stale writes and proposal approval: eleven connected groups passed.
+- Current native browser evidence: twelve Nonprofit desktop/mobile Chrome cases
+  pass on both development and optimized local previews. The final optimized
+  cross-bundle run passes all 46 cases, including ten Ministry and 24 Writer.
+  Exact outcomes and limitations are in the P7 checkpoint and Workspace ledger.
 - Installed ChatGPT/Codex, hosted migration, representative client first-use,
   live public-source research and external provider workflows: not yet validated.
 - Twelve-minute first value is a design target, not a measured result.

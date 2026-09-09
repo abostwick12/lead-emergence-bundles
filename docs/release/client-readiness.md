@@ -12,10 +12,10 @@ not measured client value. This checklist prevents those substitutions.
 | --- | --- | --- |
 | Writer & Editor | Real native library, source-led review, text/Markdown import, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search, evidence-led related/duplicate candidates, confirmed writing preferences, approval-backed preferred taxonomy and saved-revision publication packets | Rich file ingestion and metadata workflows; link evidence; authorized read-only Wix proof before any Wix mutation; representative-library and user-value pilot; installed-host and shared release acceptance |
 | Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; six scoped connected tools | Representative theological/source evaluation; rich archive ingestion and large-library ergonomics; installed-host, deployed recovery and first-use value acceptance; authorized optional Logos proof only for supported operations |
-| Nonprofit Founder | Valid generic bundle and founder-next-moves skill | Native roadmap, milestones, partner/volunteer follow-up, meeting/action workflow; source-first regulatory and grant research with dates and uncertainty; clinical/PHI boundary tests; no automatic outreach |
+| Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; crash/autosave recovery; installed-host and deployed privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Valid bundle and evidence-led thesis-review skill | Native watchlists, theses, catalysts, supporting/challenging evidence, public-filings and scenario workflow; freshness/lag warnings and corrections; no personal account requirement or trade execution |
 | Executive | Valid coordination bundle, daily-brief skill, shared scoped-policy tests | Native commitments/decisions and daily/weekly brief; task-metadata-only attention aggregation with source permissions; approved automation lifecycle and meaningful-change notifications |
-| Workspace Experience | Entitlement-based Writing and Ministry navigation/widgets, private routes, live access-removal behavior, reusable declarative composer | Contributions from remaining bundles; cross-domain search; useful command palette; connection/notification center; user-owned pin/hide/reorder/default preferences; approval-only AI layout changes |
+| Workspace Experience | Entitlement-based Writing, Ministry and Nonprofit navigation/widgets, capability-scoped navigation metadata, private routes, live access-removal behavior, reusable declarative composer | Contributions from remaining bundles; cross-domain search; useful command palette; connection/notification center; user-owned pin/hide/reorder/default preferences; approval-only AI layout changes |
 
 Build the remaining native work without waiting on optional provider accounts.
 Do not replace missing integrations with fabricated data or claim planned tools
@@ -104,4 +104,21 @@ of docs/testing/test-evidence.md. The profile starts unset; native confirmation
 does not promote inferred positions, and prior sermons do not establish current
 belief. Optional libraries, installed hosts, representative research quality,
 large-library ergonomics, first-use value, Ministry crash/autosave recovery and
-deployed privacy/retention remain open. Native Nonprofit Founder is next.
+deployed privacy/retention remain open.
+
+P7 implements the Nonprofit native slice and its clinical-scope controls, source
+provenance, proposal-only assistant workflows and direct-user approval/history.
+Current proof includes twenty-five fresh local migrations, 185 Workspace unit
+tests, 32 schema/policy tests, 357 PostgreSQL assertions, eleven Nonprofit and ten
+Ministry connected groups, and the full Writer API regression. All 46 final
+optimized desktop/mobile browser cases pass (twelve Nonprofit, ten Ministry,
+24 Writer). Exact evidence and publication receipts are in the P7 checkpoint.
+Reusable source now has 36 tests and six plugin/six skill validations.
+
+The source-URL safety fix also hardens Ministry against blank and malformed input.
+Administrative-only confirmations do not perform PHI detection, and saved source
+records do not constitute live research or legal verification. No client data,
+hosted migration, installed-plugin update or external provider action occurred.
+Investor native research is the next implementation step, followed by Executive
+orchestration and the remaining Workspace Experience work. All-six shipment
+readiness remains NOT READY TO SHIP.
