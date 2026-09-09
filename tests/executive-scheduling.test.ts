@@ -62,6 +62,14 @@ describe("Resumable Executive availability planning",()=>{
   expect(()=>chooseExecutiveMeetingTime(meeting,snapshot,at("14:15"),at("14:16"))).toThrow(/no longer fits/);
   expect(()=>chooseExecutiveMeetingTime(meeting,{...snapshot,input:{...input,busy:[window("14:00","15:00")]}},at("14:15"),now)).toThrow(/no longer fits/);
  });
+ it("rounds submillisecond input conservatively instead of proposing inside a conflict",()=>{
+  const start="2026-09-09T14:00:00.000001Z",end="2026-09-09T15:00:00Z";
+  expect(proposeExecutiveTimes({...input,bufferMinutes:0,offered:[{start,end}]},now).slots[0].start).toBe("2026-09-09T14:05:00.000Z");
+  expect(proposeExecutiveTimes({...input,bufferMinutes:0,busy:[{start:at("13:00"),end:start}]},now).slots[0].start).toBe("2026-09-09T14:05:00.000Z");
+ });
+ it("ignores object property order when checking the participant snapshot",()=>{
+  expect(executiveAvailabilityMatches(meeting,{...snapshot,participants:[{role:"Reviewer",name:"Fictional colleague"}]})).toBe(true);
+ });
  it("rejects inverted, overlong, zero-length and unzoned retained windows",()=>{
   for(const offered of [[window("15:00","14:00")],[window("14:00","14:00")],
    [{start:now,end:"2026-11-09T12:00:00Z"}],[{start:"2026-09-09T14:00:00",end:at("15:00")}]]){

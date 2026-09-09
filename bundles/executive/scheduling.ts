@@ -19,7 +19,10 @@ function merge(windows:Interval[]):Interval[]{
  }
  return result;
 }
-const intervals=(windows:ExecutiveSchedulingInput["offered"])=>merge(windows.map(w=>({start:Date.parse(w.start),end:Date.parse(w.end)})));
+const milliseconds=(raw:string,roundUp:boolean)=>Date.parse(raw)+(roundUp&&/[1-9]/.test((raw.match(/\.(\d+)/)?.[1]??"").slice(3))?1:0);
+const intervals=(windows:ExecutiveSchedulingInput["offered"],outward=false)=>merge(windows.map(w=>({
+ start:milliseconds(w.start,!outward),end:milliseconds(w.end,outward)
+})).filter(w=>w.start<w.end));
 function checkFresh(input:ExecutiveSchedulingInput,now:string){
  const current=Date.parse(instant.parse(now)),checked=Date.parse(input.checkedAt);
  if(checked>current+60000||current-checked>86400000)throw new Error("Recheck availability before proposing times.");
@@ -30,7 +33,7 @@ function possible(input:ExecutiveSchedulingInput,now:string):Interval[]{
  // Merge alternative offered/available windows BEFORE applying a boundary buffer.
  // Offered windows are valid meeting bounds; buffers protect the user's free time and known conflicts.
  const offered=intervals(input.offered),available=intervals(input.available).map(w=>({start:w.start+buffer,end:w.end-buffer})).filter(w=>w.start<w.end);
- const busy=merge(intervals(input.busy).map(w=>({start:w.start-buffer,end:w.end+buffer})));
+ const busy=merge(intervals(input.busy,true).map(w=>({start:w.start-buffer,end:w.end+buffer})));
  const common=merge(offered.flatMap(o=>available.map(a=>({start:Math.max(o.start,a.start,current),end:Math.min(o.end,a.end)})).filter(w=>w.start<w.end)));
  const free:Interval[]=[];
  for(const window of common){
@@ -61,7 +64,7 @@ export function proposeExecutiveTimes(raw:unknown,now=new Date().toISOString()){
 type Meeting=Extract<ExecutiveData,{recordType:"meeting"}>;
 export function executiveAvailabilityMatches(meeting:Meeting,availability:ExecutiveMeetingAvailability):boolean{
  return meeting.timeZone===availability.input.timeZone&&meeting.durationMinutes===availability.input.durationMinutes
-  &&JSON.stringify(meeting.participants)===JSON.stringify(availability.participants);
+  &&JSON.stringify(meeting.participants.map(p=>[p.name,p.role]))===JSON.stringify(availability.participants.map(p=>[p.name,p.role]));
 }
 export function chooseExecutiveMeetingTime(meeting:Meeting,raw:unknown,start:string,now=new Date().toISOString()):Meeting{
  const availability=executiveMeetingAvailability.parse(raw),input=availability.input,at=Date.parse(instant.parse(start)),end=at+input.durationMinutes*60000;
