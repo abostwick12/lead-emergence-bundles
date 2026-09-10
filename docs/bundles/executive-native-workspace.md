@@ -17,7 +17,8 @@ Commitments, decisions, meeting plans, daily briefs and weekly reviews remain
 distinct. Exact-record confirmation and expected revisions govern canonical
 saves and proposal decisions. Approved assistant content remains inferred.
 Original revisions remain privately retained; downloads contain saved work.
-Failed saves retain on-screen edits, not crash/autosave recovery.
+P15 adds private direct-session server recovery, exact retries and atomic commit
+for all five editors; canonical confirmation and revision checks still govern saves.
 
 All foreign sharing starts empty. Existing record grants expose six metadata
 fields. Task-metadata-v1 requires a separately confirmed supported task scope,

@@ -35,7 +35,7 @@ controls, actual OAuth denial and confirmed Home-layout changes. This is not
 a representative client-value result.
 
 Remaining: connection/notification center, approved recurring lifecycle,
-grounded approval-only layout proposals, ingestion/recovery gaps, representative
+grounded approval-only layout proposals, ingestion and deployed-recovery gaps, representative
 first-use/time-saved evaluation and authorized installed/deployed release gates.
 No new plugin app ID, provider connection, model runtime or marketplace
 submission is declared. Plugin packaging remains 0.1.0.

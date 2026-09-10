@@ -30,6 +30,7 @@ The public host branch imports a pinned 35-file allowlist, including the new
 contract. This is not permission to publish plugin listings, merge main, deploy
 a hosted migration, connect a provider or claim installed-host acceptance.
 
-Remaining client-release work includes shared crash recovery, representative
-source/value evaluation, installed-host acceptance, approved scheduled delivery,
-and deployed privacy, rollback, retention and entitlement/payment gates.
+P15 closes shared native editor recovery in local acceptance. Remaining client-
+release work includes representative source/value evaluation, installed-host
+acceptance, approved scheduled delivery, and deployed backup/recovery, privacy,
+rollback, retention and entitlement/payment gates.

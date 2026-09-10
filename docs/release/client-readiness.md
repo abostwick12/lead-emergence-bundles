@@ -1,6 +1,6 @@
 # Client shipment readiness
 
-Updated 2026-09-09. Overall status: **NOT READY TO SHIP**.
+Updated 2026-09-10. Overall status: **NOT READY TO SHIP**.
 
 A valid bundle manifest or skill is not a working client release. A local test
 is not an installed ChatGPT/Codex connection, and a synthetic timing result is
@@ -11,11 +11,11 @@ not measured client value. This checklist prevents those substitutions.
 | Bundle | Implemented foundation | Required before client shipment |
 | --- | --- | --- |
 | Writer & Editor | Real native library, source-led review, text/Markdown import, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search, evidence-led related/duplicate candidates, confirmed writing preferences, approval-backed preferred taxonomy and saved-revision publication packets | Rich file ingestion and metadata workflows; link evidence; authorized read-only Wix proof before any Wix mutation; representative-library and user-value pilot; installed-host and shared release acceptance |
-| Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; six scoped connected tools | Representative theological/source evaluation; rich archive ingestion and large-library ergonomics; installed-host, deployed recovery and first-use value acceptance; authorized optional Logos proof only for supported operations |
-| Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; crash/autosave recovery; installed-host and deployed privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
-| Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; crash/autosave recovery and large-library ergonomics; installed-host and deployed release acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
-| Executive | Five native editors; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved scheduled-delivery lifecycle (native current-condition inbox implemented); grouped attention; crash recovery; authorized provider proof before booking; installed-host, representative utility and deployed release acceptance |
-| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette; 22 native-only record/task attention scopes, complete filtered counts and exact source/task links; confirmed Home attention widget; native grant/vault evidence center, unfinished-consent visibility and exact-reviewed disconnect with safe retries; eight native notification types with source-linked current conditions, complete counts and private read/dismiss/snooze/type preferences | Grounded approval-only AI layout proposals; representative/installed/deployed and shared recovery acceptance |
+| Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; private server draft recovery across all three editors; six scoped connected tools | Representative theological/source evaluation; rich archive ingestion and large-library ergonomics; installed-host, deployed backup/retention and first-use value acceptance; authorized optional Logos proof only for supported operations |
+| Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions, private server draft recovery across all four editors and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; installed-host and deployed backup/privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
+| Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, private server draft recovery across all four editors, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; large-library ergonomics; installed-host and deployed backup/retention acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
+| Executive | Five native editors with private server draft recovery; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved scheduled-delivery lifecycle (native current-condition inbox implemented); grouped attention; authorized provider proof before booking; installed-host, representative utility and deployed backup/retention acceptance |
+| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette; 22 native-only record/task attention scopes, complete filtered counts and exact source/task links; confirmed Home attention widget; native grant/vault evidence center, unfinished-consent visibility and exact-reviewed disconnect with safe retries; eight native notification types with source-linked current conditions, complete counts and private read/dismiss/snooze/type preferences; shared private recovery contract for 16 domain editors | Grounded approval-only AI layout proposals; representative/installed/deployed backup, privacy, retention and support acceptance |
 
 Build the remaining native work without waiting on optional provider accounts.
 Do not replace missing integrations with fabricated data or claim planned tools
@@ -34,7 +34,9 @@ changes, or automatic website publishing.
 - [x] Writer reload/lost-response recovery, two-tab conflicts, explicit stale-draft
   comparison and approval-backed related metadata pass in optimized desktop/mobile.
 - [x] Unfinished drafts denied to real OAuth assistant credentials even via direct RPC.
-- [ ] Implement all six promised native workflows and their domain-private storage.
+- [x] Implement all six promised native workflows and their domain-private storage.
+- [x] Protect unfinished native work with explicit private recovery across Writer
+  and all 16 Ministry, Nonprofit, Investor and Executive editor kinds.
 - [ ] Prove negative cross-domain operations for every implemented bundle pair.
 - [ ] Pilot with a small authorized, representative resource/project dataset.
 - [ ] Observe an unaided first useful outcome for each bundle; record corrections,
@@ -53,8 +55,40 @@ changes, or automatic website publishing.
 Only the owned integration/source branches may be published under current
 approval. Do not merge main, deploy production, apply hosted migrations, create
 paid infrastructure, publish marketplace listings, or connect client accounts.
-The Workspace repository is public; reusable bundle source remains private.
-Backend entitlements—not repository visibility—must enforce paid capabilities.
+Both source repositories are intentionally public during development under the
+current launch plan; the bundle repository is expected to become private at
+launch. Backend entitlements—not repository visibility—must enforce paid capabilities.
+
+## P15 private native editor recovery checkpoint
+
+All 16 Ministry, Nonprofit, Investor and Executive editor kinds now use a shared
+private recovery contract. Direct native sessions can protect bounded incomplete
+work, while canonical domain validation and explicit confirmation remain required
+for an official revision. Drafts are separate per domain, owner, workspace, kind
+and new/existing record. Anonymous, OAuth/client, cross-owner, cross-workspace and
+wrong-kind operations fail closed.
+
+The host autosaves to private server tables without browser storage, exposes
+explicit restore/discard/copy and stale-source review, and commits the canonical
+domain save plus draft tombstone atomically. Exact request hashes, optimistic
+versions and per-target locks protect uncertain retries and competing tabs.
+Executive recovery retains unapplied repeated-hour and availability input without
+turning it into a saved meeting. Background autosave no longer disables editing
+or swallows a user’s official-save request.
+
+Final portable validation passes 180 tests in 17 files plus six plugin and six
+skill validators. Host proof passes 318 unit tests, 32 schema-policy contracts,
+272 runtime boundaries, type checking, lint and the optimized 56-page build.
+Database proof passes 1,061 assertions across 24 suites, including 265 recovery
+assertions; all 41 migrations also replayed fresh during P15 with zero retained
+users. One uninterrupted final connected run passed 202 tests across desktop and
+mobile in 41.1 minutes with four documented fixture/design skips and zero retries.
+
+This closes the local shared working-draft implementation gap, not the commercial
+release. Representative value, installed ChatGPT/Codex behavior, hosted migration,
+deployed backup/recovery/privacy/retention/support, enabled-provider proof and
+entitlement/payment enforcement remain required. Overall status remains
+**NOT READY TO SHIP**.
 
 ## P14 native notification checkpoint
 

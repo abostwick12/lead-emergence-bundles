@@ -16,7 +16,7 @@ Lead Emergence Workspace web application or client-private configuration.
 - Functional bundles contribute declarative UI metadata; the Workspace
   Experience composer renders it inside Lead Emergence.
 
-## P1 contents
+## Current contents
 
 - Six independently discoverable plugin shells under `plugins/`.
 - Versioned Bundle and UI Manifest contracts.
@@ -24,6 +24,8 @@ Lead Emergence Workspace web application or client-private configuration.
 - Fail-closed identity, entitlement, provider, domain, and mutation policy
   primitives.
 - Shared provenance and epistemic-state controls.
+- Private native editor recovery shapes for all 16 Ministry, Nonprofit,
+  Investor, and Executive record kinds; Writer keeps its specialized recovery.
 - Architecture decisions and the P0 discovery record under `docs/`.
 
 ## Local validation
@@ -33,6 +35,11 @@ npm install
 npm run check
 ```
 
-Plugin packages are additionally validated with OpenAI's installed
-`plugin-creator` validator. No provider, hosted backend, or production system
-is contacted by the test suite.
+Plugin packages and their included skills are additionally validated with
+OpenAI's installed plugin and skill validators. No provider, hosted backend, or
+production system is contacted by the test suite.
+
+Local implementation is not a commercial release. See
+[client shipment readiness](docs/release/client-readiness.md) for the current
+evidence and the remaining representative, installed-host, deployed, provider,
+payment and support gates.

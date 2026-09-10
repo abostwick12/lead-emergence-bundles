@@ -31,7 +31,8 @@ describe("native editor recovery contracts",()=>{
       expect(editorDraftChange.safeParse({...input,...patch}).success).toBe(false);
     expect(editorDraftChange.safeParse({...input,values:{data:{...emptyProject,hiddenToken:"x"},ui:{}}}).success).toBe(false);
     expect(editorDraftChange.safeParse({...input,values:{data:emptyProject,ui:{confirm:true}}}).success).toBe(false);
-    expect(editorDraftChange.safeParse({...input,values:{data:emptyProject,ui:{unsetProfile:true}}}).success).toBe(false);
+    for(const unsetProfile of [true,false])
+      expect(editorDraftChange.safeParse({...input,values:{data:emptyProject,ui:{unsetProfile}}}).success).toBe(false);
   });
   it("retains unapplied meeting time without treating it as a recorded instant",()=>{
     const meeting=emptyExecutiveData("meeting","2026-09-15");
