@@ -91,3 +91,62 @@ export const sourceIntakeExtraction = z.object({
     context.addIssue({ code: "custom", path: ["warnings"], message: "Warnings must be unique." });
 });
 export type SourceIntakeExtraction = z.infer<typeof sourceIntakeExtraction>;
+
+export const sourceBatchLimits = Object.freeze({
+  maximumItems: 20,
+  maximumAggregateCharacters: 500_000,
+  maximumRequestBytes: 650_000
+});
+export const sourceBatchResourceType = z.enum(["article", "sermon", "teaching", "study_guide", "other"]);
+export const sourceBatchItem = z.object({
+  itemId: z.string().uuid(),
+  extraction: sourceIntakeExtraction,
+  title: z.string().trim().min(1).max(240),
+  sourceLabel: z.string().trim().min(1).max(240),
+  resourceType: sourceBatchResourceType,
+  included: z.boolean()
+}).strict();
+export const sourceBatchItems = z.array(sourceBatchItem).min(1).max(sourceBatchLimits.maximumItems).superRefine((items, context) => {
+  const ids = new Set(items.map(item => item.itemId));
+  if (ids.size !== items.length) context.addIssue({ code: "custom", message: "Batch item IDs must be unique." });
+  const characters = items.reduce((total, item) => total + item.extraction.characterCount, 0);
+  if (characters > sourceBatchLimits.maximumAggregateCharacters)
+    context.addIssue({ code: "custom", message: "Batch extracted text exceeds the aggregate limit." });
+});
+export type SourceBatchItem = z.infer<typeof sourceBatchItem>;
+
+export const sourceBatchSnapshot = z.object({
+  schemaVersion: z.literal("1.0"),
+  version: z.number().int().nonnegative(),
+  requestId: z.string().uuid().nullable(),
+  items: sourceBatchItems.nullable(),
+  savedAt: z.string().datetime({ offset: true }).nullable()
+}).strict().superRefine((value, context) => {
+  if ((value.items === null) !== (value.savedAt === null))
+    context.addIssue({ code: "custom", path: ["savedAt"], message: "Saved batch state must be internally consistent." });
+});
+export type SourceBatchSnapshot = z.infer<typeof sourceBatchSnapshot>;
+
+export const sourceBatchDuplicateSignal = z.enum([
+  "same_text_ignoring_whitespace", "same_title_ignoring_case_and_whitespace"
+]);
+export const sourceBatchDuplicateCandidate = z.object({
+  candidateType: z.enum(["existing_resource", "staged_item"]),
+  candidateId: z.string().uuid(),
+  title: z.string().min(1).max(240),
+  signals: z.array(sourceBatchDuplicateSignal).min(1).max(2)
+}).strict();
+export const sourceBatchReview = z.object({
+  schemaVersion: z.literal("1.0"), version: z.number().int().positive(),
+  reviewedAt: z.string().datetime({ offset: true }), reviewToken: z.string().regex(/^[a-f0-9]{64}$/),
+  items: z.array(z.object({ itemId: z.string().uuid(), candidates: z.array(sourceBatchDuplicateCandidate).max(40) }).strict())
+    .min(1).max(sourceBatchLimits.maximumItems)
+}).strict();
+export type SourceBatchReview = z.infer<typeof sourceBatchReview>;
+
+export const sourceBatchCommit = z.object({
+  schemaVersion: z.literal("1.0"), batchVersion: z.number().int().positive(), replayed: z.boolean(),
+  resources: z.array(z.object({ itemId: z.string().uuid(), resourceId: z.string().uuid(), title: z.string().min(1).max(240) }).strict())
+    .min(1).max(sourceBatchLimits.maximumItems)
+}).strict();
+export type SourceBatchCommit = z.infer<typeof sourceBatchCommit>;
