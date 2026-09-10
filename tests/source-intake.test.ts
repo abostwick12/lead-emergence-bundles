@@ -18,6 +18,7 @@ describe("source intake contract", () => {
     { fileName: "report.pdf.exe", mediaType: "application/pdf", byteSize: 10 },
     { fileName: "report.pdf", mediaType: "text/html", byteSize: 10 },
     { fileName: "../report.pdf", mediaType: "application/pdf", byteSize: 10 },
+    { fileName: "report\u0000.pdf", mediaType: "application/pdf", byteSize: 10 },
     { fileName: ".hidden.pdf", mediaType: "application/pdf", byteSize: 10 },
     { fileName: "empty.txt", mediaType: "text/plain", byteSize: 0 },
     { fileName: "large.docx", mediaType: "application/octet-stream", byteSize: sourceIntakeLimits.maximumFileBytes + 1 }
@@ -28,6 +29,11 @@ describe("source intake contract", () => {
   it("creates a bounded human title without retaining path syntax", () => {
     expect(sourceIntakeTitle("A_long-sermon-draft.docx")).toBe("A long sermon draft");
     expect(sourceIntakeTitle(".docx")).toBe("Imported document");
+  });
+
+  it("publishes bounded archive and PDF limits for independent host enforcement", () => {
+    expect(sourceIntakeLimits).toMatchObject({ maximumPdfPages: 100, maximumDocxEntries: 500,
+      maximumDocxExpandedBytes: 15_000_000, maximumDocxEntryBytes: 10_000_000, maximumDocxCompressionRatio: 200 });
   });
 
   it("accepts a content-free extraction receipt and verifies derived fields", () => {

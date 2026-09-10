@@ -12,6 +12,7 @@ export const sourceIntakeLimits = Object.freeze({
   maximumDocxEntries: 500,
   maximumDocxExpandedBytes: 15_000_000,
   maximumDocxEntryBytes: 10_000_000,
+  maximumDocxCompressionRatio: 200,
   maximumFileNameCharacters: 255
 });
 
@@ -47,8 +48,8 @@ export type SourceIntakeDescriptor = {
 };
 
 export function inspectSourceIntakeDescriptor(input: { fileName: string; mediaType?: string; byteSize: number }): SourceIntakeDescriptor {
-  if (/[\\/]/.test(input.fileName)) throw new Error("unsupported_type");
-  const fileName = input.fileName.replace(/[\u0000-\u001f\u007f]/g, "").trim();
+  if (/[\u0000-\u001f\u007f\\/]/.test(input.fileName)) throw new Error("unsupported_type");
+  const fileName = input.fileName.trim();
   if (!fileName || fileName.length > sourceIntakeLimits.maximumFileNameCharacters || fileName.startsWith(".") || fileName.includes(".."))
     throw new Error("unsupported_type");
   const extension = fileName.includes(".") ? fileName.slice(fileName.lastIndexOf(".") + 1).toLowerCase() : "";
