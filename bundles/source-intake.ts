@@ -99,7 +99,7 @@ export const sourceBatchLimits = Object.freeze({
 });
 export const sourceBatchResourceType = z.enum(["article", "sermon", "teaching", "study_guide", "other"]);
 export const sourceBatchItem = z.object({
-  itemId: z.string().uuid(),
+  itemId: z.string().uuid().transform(value => value.toLowerCase()),
   extraction: sourceIntakeExtraction,
   title: z.string().trim().min(1).max(240),
   sourceLabel: z.string().trim().min(1).max(240),
@@ -124,6 +124,8 @@ export const sourceBatchSnapshot = z.object({
 }).strict().superRefine((value, context) => {
   if ((value.items === null) !== (value.savedAt === null))
     context.addIssue({ code: "custom", path: ["savedAt"], message: "Saved batch state must be internally consistent." });
+  if ((value.version === 0) !== (value.requestId === null))
+    context.addIssue({ code: "custom", path: ["requestId"], message: "Only a new batch can omit its latest request identity." });
 });
 export type SourceBatchSnapshot = z.infer<typeof sourceBatchSnapshot>;
 
@@ -135,18 +137,35 @@ export const sourceBatchDuplicateCandidate = z.object({
   candidateId: z.string().uuid(),
   title: z.string().min(1).max(240),
   signals: z.array(sourceBatchDuplicateSignal).min(1).max(2)
-}).strict();
+}).strict().superRefine((value, context) => {
+  if (new Set(value.signals).size !== value.signals.length)
+    context.addIssue({ code: "custom", path: ["signals"], message: "Duplicate signals must be unique." });
+});
 export const sourceBatchReview = z.object({
   schemaVersion: z.literal("1.0"), version: z.number().int().positive(),
   reviewedAt: z.string().datetime({ offset: true }), reviewToken: z.string().regex(/^[a-f0-9]{64}$/),
   items: z.array(z.object({ itemId: z.string().uuid(), candidates: z.array(sourceBatchDuplicateCandidate).max(40) }).strict())
     .min(1).max(sourceBatchLimits.maximumItems)
-}).strict();
+}).strict().superRefine((value, context) => {
+  const ids = value.items.map(item => item.itemId);
+  if (new Set(ids).size !== ids.length)
+    context.addIssue({ code: "custom", path: ["items"], message: "Reviewed batch item IDs must be unique." });
+  for (const [index, item] of value.items.entries()) {
+    const candidates = item.candidates.map(candidate => `${candidate.candidateType}:${candidate.candidateId.toLowerCase()}`);
+    if (new Set(candidates).size !== candidates.length)
+      context.addIssue({ code: "custom", path: ["items", index, "candidates"], message: "Duplicate candidates must be unique." });
+  }
+});
 export type SourceBatchReview = z.infer<typeof sourceBatchReview>;
 
 export const sourceBatchCommit = z.object({
   schemaVersion: z.literal("1.0"), batchVersion: z.number().int().positive(), replayed: z.boolean(),
   resources: z.array(z.object({ itemId: z.string().uuid(), resourceId: z.string().uuid(), title: z.string().min(1).max(240) }).strict())
     .min(1).max(sourceBatchLimits.maximumItems)
-}).strict();
+}).strict().superRefine((value, context) => {
+  if (new Set(value.resources.map(resource => resource.itemId.toLowerCase())).size !== value.resources.length)
+    context.addIssue({ code: "custom", path: ["resources"], message: "Imported batch item IDs must be unique." });
+  if (new Set(value.resources.map(resource => resource.resourceId.toLowerCase())).size !== value.resources.length)
+    context.addIssue({ code: "custom", path: ["resources"], message: "Imported resource IDs must be unique." });
+});
 export type SourceBatchCommit = z.infer<typeof sourceBatchCommit>;

@@ -54,9 +54,11 @@ describe("source intake contract", () => {
     const item = { itemId: "19111111-1111-4111-8111-111111111111", extraction, title: "Source", sourceLabel: "Imported from source.txt", resourceType: "article", included: true } as const;
     expect(sourceBatchItems.safeParse([item]).success).toBe(true);
     expect(sourceBatchItems.safeParse([item, item]).success).toBe(false);
+    expect(sourceBatchItems.parse([{ ...item, itemId: item.itemId.toUpperCase() }])[0].itemId).toBe(item.itemId);
     expect(sourceBatchLimits).toEqual({ maximumItems: 20, maximumAggregateCharacters: 500_000, maximumRequestBytes: 650_000 });
     expect(sourceBatchSnapshot.safeParse({ schemaVersion: "1.0", version: 1, requestId: item.itemId, items: [item], savedAt: "2026-09-10T12:00:00Z" }).success).toBe(true);
     expect(sourceBatchSnapshot.safeParse({ schemaVersion: "1.0", version: 1, requestId: item.itemId, items: [item], savedAt: null }).success).toBe(false);
+    expect(sourceBatchSnapshot.safeParse({ schemaVersion: "1.0", version: 0, requestId: item.itemId, items: null, savedAt: null }).success).toBe(false);
   });
 
   it("validates current duplicate-review tokens and bounded atomic import receipts", () => {
@@ -64,7 +66,11 @@ describe("source intake contract", () => {
       candidates: [{ candidateType: "existing_resource", candidateId: "19222222-2222-4222-8222-222222222222", title: "Existing", signals: ["same_text_ignoring_whitespace"] }] }] } as const;
     expect(sourceBatchReview.safeParse(review).success).toBe(true);
     expect(sourceBatchReview.safeParse({ ...review, reviewToken: "not-a-token" }).success).toBe(false);
+    expect(sourceBatchReview.safeParse({ ...review, items: [review.items[0], review.items[0]] }).success).toBe(false);
     expect(sourceBatchCommit.safeParse({ schemaVersion: "1.0", batchVersion: 3, replayed: false,
       resources: [{ itemId: review.items[0].itemId, resourceId: "19333333-3333-4333-8333-333333333333", title: "Source" }] }).success).toBe(true);
+    expect(sourceBatchCommit.safeParse({ schemaVersion: "1.0", batchVersion: 3, replayed: false,
+      resources: [{ itemId: review.items[0].itemId, resourceId: "19333333-3333-4333-8333-333333333333", title: "Source" },
+        { itemId: review.items[0].itemId, resourceId: "19444444-4444-4444-8444-444444444444", title: "Again" }] }).success).toBe(false);
   });
 });
