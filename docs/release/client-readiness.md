@@ -10,8 +10,8 @@ not measured client value. This checklist prevents those substitutions.
 
 | Bundle | Implemented foundation | Required before client shipment |
 | --- | --- | --- |
-| Writer & Editor | Real native library, source-led review, text/Markdown import, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search, evidence-led related/duplicate candidates, confirmed writing preferences, approval-backed preferred taxonomy and saved-revision publication packets | Rich file ingestion and metadata workflows; link evidence; authorized read-only Wix proof before any Wix mutation; representative-library and user-value pilot; installed-host and shared release acceptance |
-| Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; private server draft recovery across all three editors; six scoped connected tools | Representative theological/source evaluation; rich archive ingestion and large-library ergonomics; installed-host, deployed backup/retention and first-use value acceptance; authorized optional Logos proof only for supported operations |
+| Writer & Editor | Real native library, source-led review, secure review-first text/Markdown/Word/text-PDF intake, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search, evidence-led related/duplicate candidates, confirmed writing preferences, approval-backed preferred taxonomy and saved-revision publication packets | Bulk library ingestion and metadata workflows; link evidence; authorized read-only Wix proof before any Wix mutation; representative-library and user-value pilot; installed-host and shared release acceptance |
+| Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, secure review-first text/Markdown/Word/text-PDF archive intake, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; private server draft recovery across all three editors; six scoped connected tools | Representative theological/source evaluation; difficult-document and large-library ergonomics; installed-host, deployed backup/retention and first-use value acceptance; authorized optional Logos proof only for supported operations |
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions, private server draft recovery across all four editors and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; installed-host and deployed backup/privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, private server draft recovery across all four editors, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; large-library ergonomics; installed-host and deployed backup/retention acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
 | Executive | Five native editors with private server draft recovery; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved scheduled-delivery lifecycle (native current-condition inbox implemented); grouped attention; authorized provider proof before booking; installed-host, representative utility and deployed backup/retention acceptance |
@@ -45,6 +45,8 @@ changes, or automatic website publishing.
 - [x] Prove negative cross-domain operations for every implemented bundle pair,
   including Workspace Experience's native-only aggregate boundary and
   Executive's explicit metadata-only exception.
+- [x] Provide bounded, signature-checked, non-retained Word and text-PDF intake
+  with preview-before-apply for Writer resources and Ministry archives.
 - [ ] Pilot with a small authorized, representative resource/project dataset.
 - [ ] Observe an unaided first useful outcome for each bundle; record corrections,
   source coverage, abandonment, repeated use, and measured time saved.
@@ -65,6 +67,31 @@ paid infrastructure, publish marketplace listings, or connect client accounts.
 Both source repositories are intentionally public during development under the
 current launch plan; the bundle repository is expected to become private at
 launch. Backend entitlements—not repository visibility—must enforce paid capabilities.
+
+## P19 secure rich-document intake checkpoint
+
+The portable platform now publishes one reusable intake contract for text,
+Markdown, Word and text-based PDF sources. It fixes file, request, extracted-text,
+PDF-page and DOCX expansion limits; rejects path/control-character filenames and
+incompatible type declarations; and validates a plain-text-only extraction
+receipt with a SHA-256 digest and explicit `originalRetained: false` state.
+
+The Workspace host authenticates before reading the bounded multipart body and
+authorizes one fixed native destination before parsing. Writer requires current
+manage and review capabilities; Ministry requires current archive capability.
+OAuth-shaped assistants, anonymous callers, other owners and revoked
+entitlements fail closed. DOCX central-directory checks run before raw-text
+extraction. PDF extraction uses a Node-only parser path, page bounds and a clear
+scanned-document/OCR fallback. Neither parser output nor the UI imports HTML,
+images, formatting, embedded actions or attachments.
+
+Both destinations present filename/counts, a text preview, limitations and an
+explicit use/replace action. Applying text changes only the protected native
+draft; the normal canonical save and revision controls remain separate. This
+closes secure single-document intake for the two implemented destinations. It
+does not complete bulk library migration, representative document-quality
+testing, installed-host proof, deployed privacy/recovery, provider or commercial
+gates. Overall status remains **NOT READY TO SHIP**.
 
 ## P18 cross-domain isolation proof checkpoint
 
