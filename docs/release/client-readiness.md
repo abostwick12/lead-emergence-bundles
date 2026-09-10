@@ -15,7 +15,7 @@ not measured client value. This checklist prevents those substitutions.
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions, private server draft recovery across all four editors and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; installed-host and deployed backup/privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, private server draft recovery across all four editors, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; large-library ergonomics; installed-host and deployed backup/retention acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
 | Executive | Five native editors with private server draft recovery; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved scheduled-delivery lifecycle (native current-condition inbox implemented); grouped attention; authorized provider proof before booking; installed-host, representative utility and deployed backup/retention acceptance |
-| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette; 22 native-only record/task attention scopes, complete filtered counts and exact source/task links; confirmed Home attention widget; native grant/vault evidence center, unfinished-consent visibility and exact-reviewed disconnect with safe retries; eight native notification types with source-linked current conditions, complete counts and private read/dismiss/snooze/type preferences; shared private recovery contract for 16 domain editors | Grounded approval-only AI layout proposals; representative/installed/deployed backup, privacy, retention and support acceptance |
+| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette; 22 native-only record/task attention scopes, complete filtered counts and exact source/task links; confirmed Home attention widget; native grant/vault evidence center, unfinished-consent visibility and exact-reviewed disconnect with safe retries; eight native notification types with source-linked current conditions, complete counts and private read/dismiss/snooze/type preferences; shared private recovery contract for 16 domain editors; private content-free first-value checks for all six bundle promises | Grounded approval-only AI layout proposals; actual representative value/time-saved pilot; installed/deployed backup, privacy, retention and support acceptance |
 
 Build the remaining native work without waiting on optional provider accounts.
 Do not replace missing integrations with fabricated data or claim planned tools
@@ -37,6 +37,8 @@ changes, or automatic website publishing.
 - [x] Implement all six promised native workflows and their domain-private storage.
 - [x] Protect unfinished native work with explicit private recovery across Writer
   and all 16 Ministry, Nonprofit, Investor and Executive editor kinds.
+- [x] Provide a privacy-safe first-value measurement path for every bundle that
+  fixes the baseline before work and labels user reports honestly.
 - [ ] Prove negative cross-domain operations for every implemented bundle pair.
 - [ ] Pilot with a small authorized, representative resource/project dataset.
 - [ ] Observe an unaided first useful outcome for each bundle; record corrections,
@@ -58,6 +60,36 @@ paid infrastructure, publish marketplace listings, or connect client accounts.
 Both source repositories are intentionally public during development under the
 current launch plan; the bundle repository is expected to become private at
 launch. Backend entitlements—not repository visibility—must enforce paid capabilities.
+
+## P16 first-value measurement checkpoint
+
+All six manifest promises can now be evaluated through one portable, content-free
+pilot contract. The host presents only currently admitted starts, fixes the
+usual-process estimate before work, measures elapsed time on the server, records
+bounded ratings and declared signal IDs, and preserves explicit stop reasons.
+Results distinguish measured elapsed time from user-reported baseline, ratings
+and trust answers. A completed card says that one session is not representative
+proof.
+
+Private native tables and RPCs admit no prompt, source excerpt, output, notes,
+contact data or provider data. Another owner, anonymous caller, OAuth assistant,
+revoked bundle, stale version, changed retry, extra prose, contradictory outcome,
+unknown signal and duplicate signal fail closed. Exact start, finish and stop
+responses remain safely replayable. Completed history remains visible after a
+bundle change, while new starts require current entitlement.
+
+Portable validation passes 183 tests in 18 files. Host proof passes 322 unit
+tests in 37 files, 32 schema-policy contracts, 275 runtime boundaries, type
+checking, lint and the optimized 57-page build. A fresh local replay applies all
+42 migrations; database proof passes 1,141 assertions across 25 isolated suites,
+including 80 value-pilot assertions. Optimized desktop/mobile acceptance passes
+five value-check cases with one intentional mobile duplicate of desktop-only
+transport fault injection skipped.
+
+This makes the real representative pilot measurable; it does not perform that
+pilot. No actual client dataset, unaided client session, installed ChatGPT/Codex
+package, hosted environment or provider was used. Overall status remains
+**NOT READY TO SHIP**.
 
 ## P15 private native editor recovery checkpoint
 

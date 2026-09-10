@@ -72,6 +72,11 @@ The contract's experience block makes first-run outcome, time to value,
 success signals, and trust gates testable product requirements rather than
 marketing copy.
 
+P16's first-value pilot contract measures one session without storing work
+content: the user's usual-process baseline is fixed before starting, elapsed
+time is host-measured, and ratings remain explicitly user-reported. A strong
+single-session signal is not representative client proof.
+
 ## Runtime composition
 
 Composition is deterministic: explicit user order overrides win, pinned widgets
