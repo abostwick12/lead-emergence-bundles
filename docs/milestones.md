@@ -30,10 +30,13 @@ and publishing queue. Validate read-only Wix operations before any
 preview-and-approval mutation path.
 
 The P3 native foundation is now implemented and locally validated in Workspace:
-bounded review-first text/Markdown/Word/text-PDF import, canonical metadata, immutable proposals, native-only
-approval, source-preserving revision history and an assistant proposal tool.
-It does not connect or mutate Wix. Practical library workflows, representative
-client testing and real installed-host/provider acceptance remain open.
+bounded review-first text/Markdown/Word/text-PDF intake; resumable 20-item
+library staging with isolated file failures, editable type/source metadata,
+exact duplicate warnings and confirmed atomic import; canonical metadata;
+immutable proposals; native-only approval; source-preserving revision history;
+and an assistant proposal tool. It does not connect or mutate Wix. Representative
+full-library quality, link verification, read-only Wix evidence, client testing
+and real installed-host/provider acceptance remain open.
 Track all six bundles in [client shipment readiness](release/client-readiness.md).
 
 ## P4 — Ministry

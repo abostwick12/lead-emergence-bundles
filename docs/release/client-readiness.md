@@ -10,7 +10,7 @@ not measured client value. This checklist prevents those substitutions.
 
 | Bundle | Implemented foundation | Required before client shipment |
 | --- | --- | --- |
-| Writer & Editor | Real native library, source-led review, secure review-first text/Markdown/Word/text-PDF intake, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search, evidence-led related/duplicate candidates, confirmed writing preferences, approval-backed preferred taxonomy and saved-revision publication packets | Bulk library ingestion and metadata workflows; link evidence; authorized read-only Wix proof before any Wix mutation; representative-library and user-value pilot; installed-host and shared release acceptance |
+| Writer & Editor | Real native library, source-led review, secure review-first text/Markdown/Word/text-PDF intake, resumable 20-item private library staging with per-file failures, editable taxonomy fields, exact staged/existing duplicate signals, include/exclude review and one confirmed atomic import, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search, evidence-led related candidates, confirmed writing preferences, approval-backed preferred taxonomy and saved-revision publication packets | Representative full-library/document-quality migration; link evidence; authorized read-only Wix proof before any Wix mutation; representative-library and user-value pilot; installed-host and shared release acceptance |
 | Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, secure review-first text/Markdown/Word/text-PDF archive intake, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; private server draft recovery across all three editors; six scoped connected tools | Representative theological/source evaluation; difficult-document and large-library ergonomics; installed-host, deployed backup/retention and first-use value acceptance; authorized optional Logos proof only for supported operations |
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions, private server draft recovery across all four editors and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; installed-host and deployed backup/privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, private server draft recovery across all four editors, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; large-library ergonomics; installed-host and deployed backup/retention acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
@@ -47,6 +47,8 @@ changes, or automatic website publishing.
   Executive's explicit metadata-only exception.
 - [x] Provide bounded, signature-checked, non-retained Word and text-PDF intake
   with preview-before-apply for Writer resources and Ministry archives.
+- [x] Provide resumable, tenant-private Writer library staging with bounded
+  per-file failures, exact duplicate review and one confirmed atomic import.
 - [ ] Pilot with a small authorized, representative resource/project dataset.
 - [ ] Observe an unaided first useful outcome for each bundle; record corrections,
   source coverage, abandonment, repeated use, and measured time saved.
@@ -67,6 +69,35 @@ paid infrastructure, publish marketplace listings, or connect client accounts.
 Both source repositories are intentionally public during development under the
 current launch plan; the bundle repository is expected to become private at
 launch. Backend entitlements—not repository visibility—must enforce paid capabilities.
+
+## P20 resumable Writer library checkpoint
+
+The portable contract now bounds a 20-item, 500,000-character staging list and
+validates optimistic snapshots, exact duplicate evidence, freshness tokens and
+unique atomic-import receipts. Item identities are canonicalized and strict
+receipt consistency prevents ambiguous initial, review and replay states.
+
+The public Workspace branch implements native-only private staging without
+retaining original files. Three-at-a-time extraction isolates per-file failures;
+successful items remain editable and autosaved. Reload recovery, stale-version
+protection, exact request replay and content-free tombstones prevent silent loss
+or resurrection. Duplicate review distinguishes staged from existing exact
+title/text matches, makes no semantic claim, and is recalculated inside the
+confirmed transaction. Excluded items wait; included items are all imported or
+none are.
+
+Portable validation passes 205 tests in 20 files. A fresh local database replay
+applies all 43 migrations, and the complete bundle database matrix passes 1,403
+assertions across 28 suites, including 67 P20 assertions. The optimized host
+build exposes 58 pages/routes. Focused desktop and mobile Chrome acceptance
+passes mixed success/failure extraction, reload recovery, exact duplicate review,
+explicit exclusion and a deliberately lost commit-response replay.
+
+This closes the generic native bulk-staging implementation, not the release.
+Representative client documents, measured unaided value, complete link/Wix
+evidence, installed-host behavior, hosted privacy/recovery/support, provider and
+commercial enforcement gates remain open. Overall status remains **NOT READY TO
+SHIP**.
 
 ## P19 secure rich-document intake checkpoint
 
