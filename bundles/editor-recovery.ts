@@ -101,6 +101,7 @@ export const editorDraftReceipt = z.object({
   requestId: z.string().uuid(), operation: z.enum(["save", "discard", "commit"]),
   version: z.number().int().positive(), committedDocumentId: z.string().uuid().nullable(), committedRevision: z.number().int().positive().nullable()
 }).strict();
+export type EditorDraftReceipt = z.infer<typeof editorDraftReceipt>;
 export const editorDraftSnapshot = z.object({
   target: editorTarget, schemaVersion: z.literal(1), version: z.number().int().nonnegative(),
   baseRevision: z.number().int().nonnegative().nullable(), currentRevision: z.number().int().nonnegative(),
