@@ -67,8 +67,8 @@ receipts protect retries and newly changed access. Native privacy controls remai
 available after plan loss. Assistant setup no longer writes merely on page open.
 
 Portable validation: 152 tests; six plugin and six skill validators.
-Host backend: 308 unit tests, 32 schema contracts and 700 database assertions;
-all 38 migrations also replayed fresh with zero retained users.
+Host backend: 308 unit tests, 32 schema contracts and 703 database assertions;
+all 39 migrations also replayed fresh with zero retained users.
 Actual isolated OAuth/PKCE/MCP acceptance passes five groups, including unfinished
 consent, registration, native-only boundaries and revoked-token rejection.
 Desktop/mobile connection-flow acceptance passes; detailed run and presentation
