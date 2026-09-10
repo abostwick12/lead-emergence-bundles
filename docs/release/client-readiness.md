@@ -39,6 +39,9 @@ changes, or automatic website publishing.
   and all 16 Ministry, Nonprofit, Investor and Executive editor kinds.
 - [x] Provide a privacy-safe first-value measurement path for every bundle that
   fixes the baseline before work and labels user reports honestly.
+- [x] Define one comparable representative-pilot kit per bundle with fictional
+  rehearsal data, unaided scripts, quality rubrics, safety checks, and a
+  structured controlled-beta decision rule.
 - [ ] Prove negative cross-domain operations for every implemented bundle pair.
 - [ ] Pilot with a small authorized, representative resource/project dataset.
 - [ ] Observe an unaided first useful outcome for each bundle; record corrections,

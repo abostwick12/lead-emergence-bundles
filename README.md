@@ -28,6 +28,8 @@ Lead Emergence Workspace web application or client-private configuration.
   Investor, and Executive record kinds; Writer keeps its specialized recovery.
 - A privacy-safe first-value pilot contract that records the user's baseline
   before work begins and keeps measured elapsed time separate from user ratings.
+- One reusable representative-pilot kit per bundle with fictional rehearsal
+  data, an unaided script, quality rubric, safety checks, and decision thresholds.
 - Architecture decisions and the P0 discovery record under `docs/`.
 
 ## Local validation
@@ -45,3 +47,6 @@ Local implementation is not a commercial release. See
 [client shipment readiness](docs/release/client-readiness.md) for the current
 evidence and the remaining representative, installed-host, deployed, provider,
 payment and support gates.
+
+Pilot operators should also use the
+[representative pilot protocol](docs/release/representative-pilots.md).
