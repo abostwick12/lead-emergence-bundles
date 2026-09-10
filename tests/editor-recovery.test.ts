@@ -38,6 +38,13 @@ describe("native editor recovery contracts",()=>{
     expect(editorDraftChange.safeParse({...input,target:{domain:"executive",kind:"meeting",documentId:null},values:{data:meeting,ui:{meetingTime:{local:"2026-11-01T01:30",selection:"",pending:true}}}}).success).toBe(true);
     expect(meeting.recordType==="meeting"&&meeting.startsAt).toBeNull();
   });
+  it("recovers bounded, unapplied availability without saving it to the meeting",()=>{
+    const meeting=emptyExecutiveData("meeting","2026-09-15"),window={id:requestId,start:"2026-09-20T09:00",end:"",startInstant:"",endInstant:""};
+    const availability={zone:"UTC",offered:[window],available:[],busy:[],source:"",bufferMinutes:-1,checkedAt:null,context:"[]",pending:true};
+    expect(editorDraftChange.safeParse({...input,target:{domain:"executive",kind:"meeting",documentId:null},values:{data:meeting,ui:{availability}}}).success).toBe(true);
+    expect("availability" in meeting).toBe(false);
+    expect(editorDraftChange.safeParse({...input,target:{domain:"executive",kind:"meeting",documentId:null},values:{data:meeting,ui:{availability:{...availability,busy:Array(201).fill(window)}}}}).success).toBe(false);
+  });
   it("requires explicit commit confirmation and exact draft version, not replacement data",()=>{
     const commit={operation:"commit",target,requestId,expectedVersion:2,confirm:true};
     expect(editorDraftChange.safeParse(commit).success).toBe(true);
@@ -51,6 +58,7 @@ describe("native editor recovery contracts",()=>{
     expect(editorDraftSnapshot.safeParse(snapshot).success).toBe(true);
     expect(editorDraftSnapshot.safeParse({...snapshot,target:{domain:"investor",kind:"thesis",documentId:null}}).success).toBe(false);
     expect(validEditorValues(target,{data:emptyProject,ui:{meetingTime:{local:"",selection:"",pending:false}}})).toBe(false);
+    expect(validEditorValues(target,{data:emptyProject,ui:{availability:{zone:"UTC",offered:[],available:[],busy:[],source:"",bufferMinutes:0,checkedAt:null,context:"[]",pending:false}}})).toBe(false);
   });
   it("fails closed on unsupported schema compositions",()=>{
     expect(()=>recoveryShape({$ref:"#/definitions/secret"})).toThrow();
@@ -58,4 +66,3 @@ describe("native editor recovery contracts",()=>{
     expect(Object.values(editorRecoveryShapes).flatMap(Object.keys)).toHaveLength(16);
   });
 });
-

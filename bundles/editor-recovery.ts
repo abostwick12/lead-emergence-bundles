@@ -69,7 +69,14 @@ export const editorDraftValues = z.object({
   data: z.record(z.string(), z.json()),
   ui: z.object({
     unsetProfile: z.boolean().optional(),
-    meetingTime: z.object({local: z.string().max(40), selection: z.string().max(64), pending: z.boolean()}).strict().optional()
+    meetingTime: z.object({local: z.string().max(40), selection: z.string().max(64), pending: z.boolean()}).strict().optional(),
+    availability: z.object({
+      zone: z.string().max(100),
+      offered: z.array(z.object({id:z.string().uuid(),start:z.string().max(40),end:z.string().max(40),startInstant:z.string().max(64),endInstant:z.string().max(64)}).strict()).max(20),
+      available: z.array(z.object({id:z.string().uuid(),start:z.string().max(40),end:z.string().max(40),startInstant:z.string().max(64),endInstant:z.string().max(64)}).strict()).max(20),
+      busy: z.array(z.object({id:z.string().uuid(),start:z.string().max(40),end:z.string().max(40),startInstant:z.string().max(64),endInstant:z.string().max(64)}).strict()).max(200),
+      source: z.string().max(240),bufferMinutes:z.number().int().min(-1).max(120),checkedAt:z.string().max(64).nullable(),context:z.string().max(20000),pending:z.boolean()
+    }).strict().optional()
   }).strict()
 }).strict();
 export type EditorDraftValues = z.infer<typeof editorDraftValues>;
@@ -77,7 +84,8 @@ export function validEditorValues(target: EditorTarget, values: EditorDraftValue
   return !!editorRecoveryShapes[target.domain]?.[target.kind]
     && matchesRecoveryShape(editorRecoveryShapes[target.domain][target.kind], values.data)
     && (!("unsetProfile" in values.ui) || target.domain === "ministry" && target.kind === "profile")
-    && (!values.ui.meetingTime || target.domain === "executive" && target.kind === "meeting");
+    && (!values.ui.meetingTime || target.domain === "executive" && target.kind === "meeting")
+    && (!values.ui.availability || target.domain === "executive" && target.kind === "meeting");
 }
 const common = {target: editorTarget, requestId: z.string().uuid(), expectedVersion: z.number().int().min(0).max(2147483646)};
 export const editorDraftChange = z.discriminatedUnion("operation", [
