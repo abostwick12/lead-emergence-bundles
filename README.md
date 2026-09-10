@@ -26,6 +26,8 @@ Lead Emergence Workspace web application or client-private configuration.
 - Shared provenance and epistemic-state controls.
 - Private native editor recovery shapes for all 16 Ministry, Nonprofit,
   Investor, and Executive record kinds; Writer keeps its specialized recovery.
+- A privacy-safe first-value pilot contract that records the user's baseline
+  before work begins and keeps measured elapsed time separate from user ratings.
 - Architecture decisions and the P0 discovery record under `docs/`.
 
 ## Local validation
