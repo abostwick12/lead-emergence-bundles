@@ -155,3 +155,16 @@ Native approval preserves inference labels. Installed ChatGPT/Codex discovery,
 tool selection and update/removal are separate, still-unproven release gates.
 No new OpenAI app ID, package install, provider connection or submission was
 invented to stand in for those tests. No OpenAI model API runtime was added.
+
+## P13 connection evidence — 2026-09-09
+
+[Authentication guidance](https://developers.openai.com/plugins/build/auth)
+requires current runtime authorization rather than trusting tool metadata.
+The native center independently distinguishes active Workspace grants, completed
+registration, plan/admission blocks and revoked access. It exposes no tokens.
+
+[Connection/testing guidance](https://developers.openai.com/plugins/deploy/connect-chatgpt)
+separates local MCP success from complete installed-plugin acceptance. Setup now
+uses the current Developer Mode/Plugins instructions, writes only after a user's
+explicit preparation action, and never treats a stored label as installation proof.
+Sources checked 2026-09-09. No new app ID, host installation or submission occurred.

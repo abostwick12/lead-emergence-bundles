@@ -15,7 +15,7 @@ not measured client value. This checklist prevents those substitutions.
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; crash/autosave recovery; installed-host and deployed privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; crash/autosave recovery and large-library ergonomics; installed-host and deployed release acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
 | Executive | Five native editors; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved recurring/notification lifecycle; grouped attention; crash recovery; authorized provider proof before booking; installed-host, representative utility and deployed release acceptance |
-| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette; 22 native-only record/task attention scopes, complete filtered counts and exact source/task links; confirmed Home attention widget | Connection/notification center; grounded approval-only AI layout proposals; representative/installed/deployed and shared recovery acceptance |
+| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette; 22 native-only record/task attention scopes, complete filtered counts and exact source/task links; confirmed Home attention widget; native grant/vault evidence center, unfinished-consent visibility and exact-reviewed disconnect with safe retries | Notification center; grounded approval-only AI layout proposals; representative/installed/deployed and shared recovery acceptance |
 
 Build the remaining native work without waiting on optional provider accounts.
 Do not replace missing integrations with fabricated data or claim planned tools
@@ -55,6 +55,29 @@ approval. Do not merge main, deploy production, apply hosted migrations, create
 paid infrastructure, publish marketplace listings, or connect client accounts.
 The Workspace repository is public; reusable bundle source remains private.
 Backend entitlements—not repository visibility—must enforce paid capabilities.
+
+## P13 native connection checkpoint
+
+The existing Connections route now checks actual Workspace grants and
+registration, incomplete consent, current plan/admission gates and independent
+vault/release evidence. It never equates a saved label with a working provider.
+All owned assistant records are paged with complete counts. Google-family
+disconnect impact is explicit; user-confirmed revision checks and idempotent
+receipts protect retries and newly changed access. Native privacy controls remain
+available after plan loss. Assistant setup no longer writes merely on page open.
+
+Portable validation: 152 tests; six plugin and six skill validators.
+Host backend: 308 unit tests, 32 schema contracts and 700 database assertions;
+all 38 migrations also replayed fresh with zero retained users.
+Actual isolated OAuth/PKCE/MCP acceptance passes five groups, including unfinished
+consent, registration, native-only boundaries and revoked-token rejection.
+Desktop/mobile connection-flow acceptance passes; detailed run and presentation
+evidence is maintained in the public host's P13 acceptance document.
+
+This does not complete notification lifecycle, installed-host acceptance,
+representative user-value testing or approved deployed release/recovery gates.
+Overall status remains **NOT READY TO SHIP**. See
+[connection contract and boundaries](../architecture/native-connections.md).
 
 ## P12 native shared attention checkpoint
 
