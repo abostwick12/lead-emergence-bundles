@@ -52,8 +52,8 @@ The host must use exact-version writes, immutable retry identities and a
 per-workspace serialization boundary. Duplicate evidence must be recalculated
 after staging changes and again inside the final transaction. A commit requires
 an explicit user confirmation and either imports every included item or none.
-Successful commit retires the staging text while retaining a content-free retry
-receipt. Excluded items are not imported.
+Successful commit retires the staging text while retaining a body-text-free
+retry receipt. Excluded items are not imported.
 
 Original binaries remain ephemeral P19 inputs. The host may persist reviewed
 plain text and the filename as normal private Writer resources; it must not
