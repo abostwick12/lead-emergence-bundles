@@ -14,8 +14,8 @@ not measured client value. This checklist prevents those substitutions.
 | Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; six scoped connected tools | Representative theological/source evaluation; rich archive ingestion and large-library ergonomics; installed-host, deployed recovery and first-use value acceptance; authorized optional Logos proof only for supported operations |
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; crash/autosave recovery; installed-host and deployed privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; crash/autosave recovery and large-library ergonomics; installed-host and deployed release acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
-| Executive | Five native editors; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved recurring/notification lifecycle; grouped attention; crash recovery; authorized provider proof before booking; installed-host, representative utility and deployed release acceptance |
-| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette; 22 native-only record/task attention scopes, complete filtered counts and exact source/task links; confirmed Home attention widget; native grant/vault evidence center, unfinished-consent visibility and exact-reviewed disconnect with safe retries | Notification center; grounded approval-only AI layout proposals; representative/installed/deployed and shared recovery acceptance |
+| Executive | Five native editors; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved scheduled-delivery lifecycle (native current-condition inbox implemented); grouped attention; crash recovery; authorized provider proof before booking; installed-host, representative utility and deployed release acceptance |
+| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette; 22 native-only record/task attention scopes, complete filtered counts and exact source/task links; confirmed Home attention widget; native grant/vault evidence center, unfinished-consent visibility and exact-reviewed disconnect with safe retries; eight native notification types with source-linked current conditions, complete counts and private read/dismiss/snooze/type preferences | Grounded approval-only AI layout proposals; representative/installed/deployed and shared recovery acceptance |
 
 Build the remaining native work without waiting on optional provider accounts.
 Do not replace missing integrations with fabricated data or claim planned tools
@@ -55,6 +55,30 @@ approval. Do not merge main, deploy production, apply hosted migrations, create
 paid infrastructure, publish marketplace listings, or connect client accounts.
 The Workspace repository is public; reusable bundle source remains private.
 Backend entitlements—not repository visibility—must enforce paid capabilities.
+
+## P14 native notification checkpoint
+
+The native inbox surfaces eight selected current conditions across the six
+bundles. Owner/source admission is rechecked on every read and write. Private
+acknowledgements and type preferences support read, dismiss, restore, 24-hour
+snooze and mute without changing source work. Exact reviewed requests and a
+serialized choices version protect retries and stale tabs. Source resolution or
+revocation removes inaccessible current updates. This is not email, push,
+background monitoring, scheduled delivery or a historical event log.
+
+Portable validation passes 157 tests plus six plugin and six skill validators.
+Host proof includes 313 unit tests, 32 schema contracts, 796 local database
+assertions and all 40 migrations replayed fresh. The broad browser run passed
+190 tests (two separate SOTF harness cases skipped); after an isolated keyboard-
+focus correction, all 14 notification workflows passed again on the final
+optimized build. Four actual local OAuth/MCP groups verify the native-only
+boundary and resolution of an unfinished-access cue. No installed-client or
+hosted acceptance is implied.
+
+See [the portable notification boundary](../architecture/native-notifications.md)
+and the public host branch's P14 acceptance ledger for current test outcomes.
+A valid manifest, local browser pass or fictional scale corpus does not establish
+representative user value or installed/deployed client readiness.
 
 ## P13 native connection checkpoint
 
