@@ -42,7 +42,9 @@ changes, or automatic website publishing.
 - [x] Define one comparable representative-pilot kit per bundle with fictional
   rehearsal data, unaided scripts, quality rubrics, safety checks, and a
   structured controlled-beta decision rule.
-- [ ] Prove negative cross-domain operations for every implemented bundle pair.
+- [x] Prove negative cross-domain operations for every implemented bundle pair,
+  including Workspace Experience's native-only aggregate boundary and
+  Executive's explicit metadata-only exception.
 - [ ] Pilot with a small authorized, representative resource/project dataset.
 - [ ] Observe an unaided first useful outcome for each bundle; record corrections,
   source coverage, abandonment, repeated use, and measured time saved.
@@ -63,6 +65,34 @@ paid infrastructure, publish marketplace listings, or connect client accounts.
 Both source repositories are intentionally public during development under the
 current launch plan; the bundle repository is expected to become private at
 launch. Backend entitlements—not repository visibility—must enforce paid capabilities.
+
+## P18 cross-domain isolation proof checkpoint
+
+An independent rollback-only PostgreSQL oracle now exercises the five private
+domain stores as a complete ordered-pair matrix. One fictional owner holds all
+six bundle entitlements, so a denial cannot be attributed to a missing product.
+Canonical reads, revision history and private-marker search return only the
+expected domain. Same-domain records owned by another fictional user follow the
+same unavailable path. Anonymous callers lack execution authority, and neither
+anonymous nor authenticated roles can directly select, insert, update or delete
+the private tables; RLS remains enabled on every store.
+
+An OAuth-shaped assistant session can read the owner's admitted record through
+each domain's canonical function, but every cross-domain identifier fails. It
+cannot invoke Workspace Experience's native-only saved-work search or attention
+surfaces. Revoking the assistant connection closes all five reads, and revoking
+the source bundle closes the corresponding native and Executive reference paths.
+Executive begins with no cross-domain authority; after explicit user confirmation
+it receives only fixed metadata for exact permitted records and only the two
+implemented expanded task contracts. The oracle confirms private source markers
+never enter that projection and rejects unsupported task capabilities.
+
+The new suite passes 184 assertions. The complete retained local database run
+passes 1,325 assertions across 26 suites, with every fixture rolled back. This
+closes the implemented cross-domain negative-operation gate, including the sixth
+bundle's aggregate boundary; it does not constitute a representative pilot,
+installed-host proof, hosted deployment, provider connection or client shipment.
+Overall status remains **NOT READY TO SHIP**.
 
 ## P16 first-value measurement checkpoint
 
