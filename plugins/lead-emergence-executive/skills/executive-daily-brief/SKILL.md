@@ -53,6 +53,10 @@ commitments at risk, decisions needed and a small proposed action list. Preserve
 source, priority, reason, date when known, suggested next action and evidence.
 Separate reported observations from interpretation and recommendation.
 
+Rank deadlines only against an explicit as-of time and named time zone. If
+weekday, relative or absolute dates cannot be compared safely, expose the
+ambiguity and ask for the missing anchor instead of inventing an order.
+
 Describe coverage: which sources were checked, unavailable, unshared or truncated.
 No matching saved-record signals is not proof that all work is complete or that
 nothing materially changed. Do not infer market, inbox or calendar monitoring.

@@ -111,6 +111,7 @@ export const representativePilotKits = representativePilotKit.array().length(6).
     participantFit: "A person coordinating several kinds of work who already has commitments, decisions, meetings, and due items to review.",
     baselinePrompt: "How long would you normally spend checking each work area and assembling a trustworthy next-action list?",
     sourcePacket: [
+      { id: "executive.source.anchor", label: "Scenario clock", layer: "synthetic_system_state", content: "As of Wednesday, October 7, 2026 at 9:00 AM America/Chicago.", handling: "Use this fictional clock only to compare deadlines; preserve its named time zone." },
       { id: "executive.source.commitment", label: "Confirmed commitment", layer: "task_metadata", content: "Send the board-chair briefing by Thursday at 3:00 PM; owner: participant; status: open.", handling: "The brief may use this task metadata and its due time." },
       { id: "executive.source.partner", label: "Partner follow-up", layer: "task_metadata", content: "Community partner reply is overdue by two days; owner: participant; linked domain: nonprofit.", handling: "Show only the follow-up metadata unless the participant deliberately opens its source." },
       { id: "executive.source.teaching", label: "Teaching preparation", layer: "task_metadata", content: "Teaching outline is due in four days; status: draft; linked domain: ministry.", handling: "Do not surface sermon notes or theological profile content in the cross-bundle brief." },

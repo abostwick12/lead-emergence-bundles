@@ -39,6 +39,12 @@ describe("representative bundle pilot kits", () => {
     expect(representativePilotRun.safeParse({ ...valid, participantName: "A Person" }).success).toBe(false);
   });
 
+  it("anchors mixed Executive deadlines to one explicit scenario clock", () => {
+    const anchor = representativePilotKitByBundle.executive.sourcePacket.find(card => card.id === "executive.source.anchor");
+    expect(anchor).toMatchObject({ layer: "synthetic_system_state" });
+    expect(anchor?.content).toContain("America/Chicago");
+  });
+
   it("excludes rehearsal attempts and requires representative repeated use", () => {
     const kit = representativePilotKitByBundle.executive;
     const rehearsal = completed("executive", 1, { mode: "synthetic_rehearsal" });
