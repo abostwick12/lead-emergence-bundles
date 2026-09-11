@@ -82,7 +82,7 @@ export function executiveAttentionGroupForCapability(capabilityId:string):z.infe
  throw new Error("Unsupported Executive attention capability.");
 }
 export const executiveAttentionGroup=z.object({
- groupKey:executiveAttentionGroupKey,priority:executivePriority,total:z.number().int().positive()
+ groupKey:executiveAttentionGroupKey,total:z.number().int().positive()
 }).strict();
 export const executiveAttentionV2 = z.object({
   schemaVersion: z.literal("2.0"), asOfDate: z.iso.date(), retrievedAt: z.iso.datetime({ offset: true }),
@@ -104,7 +104,7 @@ export const executiveAttentionV2 = z.object({
     || value.items.length !== Math.min(value.limit, Math.max(0, value.total - value.offset)))
     issue("Attention counts or paging could not be verified.");
   if(value.groups.reduce((sum,group)=>sum+group.total,0)!==value.total
-    ||new Set(value.groups.map(group=>group.groupKey+":"+group.priority)).size!==value.groups.length)
+    ||new Set(value.groups.map(group=>group.groupKey)).size!==value.groups.length)
     issue("Attention group totals could not be verified.");
   if (new Set(value.items.map(item => item.id)).size !== value.items.length
     || value.items.some(item => item.id !== referenceKey(item.source)))
@@ -115,7 +115,7 @@ export const executiveAttentionV2 = z.object({
   if (value.items.some(item => !value.coverage.some(c => c.capabilityId === item.source.capabilityId
     && c.level === (item.source.item ? "task" : "record") && c.state === "current")))
     issue("Every item must belong to a currently checked scope.");
-  if(value.items.some(item=>!value.groups.some(group=>group.groupKey===executiveAttentionGroupForCapability(item.source.capabilityId)&&group.priority===item.priority)))
+  if(value.items.some(item=>!value.groups.some(group=>group.groupKey===executiveAttentionGroupForCapability(item.source.capabilityId))))
     issue("Every attention item needs its source and priority group.");
 });
 

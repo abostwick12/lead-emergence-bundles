@@ -20,7 +20,7 @@ const coverage=[
  ...Object.keys(executiveTaskKinds).map(capabilityId=>({capabilityId,level:"task",state:"current",total:capabilityId===task.capabilityId?1:0}))
 ];
 const snapshot={schemaVersion:"2.0",asOfDate:date,retrievedAt:now,items:[item],total:1,offset:0,limit:25,coverage,
- groups:[{groupKey:"nonprofit_founder",priority:"high",total:1}]};
+ groups:[{groupKey:"nonprofit_founder",total:1}]};
 describe("Executive individually consented task metadata",()=>{
  it("keeps record references valid and distinct from several tasks in the same record",()=>{
   const second={...task,item:{kind:"milestone",id}};
