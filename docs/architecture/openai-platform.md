@@ -1,6 +1,6 @@
 # Current OpenAI plugin platform findings
 
-Retrieved: **2026-09-08**
+Retrieved: **2026-09-10**
 
 This record uses current official OpenAI documentation. It replaces historical
 ChatGPT plugin assumptions for this repository.
@@ -8,11 +8,11 @@ ChatGPT plugin assumptions for this repository.
 | Official documentation | Important architectural requirement |
 | --- | --- |
 | [Plugin architecture](https://developers.openai.com/plugins/concepts/plugins) | A plugin is the installable package shared by ChatGPT and Codex. It may contain skills, an MCP server, or both; MCP may return optional UI. Start with the smallest useful shape. |
-| [Package your plugin](https://developers.openai.com/plugins/build/plugins) | Every plugin requires .codex-plugin/plugin.json. Skills live at the plugin root under skills/; .app.json, .mcp.json, assets, and hooks are optional root-level companions. |
-| [Marketplace metadata](https://developers.openai.com/plugins/build/plugins#marketplace-metadata) | A repo marketplace lives at .agents/plugins/marketplace.json. Local source.path values are ./-prefixed and resolved from the marketplace root. Each local entry includes installation policy, authentication policy, and category. |
+| [Package your plugin](https://developers.openai.com/plugins/build/plugins) | A new portable plugin requires root `plugin.json` with the Agent Plugins schema. Portable skills are discovered at `skills/`, portable MCP configuration uses root `mcp.json`, and OpenAI presentation settings belong under `extensions.com.openai`. `.codex-plugin/plugin.json` remains an optional compatibility fallback. |
+| [Marketplace metadata](https://developers.openai.com/plugins/build/plugins#build-your-own-curated-plugin-list) | A repo marketplace lives at `.agents/plugins/marketplace.json`. Local `source.path` values are `./`-prefixed and resolved from the marketplace root. Git-backed marketplaces can be added, pinned to a ref, sparsely checked out, upgraded and removed through the Codex plugin commands. |
 | [Build skills](https://developers.openai.com/plugins/build/skills) | Each skill requires SKILL.md; workflow boundaries must define expected input, steps, output, non-inferences, and stopping behavior. |
 | [Authentication](https://developers.openai.com/plugins/build/auth) | Customer-specific data and write actions authenticate. MCP authorization uses protected-resource metadata, an authorization server, authorization code + PKCE with S256, audience validation, scopes, and runtime authentication challenges. |
-| [Connect and test](https://developers.openai.com/plugins/deploy/connect-chatgpt) | Test declared schemas, auth failures, positive and negative tool selection, optional UI, and a representative evaluation set. Metadata changes require refresh and a new conversation. |
+| [Connect and test](https://developers.openai.com/plugins/deploy/connect-chatgpt) | Test each skill, tool, UI and auth boundary before package installation, then repeat representative positive, negative and edge-case prompts in a newly installed host session. Local MCP testing needs a reachable HTTPS endpoint or the Secure MCP Tunnel. |
 | [Security and privacy](https://developers.openai.com/plugins/guides/security-privacy) | Apply least privilege, explicit consent for linking and writes, prompt-injection defenses, auditability, data minimization, and PII-safe logs. |
 | [Submit plugins](https://developers.openai.com/plugins/deploy/submission) | Public release goes through the OpenAI Platform review flow. Submission may include skills, MCP, UI, starter prompts, test cases, regions, and attestations. This repository is not authorized for public submission. |
 | [Plugins in ChatGPT and Codex](https://learn.chatgpt.com/docs/plugins) | ChatGPT and Codex use one universal plugin directory on supported surfaces. New sessions are required after installation in Codex CLI; the IDE extension does not support plugins. |
@@ -29,23 +29,26 @@ No OpenAI protocol, model runtime, package connection or installed-host claim ch
 
 ## Confirmed decisions
 
-1. .agents/plugins/marketplace.json is the correct private-beta repository
-   source and is implemented here.
+1. `.agents/plugins/marketplace.json` remains the repository marketplace source
+   and is implemented here. It is separate from universal-directory publication.
 2. Official plugin packages live under plugins/, matching current repo
    marketplace conventions. Product bundle definitions remain under bundles/;
    plugin packaging is an adapter, not the product contract.
-3. P1 plugins are skills-only. No .app.json or .mcp.json is declared until a
+3. The six version 0.2.0 packages are portable skills-only plugins. Their root
+   `plugin.json` manifests are canonical and their `.codex-plugin/plugin.json`
+   manifests preserve compatibility with current Codex scaffolds. Identity,
+   release metadata and OpenAI interface metadata must remain exactly aligned.
+4. No `.app.json`, `mcp.json` or legacy `.mcp.json` is declared until a
    registered app or a working MCP server actually exists. This avoids false
-   provider claims and the desktop-only behavior associated with bundled MCP
-   configuration in GitHub-imported plugins.
-4. The Lead Emergence Workspace remains the primary application UI. Bundle UI
+   provider and installed-runtime claims.
+5. The Lead Emergence Workspace remains the primary application UI. Bundle UI
    manifests in this repo describe that product's navigation and experiences;
    they do not attempt to alter ChatGPT or Codex native navigation.
-5. One shared Workspace MCP can later expose entitlement-filtered tools to both
+6. One shared Workspace MCP can later expose entitlement-filtered tools to both
    ChatGPT and Codex. Separate bundle plugins supply focused skills and
    distribution metadata; they do not become independent authorization
    authorities.
-6. Public plugin submission and universal-directory publication remain out of
+7. Public plugin submission and universal-directory publication remain out of
    scope until explicitly authorized.
 
 ## Authentication implications

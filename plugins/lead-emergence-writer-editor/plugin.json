@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lead-emergence-writer-editor",
+  "version": "0.2.0",
+  "description": "Voice-preserving editorial, resource, and publishing-readiness workflows.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": ["writing", "editing", "resources", "metadata", "publishing"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Lead Emergence Writer & Editor",
+        "shortDescription": "Improve resources without losing the author's voice.",
+        "longDescription": "Review supplied resources, preserve voice, and propose structured editorial and publishing metadata without executing website changes.",
+        "developerName": "Lead Emergence",
+        "category": "Productivity",
+        "capabilities": ["Read", "Propose"],
+        "defaultPrompt": [
+          "Review this resource and preserve its voice.",
+          "Prepare this resource for web publishing.",
+          "Propose metadata for this document."
+        ],
+        "brandColor": "#A85B3D"
+      }
+    }
+  }
+}

@@ -584,3 +584,21 @@ proposals, connection/notification consumers, recurring lifecycle, ingestion
 and recovery gaps. Representative value, installed-host, deployed/commercial
 and approved migration gates remain required. **All six remain NOT READY TO
 SHIP.** See Workspace's `docs/testing/workspace-layout-acceptance.md`.
+
+## P24 — portable plugin packaging
+
+All six distribution adapters now use root Agent Plugins 1.0.0 manifests and
+retain matching Codex compatibility manifests. Package version 0.2.0 identifies
+this packaging migration; it does not change bundle entitlement versions or
+claim a hosted runtime. Automated policy requires one marketplace entry per
+bundle, canonical/fallback metadata parity, valid portable names, root skill
+discovery, starter prompts and the deliberate absence of MCP/app declarations.
+
+The six compatibility packages pass the bundled plugin validator. Repository
+typecheck and all 231 tests in 23 files pass, including the portable marketplace
+checks. This is package/source proof only. GitHub marketplace import and sync,
+installation, new-session discovery, representative tool selection, update and
+removal remain installed-host gates. Public-directory submission, provider
+connection, client accounts, hosted deployment and commercial launch were not
+performed. **All six remain NOT READY TO SHIP.** See
+[plugin packaging readiness](plugin-packaging-readiness.md).

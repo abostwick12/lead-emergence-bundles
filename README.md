@@ -18,7 +18,8 @@ Lead Emergence Workspace web application or client-private configuration.
 
 ## Current contents
 
-- Six independently discoverable plugin shells under `plugins/`.
+- Six independently discoverable portable plugin packages under `plugins/`,
+  each with a compatibility fallback and one focused skill.
 - Versioned Bundle and UI Manifest contracts.
 - Bundle and capability registries with deterministic composition.
 - Fail-closed identity, entitlement, provider, domain, and mutation policy

@@ -14,6 +14,41 @@ type Marketplace = {
   }>;
 };
 
+type PluginInterface = {
+  displayName: string;
+  category: string;
+  defaultPrompt: string[];
+};
+
+type PortablePlugin = {
+  $schema: string;
+  name: string;
+  version: string;
+  description: string;
+  author: { name: string; url: string };
+  homepage: string;
+  repository: string;
+  keywords: string[];
+  skills?: unknown;
+  apps?: unknown;
+  mcpServers?: unknown;
+  extensions: { "com.openai": { interface: PluginInterface } };
+};
+
+type CompatibilityPlugin = {
+  name: string;
+  version: string;
+  description: string;
+  author: { name: string; url: string };
+  homepage: string;
+  repository: string;
+  keywords: string[];
+  skills: string;
+  apps?: unknown;
+  mcpServers?: unknown;
+  interface: PluginInterface;
+};
+
 describe("OpenAI repo marketplace", () => {
   const root = process.cwd();
   const marketplace = JSON.parse(
@@ -33,24 +68,69 @@ describe("OpenAI repo marketplace", () => {
     }
   });
 
-  it("points every entry to a valid, matching skills-only plugin package", () => {
+  it("points every entry to a portable skills-only package with an exact compatibility fallback", () => {
     for (const entry of marketplace.plugins) {
       const pluginRoot = join(root, entry.source.path);
-      const plugin = JSON.parse(
+      const portable = JSON.parse(
+        readFileSync(join(pluginRoot, "plugin.json"), "utf8")
+      ) as PortablePlugin;
+      const compatibility = JSON.parse(
         readFileSync(join(pluginRoot, ".codex-plugin", "plugin.json"), "utf8")
-      ) as {
-        name: string;
-        skills: string;
-        apps?: unknown;
-        mcpServers?: unknown;
-        interface: { defaultPrompt: string[] };
-      };
-      expect(plugin.name).toBe(entry.name);
-      expect(plugin.skills).toBe("./skills/");
-      expect(plugin.apps).toBeUndefined();
-      expect(plugin.mcpServers).toBeUndefined();
-      expect(plugin.interface.defaultPrompt.length).toBeGreaterThan(0);
+      ) as CompatibilityPlugin;
+
+      expect(portable.$schema).toBe(
+        "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json"
+      );
+      expect(Object.keys(portable).sort()).toEqual([
+        "$schema",
+        "author",
+        "description",
+        "extensions",
+        "homepage",
+        "keywords",
+        "name",
+        "repository",
+        "version"
+      ]);
+      expect(Object.keys(portable.author).sort()).toEqual(["name", "url"]);
+      expect(portable.name).toBe(entry.name);
+      expect(portable.name.length).toBeLessThanOrEqual(64);
+      expect(portable.name).toMatch(/^(?!.*(?:--|\.\.))[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?$/);
+      expect(portable.version).toMatch(/^\d+\.\d+\.\d+$/);
+      expect(portable.description.length).toBeGreaterThan(0);
+      expect(portable.keywords.length).toBeGreaterThan(0);
+      expect(portable.extensions["com.openai"].interface.category).toBe(entry.category);
+      expect(portable.extensions["com.openai"].interface.defaultPrompt.length).toBeGreaterThan(0);
+      expect(portable.skills).toBeUndefined();
+      expect(portable.apps).toBeUndefined();
+      expect(portable.mcpServers).toBeUndefined();
+
+      expect({
+        name: compatibility.name,
+        version: compatibility.version,
+        description: compatibility.description,
+        author: compatibility.author,
+        homepage: compatibility.homepage,
+        repository: compatibility.repository,
+        keywords: compatibility.keywords,
+        interface: compatibility.interface
+      }).toEqual({
+        name: portable.name,
+        version: portable.version,
+        description: portable.description,
+        author: portable.author,
+        homepage: portable.homepage,
+        repository: portable.repository,
+        keywords: portable.keywords,
+        interface: portable.extensions["com.openai"].interface
+      });
+      expect(compatibility.skills).toBe("./skills/");
+      expect(compatibility.apps).toBeUndefined();
+      expect(compatibility.mcpServers).toBeUndefined();
       expect(existsSync(join(pluginRoot, "skills"))).toBe(true);
+      expect(existsSync(join(pluginRoot, "mcp.json"))).toBe(false);
+      expect(existsSync(join(pluginRoot, ".mcp.json"))).toBe(false);
+      expect(existsSync(join(pluginRoot, ".app.json"))).toBe(false);
     }
   });
 

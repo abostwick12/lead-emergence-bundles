@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lead-emergence-executive",
+  "version": "0.2.0",
+  "description": "Evidence-linked daily attention and executive review workflows.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": ["executive", "priorities", "briefing", "follow-up"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Lead Emergence Executive",
+        "shortDescription": "Turn authorized work signals into a focused brief.",
+        "longDescription": "Prepare evidence-linked attention briefs and reviews while keeping private bundle content separated.",
+        "developerName": "Lead Emergence",
+        "category": "Productivity",
+        "capabilities": ["Read", "Propose"],
+        "defaultPrompt": [
+          "Prepare my evidence-linked daily brief.",
+          "Review my commitments and follow-ups.",
+          "What deserves my attention today?"
+        ],
+        "brandColor": "#173B3F"
+      }
+    }
+  }
+}

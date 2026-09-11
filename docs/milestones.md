@@ -74,3 +74,12 @@ assistant layout recommendations. The connected assistant sees only the active
 catalog and exact revisions, while the direct native user alone previews,
 accepts, rejects or saves. Installed-host, hosted operations, representative
 value and commercial enforcement remain the P8 release gates.
+
+The first productization slice upgrades all six skills-only adapters to the
+portable Agent Plugins 1.0.0 package shape. Root `plugin.json` manifests are
+canonical, `.codex-plugin/plugin.json` remains as a compatibility fallback, and
+tests require exact identity/version/interface parity. No MCP, registered-app or
+provider file is claimed. Package structure and the repo marketplace validate
+locally; installed ChatGPT/Codex behavior and GitHub-source refresh/removal are
+still separate P8 acceptance gates. See
+[plugin packaging readiness](release/plugin-packaging-readiness.md).
