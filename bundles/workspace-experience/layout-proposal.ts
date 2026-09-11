@@ -103,6 +103,9 @@ export const layoutProposalDecision = z.object({
   expectedLayoutRevision:z.number().int().min(0),expectedAuthorityRevision:z.string().min(1).max(200),
   requestId:z.string().uuid(),decision:z.enum(["accept","reject"]),confirmed:z.literal(true),note:z.string().trim().max(500).default("")
 }).strict();
+export const layoutProposalDecisionResult = layoutProposalRecord.extend({
+  replayed:z.boolean(),resultingLayoutRevision:z.number().int().min(0)
+}).strict();
 
 export type LayoutProposalCatalog = {items:Array<{id:string;kind:"navigation"|"widget";route:string|null}>;defaultRoutes:string[]};
 
