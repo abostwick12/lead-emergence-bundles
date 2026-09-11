@@ -16,6 +16,7 @@ describe("Executive native delivery contract",()=>{
   expect(executiveDeliveryMutation.safeParse({scheduleId,expectedVersion:1,requestId,operation:"pause",definition:null,confirmExactSchedule:true}).success).toBe(true);
   for(const value of [{scheduleId,expectedVersion:0,operation:"create",definition:daily},{scheduleId:null,expectedVersion:0,operation:"update",definition:daily},{scheduleId,expectedVersion:1,operation:"resume",definition:daily},{scheduleId,expectedVersion:1,operation:"update",definition:null}])
    expect(executiveDeliveryMutation.safeParse({...value,requestId,confirmExactSchedule:true}).success).toBe(false);
+  expect(executiveDeliveryMutation.safeParse({scheduleId,expectedVersion:Number.MAX_SAFE_INTEGER+1,requestId,operation:"pause",definition:null,confirmExactSchedule:true}).success).toBe(false);
  });
  it("requires next occurrence only for active schedules",()=>{
  expect(executiveDeliverySchedule.safeParse(record).success).toBe(true);
@@ -24,10 +25,11 @@ describe("Executive native delivery contract",()=>{
   expect(executiveDeliverySchedule.safeParse({...record,status:"paused"}).success).toBe(false);
  });
  it("labels native delivery honestly and never claims an external send or saved record",()=>{
-  const event={deliveryId:requestId,scheduleId,scheduleVersion:1,deliveryKind:"daily_brief",label:daily.label,dueAt:now,evaluatedAt:now,outcome:"ready",reason:"The scheduled native review is ready.",currentAttentionCount:3,highPriorityCount:1,route:"/workspace/executive/daily_brief/new",requiresUserReview:true,externalDelivery:false,recordCreated:false};
+  const event={deliveryId:requestId,scheduleId,scheduleVersion:1,deliveryKind:"daily_brief",label:daily.label,dueAt:now,evaluatedAt:now,outcome:"ready",reason:"The scheduled native review is ready.",currentAttentionCount:60,inspectedAttentionCount:50,inspectedHighPriorityCount:8,route:"/workspace/executive/daily_brief/new",requiresUserReview:true,externalDelivery:false,recordCreated:false};
   expect(executiveDeliveryEvent.safeParse(event).success).toBe(true);
   expect(executiveDeliveryEvent.safeParse({...event,externalDelivery:true}).success).toBe(false);
   expect(executiveDeliveryEvent.safeParse({...event,deliveryKind:"weekly_review"}).success).toBe(false);
+  expect(executiveDeliveryEvent.safeParse({...event,inspectedHighPriorityCount:51}).success).toBe(false);
   expect(executiveDeliveryList.safeParse({schemaVersion:"1.0",workspaceId:scheduleId,authorityRevision:"r1",serverNow:now,schedules:[record],deliveries:[event],backgroundDeliveryAvailable:false}).success).toBe(true);
   expect(executiveDeliveryList.safeParse({schemaVersion:"1.0",workspaceId:scheduleId,authorityRevision:"r1",serverNow:now,schedules:[record,{...record,scheduleId:requestId}],deliveries:[],backgroundDeliveryAvailable:false}).success).toBe(false);
   expect(executiveDeliveryList.safeParse({schemaVersion:"1.0",workspaceId:scheduleId,authorityRevision:"r1",serverNow:now,schedules:[record,{...record,scheduleId:requestId,status:"cancelled",nextOccurrence:null}],deliveries:[],backgroundDeliveryAvailable:false}).success).toBe(true);
