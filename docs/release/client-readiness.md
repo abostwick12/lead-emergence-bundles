@@ -596,9 +596,15 @@ discovery, starter prompts and the deliberate absence of MCP/app declarations.
 
 The six compatibility packages pass the bundled plugin validator. Repository
 typecheck and all 231 tests in 23 files pass, including the portable marketplace
-checks. This is package/source proof only. GitHub marketplace import and sync,
-installation, new-session discovery, representative tool selection, update and
-removal remain installed-host gates. Public-directory submission, provider
-connection, client accounts, hosted deployment and commercial launch were not
-performed. **All six remain NOT READY TO SHIP.** See
+checks. Codex CLI 0.153.4 imported the public feature ref, installed and enabled
+all six 0.2.0 packages, matched every three-file cache to the Git snapshot,
+exposed all six skills in a fresh Sol session, routed six fictional domain cases
+correctly, rejected one unrelated control and removed all package/marketplace
+discovery in a final fresh session. The prior local plugin state was restored.
+
+This remains bounded installed-Codex proof. ChatGPT's plugin-directory surface,
+a changed-version update, representative output quality, hosted operation and
+client acceptance remain open. Public-directory submission, provider connection,
+client accounts, hosted deployment and commercial launch were not performed.
+**All six remain NOT READY TO SHIP.** See
 [plugin packaging readiness](plugin-packaging-readiness.md).

@@ -80,6 +80,9 @@ portable Agent Plugins 1.0.0 package shape. Root `plugin.json` manifests are
 canonical, `.codex-plugin/plugin.json` remains as a compatibility fallback, and
 tests require exact identity/version/interface parity. No MCP, registered-app or
 provider file is claimed. Package structure and the repo marketplace validate
-locally; installed ChatGPT/Codex behavior and GitHub-source refresh/removal are
-still separate P8 acceptance gates. See
+locally. A controlled Codex CLI 0.153.4 rehearsal from the public feature ref
+passed import, six-package installation, fresh-session discovery, six positive
+routing cases, one negative control and clean removal. ChatGPT install-surface
+behavior, representative output quality and changed-version update remain
+separate P8 acceptance gates. See
 [plugin packaging readiness](release/plugin-packaging-readiness.md).

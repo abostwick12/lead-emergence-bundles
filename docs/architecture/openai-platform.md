@@ -1,6 +1,6 @@
 # Current OpenAI plugin platform findings
 
-Retrieved: **2026-09-10**
+Retrieved: **2026-09-11**
 
 This record uses current official OpenAI documentation. It replaces historical
 ChatGPT plugin assumptions for this repository.
