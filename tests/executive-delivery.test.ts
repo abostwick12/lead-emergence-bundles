@@ -4,7 +4,7 @@ const scheduleId="91000000-0000-4000-8000-000000000001",requestId="91000000-0000
 const daily={schemaVersion:"1.0" as const,deliveryKind:"daily_brief" as const,label:"Weekday daily brief",timeZone:"America/Chicago",
  cadence:{kind:"daily" as const,localTime:"07:30"},changePolicy:"when_attention_summary_changes" as const,deliveryTarget:"native_executive_inbox" as const};
 const weekly={...daily,deliveryKind:"weekly_review" as const,label:"Friday weekly review",cadence:{kind:"weekly" as const,localTime:"16:00",weekdays:[5]}};
-const record={scheduleId,version:1,definition:daily,status:"active" as const,nextOccurrence:"2026-09-11T12:30:00Z",lastEvaluatedAt:null,lastDeliveredAt:null,createdAt:now,updatedAt:now,replayed:false};
+const record={scheduleId,version:1,definition:daily,status:"active" as const,capabilityAvailable:true,nextOccurrence:"2026-09-11T12:30:00Z",lastEvaluatedAt:null,lastDeliveredAt:null,createdAt:now,updatedAt:now,replayed:false};
 describe("Executive native delivery contract",()=>{
  it("accepts strict daily and weekly definitions with named zones",()=>{
   expect(executiveDeliveryDefinition.safeParse(daily).success).toBe(true);expect(executiveDeliveryDefinition.safeParse(weekly).success).toBe(true);
@@ -18,7 +18,8 @@ describe("Executive native delivery contract",()=>{
    expect(executiveDeliveryMutation.safeParse({...value,requestId,confirmExactSchedule:true}).success).toBe(false);
  });
  it("requires next occurrence only for active schedules",()=>{
-  expect(executiveDeliverySchedule.safeParse(record).success).toBe(true);
+ expect(executiveDeliverySchedule.safeParse(record).success).toBe(true);
+  expect(executiveDeliverySchedule.safeParse({...record,capabilityAvailable:false}).success).toBe(true);
   expect(executiveDeliverySchedule.safeParse({...record,status:"paused",nextOccurrence:null}).success).toBe(true);
   expect(executiveDeliverySchedule.safeParse({...record,status:"paused"}).success).toBe(false);
  });
@@ -29,5 +30,6 @@ describe("Executive native delivery contract",()=>{
   expect(executiveDeliveryEvent.safeParse({...event,deliveryKind:"weekly_review"}).success).toBe(false);
   expect(executiveDeliveryList.safeParse({schemaVersion:"1.0",workspaceId:scheduleId,authorityRevision:"r1",serverNow:now,schedules:[record],deliveries:[event],backgroundDeliveryAvailable:false}).success).toBe(true);
   expect(executiveDeliveryList.safeParse({schemaVersion:"1.0",workspaceId:scheduleId,authorityRevision:"r1",serverNow:now,schedules:[record,{...record,scheduleId:requestId}],deliveries:[],backgroundDeliveryAvailable:false}).success).toBe(false);
+  expect(executiveDeliveryList.safeParse({schemaVersion:"1.0",workspaceId:scheduleId,authorityRevision:"r1",serverNow:now,schedules:[record,{...record,scheduleId:requestId,status:"cancelled",nextOccurrence:null}],deliveries:[],backgroundDeliveryAvailable:false}).success).toBe(true);
  });
 });

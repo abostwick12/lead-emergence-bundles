@@ -31,7 +31,7 @@ export const executiveDeliveryMutation=z.object({
 
 export const executiveDeliverySchedule=z.object({
  scheduleId:z.string().uuid(),version:z.number().int().positive(),definition:executiveDeliveryDefinition,
- status:z.enum(["active","paused","cancelled"]),nextOccurrence:instant.nullable(),lastEvaluatedAt:instant.nullable(),lastDeliveredAt:instant.nullable(),
+ status:z.enum(["active","paused","cancelled"]),capabilityAvailable:z.boolean(),nextOccurrence:instant.nullable(),lastEvaluatedAt:instant.nullable(),lastDeliveredAt:instant.nullable(),
  createdAt:instant,updatedAt:instant,replayed:z.boolean()
 }).strict().superRefine((value,context)=>{
  if((value.status==="active")!==Boolean(value.nextOccurrence))context.addIssue({code:"custom",message:"Only active schedules have a next occurrence."});
@@ -52,10 +52,11 @@ export const executiveDeliveryEvent=z.object({
 });
 export const executiveDeliveryList=z.object({
  schemaVersion:z.literal("1.0"),workspaceId:z.string().uuid(),authorityRevision:z.string().min(1).max(200),serverNow:instant,
- schedules:z.array(executiveDeliverySchedule).max(2),deliveries:z.array(executiveDeliveryEvent).max(50),
+ schedules:z.array(executiveDeliverySchedule).max(20),deliveries:z.array(executiveDeliveryEvent).max(50),
  backgroundDeliveryAvailable:z.literal(false)
 }).strict().superRefine((value,context)=>{
- if(new Set(value.schedules.map(schedule=>schedule.definition.deliveryKind)).size!==value.schedules.length
+ const currentSchedules=value.schedules.filter(schedule=>schedule.status!=="cancelled");
+ if(new Set(currentSchedules.map(schedule=>schedule.definition.deliveryKind)).size!==currentSchedules.length
   ||value.deliveries.some(delivery=>!value.schedules.some(schedule=>schedule.scheduleId===delivery.scheduleId)))
   context.addIssue({code:"custom",message:"Delivery schedules or history could not be verified."});
 });
