@@ -1,6 +1,6 @@
 # Client shipment readiness
 
-Updated 2026-09-10. Overall status: **NOT READY TO SHIP**.
+Updated 2026-09-11. Overall status: **NOT READY TO SHIP**.
 
 A valid bundle manifest or skill is not a working client release. A local test
 is not an installed ChatGPT/Codex connection, and a synthetic timing result is
@@ -58,8 +58,10 @@ changes, or automatic website publishing.
 - [ ] Pilot with a small authorized, representative resource/project dataset.
 - [ ] Observe an unaided first useful outcome for each bundle; record corrections,
   source coverage, abandonment, repeated use, and measured time saved.
-- [ ] Validate approved non-production Entry/sign-in/consent and actual installed
-  ChatGPT/Codex invocation, update, removal and reconnect.
+- [x] Validate public-branch Codex install, discovery, routing, changed-version
+  refresh, cache replacement and removal with fictional, non-client data.
+- [ ] Validate approved non-production Entry/sign-in/consent and the actual
+  installed ChatGPT invocation, update, removal and reconnect experience.
 - [ ] Verify every enabled external provider against a real authorized connection;
   distinguish missing, disconnected, expired, revoked and unavailable states.
 - [ ] Exercise deployed recovery, rollback, privacy/export/retention, support,
@@ -75,6 +77,31 @@ paid infrastructure, publish marketplace listings, or connect client accounts.
 Both source repositories are intentionally public during development under the
 current launch plan; the bundle repository is expected to become private at
 launch. Backend entitlements—not repository visibility—must enforce paid capabilities.
+
+## P26 installed Sol quality checkpoint
+
+All six skills-only packages were installed together from the public feature ref
+and invoked in fresh, ephemeral, read-only Sol sessions against their fictional
+pilot packets. The final artifacts passed all observable checks: 23 of 24 rubric
+items and 17 of 18 safety checks. The two not-observable Workspace checks require
+real navigation and keyboard interaction. This same-model-family synthetic
+review is neither representative evidence nor a shipment decision.
+
+The exercise corrected two real defects. Executive's 8,241-character entrypoint
+was truncated by the installed host, so conditional weekly, meeting and delivery
+details moved to an on-demand reference; a new 7,500-byte packaging guard covers
+all six skills. The Executive pilot also gained an explicit named-zone scenario
+clock after a mixed-date packet caused unsupported ordering. Executive package
+0.2.2 produced the corrected evidence-linked brief without selected-skill
+truncation.
+
+Public marketplace refreshes adopted the deliberate 0.2.0 to 0.2.1 to 0.2.2
+changes. The old Executive cache was absent and every 0.2.1 installed file
+matched the refreshed snapshot by SHA-256. No client account, Workspace
+entitlement, provider, external action or public-directory submission was used.
+See [the installed Sol quality rehearsal](installed-sol-quality-rehearsal.md).
+Overall status remains **NOT READY TO SHIP** pending representative use,
+installed ChatGPT presentation and deployed acceptance.
 
 ## P22 grounded layout proposal checkpoint
 

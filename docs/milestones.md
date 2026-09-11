@@ -82,7 +82,9 @@ tests require exact identity/version/interface parity. No MCP, registered-app or
 provider file is claimed. Package structure and the repo marketplace validate
 locally. A controlled Codex CLI 0.153.4 rehearsal from the public feature ref
 passed import, six-package installation, fresh-session discovery, six positive
-routing cases, one negative control and clean removal. ChatGPT install-surface
-behavior, representative output quality and changed-version update remain
-separate P8 acceptance gates. See
+routing cases, one negative control and clean removal. A later installed Sol
+rehearsal exercised real 0.2.0 to 0.2.2 Executive refresh, corrected a selected-
+skill truncation and a missing scenario clock, and produced useful artifacts for
+all six fictional packets. This same-model-family rehearsal does not replace
+representative output-quality or ChatGPT install-surface acceptance. See
 [plugin packaging readiness](release/plugin-packaging-readiness.md).

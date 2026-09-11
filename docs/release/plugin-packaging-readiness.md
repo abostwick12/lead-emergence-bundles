@@ -12,9 +12,10 @@ Plugins packages. Each package contains:
 - OpenAI install-surface metadata under `extensions.com.openai.interface`; and
 - a matching `.codex-plugin/plugin.json` compatibility fallback.
 
-The package version is 0.2.0. This version identifies the packaging migration;
-it is independent from the version of each product bundle's functional
-contract.
+Writer & Editor, Ministry, Nonprofit Founder, Investor and Workspace Experience
+remain package version 0.2.0. Executive is package version 0.2.2 after installed
+host quality corrections. Package versions identify distribution changes and
+remain independent from each product bundle's functional contract.
 
 ## Truthful boundary
 
@@ -36,8 +37,10 @@ client installation record.
   interface metadata match exactly.
 - Portable root keys and names satisfy the published 1.0.0 schema constraints.
 - Every package supplies starter prompts and a root skill directory.
+- Every always-loaded skill entrypoint is at most 7,500 bytes; conditional
+  connected-workflow detail can live in on-demand references.
 - Tests reject accidental MCP, legacy MCP or registered-app declarations.
-- Repository typecheck and all 231 tests in 23 files pass.
+- Repository typecheck and all 238 tests in 24 files pass.
 
 ## Codex installed-host acceptance
 
@@ -72,20 +75,38 @@ both separately configured remote Lead Emergence MCP entries explicitly and made
 no handshake. This observation is host configuration evidence, not a capability
 of the six packages.
 
+## Changed-version and installed-output acceptance
+
+A second controlled lifecycle on 2026-09-11 exercised actual changed-version
+refresh rather than only no-change sync. The public feature ref advanced
+Executive from 0.2.0 to 0.2.1 and then 0.2.2. Each marketplace refresh adopted
+the new installed version automatically. The 0.2.1 cache contained no prior
+0.2.0 sibling, and its four files matched the refreshed Git snapshot by SHA-256.
+All four final 0.2.2 files also matched their refreshed snapshot. After the
+quality runs, all six packages and the temporary marketplace were removed,
+the empty cache root was deleted, and the preexisting 16 plugins remained.
+
+Six fresh read-only Sol sessions then invoked the package-qualified skills with
+their fictional pilot packets. All observable output-quality and safety
+criteria passed: 23 of 24 rubric items and 17 of 18 safety checks were observable
+and passed; the two remaining Workspace checks require interactive navigation
+and keyboard testing. The exercise found and corrected one selected-skill
+context truncation and one missing temporal anchor. Read
+[the installed Sol quality rehearsal](installed-sol-quality-rehearsal.md) for
+the scorecard, corrections and limitations.
+
 ## Open release gates
 
 Before client shipment, use the published feature ref in a controlled
 non-client environment and record:
 
 1. ChatGPT plugin-directory installation, presentation and new-chat discovery.
-2. A GitHub refresh that adopts a deliberately changed package version, followed
-   by verified cache replacement and rollback/removal.
-3. Representative end-to-end output-quality and safety evaluation for every
+2. Representative end-to-end output-quality and safety evaluation for every
    bundle, not only routing classification.
-4. Confirmation in each intended surface that installation grants neither
+3. Confirmation in each intended surface that installation grants neither
    Workspace entitlement nor a provider connection and cannot bypass
    direct-user approval.
-5. A final metadata and screenshot review on each intended client surface.
+4. A final metadata and screenshot review on each intended client surface.
 
 These tests require an installed host and, where applicable, an approved test
 account. They are not established by source validation. Public-directory

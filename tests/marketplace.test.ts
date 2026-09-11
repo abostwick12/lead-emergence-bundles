@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { bundleSlugs, loadArtifacts } from "./fixtures";
@@ -51,6 +51,7 @@ type CompatibilityPlugin = {
 
 describe("OpenAI repo marketplace", () => {
   const root = process.cwd();
+  const maximumInstalledSkillBytes = 7_500;
   const marketplace = JSON.parse(
     readFileSync(join(root, ".agents", "plugins", "marketplace.json"), "utf8")
   ) as Marketplace;
@@ -140,5 +141,17 @@ describe("OpenAI repo marketplace", () => {
       expect(pluginNames.has(artifact.manifest.distribution.pluginName)).toBe(true);
     }
     expect(bundleSlugs).toHaveLength(marketplace.plugins.length);
+  });
+
+  it("keeps installed skill entrypoints below the observed host truncation boundary", () => {
+    for (const entry of marketplace.plugins) {
+      const skillsRoot = join(root, entry.source.path, "skills");
+      const skillDirectories = readdirSync(skillsRoot, { withFileTypes: true })
+        .filter(item => item.isDirectory());
+      expect(skillDirectories).toHaveLength(1);
+      const skill = readFileSync(join(skillsRoot, skillDirectories[0].name, "SKILL.md"));
+      expect(skill.byteLength, `${entry.name} should use references before its entrypoint reaches the installed-host limit`)
+        .toBeLessThanOrEqual(maximumInstalledSkillBytes);
+    }
   });
 });
