@@ -19,7 +19,8 @@ const coverage=[
  ...executiveAllCapabilities.map(capabilityId=>({capabilityId,level:"record",state:"current",total:0})),
  ...Object.keys(executiveTaskKinds).map(capabilityId=>({capabilityId,level:"task",state:"current",total:capabilityId===task.capabilityId?1:0}))
 ];
-const snapshot={schemaVersion:"2.0",asOfDate:date,retrievedAt:now,items:[item],total:1,offset:0,limit:25,coverage};
+const snapshot={schemaVersion:"2.0",asOfDate:date,retrievedAt:now,items:[item],total:1,offset:0,limit:25,coverage,
+ groups:[{groupKey:"nonprofit_founder",priority:"high",total:1}]};
 describe("Executive individually consented task metadata",()=>{
  it("keeps record references valid and distinct from several tasks in the same record",()=>{
   const second={...task,item:{kind:"milestone",id}};
@@ -62,7 +63,7 @@ describe("Executive individually consented task metadata",()=>{
  });
  it("requires all 22 distinct coverage scopes and exact page totals",()=>{
   expect(executiveAttentionV2.safeParse(snapshot).success).toBe(true);
-  for(const patch of [{coverage:coverage.slice(1)},{coverage:[...coverage.slice(1),coverage[1]]},{total:2},{offset:1},
+  for(const patch of [{coverage:coverage.slice(1)},{coverage:[...coverage.slice(1),coverage[1]]},{total:2},{offset:1},{groups:[]},
    {items:[{...item,id:"unrelated"}]},{items:[{...item,owner:null}]},
    {coverage:coverage.map(c=>c.total?{...c,state:"not_shared"}:c)}])
    expect(executiveAttentionV2.safeParse({...snapshot,...patch}).success).toBe(false);
