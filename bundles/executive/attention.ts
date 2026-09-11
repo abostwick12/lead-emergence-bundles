@@ -116,7 +116,7 @@ export const executiveAttentionV2 = z.object({
     && c.level === (item.source.item ? "task" : "record") && c.state === "current")))
     issue("Every item must belong to a currently checked scope.");
   if(value.items.some(item=>!value.groups.some(group=>group.groupKey===executiveAttentionGroupForCapability(item.source.capabilityId))))
-    issue("Every attention item needs its source and priority group.");
+    issue("Every attention item needs its source group.");
 });
 
 // Cursors contain only a stable record/item identity, never a source title.
