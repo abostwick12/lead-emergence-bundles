@@ -1,6 +1,6 @@
 # Executive native coordination — implementation in progress
 
-Updated 2026-09-09. **All six bundles remain NOT READY TO SHIP.**
+Updated 2026-09-10. **All six bundles remain NOT READY TO SHIP.**
 P9f adds resumable availability planning and verifies the P9d/P9e/P9f database
 and connected assistant work against fictional accounts. All 116 optimized browser
 journeys pass; the final mobile spacing refinement passes all 28 affected cases.
@@ -31,7 +31,9 @@ Attention has 22 record/task scopes, exact totals and bounded pages.
 Unavailable/unshared counts are null. Source discovery uses title-only queries
 within an explicit scope, with stable identity cursors beyond the first fifty.
 Access and current state remain live; neither read promises a frozen snapshot.
-Parent/task cue grouping remains a refinement.
+Executive 0.6 adds complete non-zero totals by Executive, Writing, Ministry,
+Nonprofit and Investor source domain. Native page items are grouped under those
+domains while retaining priority order and exact source links.
 
 P9d source links target the exact on-screen task for ten mappings, expanding
 and focusing only that authorized editor's child. Invalid, missing or historical
@@ -82,12 +84,32 @@ Users can retain reviewed availability without choosing a time. Independent
 manual-time and planner drafts block save until applied/discarded. Closing the
 planner does not discard edits; controls cannot accidentally submit the form.
 
-Twenty scoped MCP tools still contain only five proposal writes. Authorized
+The scoped MCP toolset still contains only proposal writes. Authorized
 Executive meeting reads/proposals include the snapshot; consent discloses this.
 Attention and weekly metadata exclude it. Canonical save, approval, permissions
 and full history remain native-only. No tool books, sends or notifies.
 Skill-creation guidance kept the assistant's instructions aligned with explicit
 user review, snapshot/context checks and the proposal-only boundary.
+
+## Native review schedules — P23
+
+Executive 0.6 declares daily-brief and weekly-review schedules with named zones,
+local cadence, an always/meaningful-change policy and direct-user lifecycle.
+Cancelled configuration remains in history; only one non-cancelled schedule per
+review kind is allowed. Capability availability is reported separately so a
+retained schedule never implies revoked access can still run.
+
+Delivery evidence separates the complete current attention count from the
+bounded first-page count and its high-priority subset. Every ready cue targets
+an unsaved native editor and declares that user review is required, external
+delivery is false and canonical record creation is false. The assistant receives
+no schedule management or trigger tool.
+
+The current host has no background runner. A due occurrence is evaluated only
+when the direct user opens Executive, and missed occurrences do not flood later.
+See `docs/architecture/executive-native-delivery.md` for the portable contract,
+meaningful-change scope and daylight-saving requirements. Host runtime evidence
+is still required before the P23 checkpoint is publishable.
 
 ## Evidence and release boundary
 
@@ -118,9 +140,8 @@ all 28 affected navigation cases passed again (1.0 minute), with clearance
 assertions and final viewport inspection. The full 116 were not repeated after
 that spacing-only change; the final component rerun passed all ten cases.
 
-Remaining: approved recurring lifecycle and meaningful-change notifications;
-grouped attention; shared Workspace Experience consumers/preferences; crash
-recovery; representative quality/utility, installed-host, optional provider and
+Remaining: P23 host runtime acceptance; shared Workspace Experience consumers/preferences;
+representative quality/utility, installed-host, optional provider and
 deployed privacy/retention/commercial acceptance. Local success is not client
 readiness. No hosted migration, main merge, production deployment, provider/client
 connection, installed-plugin change or marketplace submission is included.
