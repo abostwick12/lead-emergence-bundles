@@ -15,7 +15,7 @@ not measured client value. This checklist prevents those substitutions.
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions, private server draft recovery across all four editors and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; installed-host and deployed backup/privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, private server draft recovery across all four editors, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; large-library ergonomics; installed-host and deployed backup/retention acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
 | Executive | Five native editors with private server draft recovery; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved scheduled-delivery lifecycle (native current-condition inbox implemented); grouped attention; authorized provider proof before booking; installed-host, representative utility and deployed backup/retention acceptance |
-| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette; 22 native-only record/task attention scopes, complete filtered counts and exact source/task links; confirmed Home attention widget; native grant/vault evidence center, unfinished-consent visibility and exact-reviewed disconnect with safe retries; eight native notification types with source-linked current conditions, complete counts and private read/dismiss/snooze/type preferences; shared private recovery contract for 16 domain editors; private content-free first-value checks for all six bundle promises | Grounded approval-only AI layout proposals; actual representative value/time-saved pilot; installed/deployed backup, privacy, retention and support acceptance |
+| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; grounded assistant layout context and immutable proposals with native-only preview/accept/reject, drift protection and no assistant decision tool; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette; 22 native-only record/task attention scopes, complete filtered counts and exact source/task links; confirmed Home attention widget; native grant/vault evidence center, unfinished-consent visibility and exact-reviewed disconnect with safe retries; eight native notification types with source-linked current conditions, complete counts and private read/dismiss/snooze/type preferences; shared private recovery contract for 16 domain editors; private content-free first-value checks for all six bundle promises | Actual representative value/time-saved pilot; installed/deployed backup, privacy, retention and support acceptance |
 
 Build the remaining native work without waiting on optional provider accounts.
 Do not replace missing integrations with fabricated data or claim planned tools
@@ -52,6 +52,9 @@ changes, or automatic website publishing.
 - [x] Provide a provider-neutral Writer publication queue with exact-revision
   review, explicit human confirmations, dated user-observed public-link evidence,
   derived blockers, stale-evidence handling and a non-publication handoff record.
+- [x] Let an admitted assistant read only active layout metadata and create an
+  immutable grounded recommendation while keeping preview, acceptance,
+  rejection and persistence exclusively in the native Workspace.
 - [ ] Pilot with a small authorized, representative resource/project dataset.
 - [ ] Observe an unaided first useful outcome for each bundle; record corrections,
   source coverage, abandonment, repeated use, and measured time saved.
@@ -72,6 +75,43 @@ paid infrastructure, publish marketplace listings, or connect client accounts.
 Both source repositories are intentionally public during development under the
 current launch plan; the bundle repository is expected to become private at
 launch. Backend entitlements—not repository visibility—must enforce paid capabilities.
+
+## P22 grounded layout proposal checkpoint
+
+Workspace Experience 0.5.0 now gives a connected assistant a deliberately small
+layout surface: it can read currently admitted navigation/widgets, available
+starting workspaces, current states and exact layout/access revisions. Dormant
+preferences remain only a count, so an unavailable bundle identity is never
+disclosed. The assistant can store a bounded recommendation only when every
+operation targets that active catalog and includes a clear reason grounded in a
+user-stated priority, current layout or enabled capability. Inference alone is
+not sufficient.
+
+The public Workspace branch independently validates and applies each operation
+inside the database. Proposals are immutable and exact-retry safe, become stale
+after layout or access drift, and preserve dormant choices. The assistant has no
+approval, rejection or layout-save tool. Only the direct native user can see the
+plain-language changes, preview the exact resulting layout, confirm acceptance
+or reject it. A manually edited preview leaves the proposal path and uses the
+ordinary user-owned save flow. Recent decisions remain available without
+crowding the active review surface.
+
+Portable validation passes 227 tests in 22 files. A fresh local database replay
+applies all 45 migrations, and the complete database matrix passes 1,569
+assertions across 30 suites, including 79 P22 assertions. Host validation passes
+353 tests in 42 files, strict type checking and lint. The optimized host exposes
+59 pages/routes. Actual loopback OAuth/PKCE/MCP acceptance passes four boundary
+groups, including filtered context, immutable proposal replay and native-only
+layout persistence. The connected assistant-to-native browser journey passes
+four desktop/mobile Chrome cases for preview, uncertain-response replay, stale
+blocking and rejection; the existing optimized native layout matrix passes all
+14 desktop/mobile cases. Focused screenshots pass visual and overflow review.
+
+This closes the provider-free local layout-proposal implementation, not the
+release. No installed ChatGPT/Codex host, representative client outcome,
+automatic recommendation-quality study, hosted recovery/privacy/support path,
+provider account or payment enforcement was exercised. Overall status remains
+**NOT READY TO SHIP**.
 
 ## P21 publication readiness checkpoint
 

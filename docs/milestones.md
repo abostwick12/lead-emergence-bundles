@@ -68,3 +68,9 @@ meaningful-change notification rules.
 Validate installation, GitHub sync, assignments/removal, provider authorization,
 Workspace/ChatGPT/Codex parity, security, observability, and public-readiness.
 Do not submit publicly without authorization.
+
+The provider-free Workspace product surface now includes grounded, immutable
+assistant layout recommendations. The connected assistant sees only the active
+catalog and exact revisions, while the direct native user alone previews,
+accepts, rejects or saves. Installed-host, hosted operations, representative
+value and commercial enforcement remain the P8 release gates.

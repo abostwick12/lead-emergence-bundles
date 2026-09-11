@@ -48,6 +48,8 @@ A conforming host must:
 
 ## Remaining release work
 
-This contract does not prove the Workspace host, installed assistant discovery,
-automatic recommendation quality, representative usefulness, hosted recovery,
-privacy/support operations or payment enforcement. Those gates remain separate.
+The Workspace integration branch now implements and locally verifies this
+contract through real loopback OAuth/PKCE/MCP plus native desktop/mobile review.
+That evidence does not prove installed-host discovery, automatic recommendation
+quality, representative usefulness, hosted recovery, privacy/support operations
+or payment enforcement. Those gates remain separate.
