@@ -95,6 +95,24 @@ context truncation and one missing temporal anchor. Read
 [the installed Sol quality rehearsal](installed-sol-quality-rehearsal.md) for
 the scorecard, corrections and limitations.
 
+## ChatGPT surface attempt
+
+Official OpenAI guidance describes the supported pre-submission path:
+an eligible workspace administrator imports the GitHub repository through
+Admin > Plugins > Import marketplace, selects the repository branch, reviews
+the imported plugins and uses Sync now for updates. Import does not grant app
+access or connect member accounts. See
+[plugin management](https://learn.chatgpt.com/docs/enterprise/plugin-management)
+and [plugin use](https://learn.chatgpt.com/docs/plugins).
+
+The authenticated Plus session available for this checkpoint exposed a Plugins
+entry, but the controlled in-app browser received a connection reset while
+loading its page. The admin import URL returned to ChatGPT Home rather than
+exposing an import surface. No GitHub authorization, marketplace import, plugin
+installation or account connection occurred. ChatGPT presentation and new-chat
+discovery therefore remain unverified and require an eligible admin surface
+that can load the directory.
+
 ## Open release gates
 
 Before client shipment, use the published feature ref in a controlled

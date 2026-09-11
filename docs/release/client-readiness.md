@@ -101,7 +101,10 @@ matched the refreshed snapshot by SHA-256. No client account, Workspace
 entitlement, provider, external action or public-directory submission was used.
 See [the installed Sol quality rehearsal](installed-sol-quality-rehearsal.md).
 Overall status remains **NOT READY TO SHIP** pending representative use,
-installed ChatGPT presentation and deployed acceptance.
+installed ChatGPT presentation and deployed acceptance. A controlled Plus
+session exposed the Plugins navigation entry, but the in-app browser could not
+load the directory and the admin URL did not expose marketplace import. No
+GitHub authorization or ChatGPT installation occurred.
 
 ## P22 grounded layout proposal checkpoint
 
