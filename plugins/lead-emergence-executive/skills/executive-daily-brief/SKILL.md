@@ -58,27 +58,9 @@ No matching saved-record signals is not proof that all work is complete or that
 nothing materially changed. Do not infer market, inbox or calendar monitoring.
 A revoked source is an access change, never evidence that its work was resolved.
 
-For a weekly review, use `executive_weekly_outcomes` when available with one to
-seven inclusive local dates and an explicit named time zone. It requires current
-weekly-review access and separately checks each Executive source capability.
-It reads a fixed projection of retained saved revisions, not full private audit
-bodies or other bundles' history. Otherwise, work from supplied evidence and
-state that historical coverage could not be checked.
-
-Keep `recordedThrough` unchanged when paging. Every page rechecks current
-access; the cutoff is not a frozen snapshot. Count recorded changes, not unique
-accomplishments: the same work can be completed, corrected and reopened.
-`recordedAt` is the saved-revision time. `reportedDate` is a user-recorded
-completion or decision date and can fall outside the week. A planned meeting
-time is not proof of when it actually occurred. Preserve inferred review states,
-corrections, reversals, withdrawn outcomes and current status.
-
-Use historical revisions for provenance, then fetch current revisions before
-proposing edits. Removed actions can remain in historical outcomes; open their
-parent to inspect saved history instead of inventing a current task. Native
-draft preparation links current parent records without copying outcome titles.
-State first-page/reference limits. Combine this historical view with current
-attention for unresolved work; neither alone proves a complete week's activity.
+For weekly reviews, meeting availability or Executive delivery schedules, read
+[connected workflows](references/connected-workflows.md) before using their
+specialized tools or interpreting their retained state.
 
 ## Preserve user control
 
@@ -98,40 +80,7 @@ and blockers explicit. Do not fabricate commitments on someone else's behalf.
 For decisions, preserve alternatives and tradeoffs; a decided/reversed record
 needs its selected option, decision date and rationale.
 
-## Meetings and follow-through
-
-Meeting plans are not calendar bookings. Scheduling support compares explicit
-offered/available/busy windows with offsets and recently checked provenance.
-Ask for the missing availability when needed; do not infer it from an empty
-calendar response or a disconnected provider. Preserve the named display time
-zone and actual instants through daylight-saving transitions. A candidate time
-still requires agreement. A changed AI-proposed time cannot retain a claim of
-user-reported agreement.
-
-Native meeting plans can retain an optional availability snapshot: explicit
-offered, available and known-busy instant windows, source, checkedAt, duration,
-buffer, display zone and the participants it was reviewed for. It is user-
-supplied coordination data, not a connected calendar. Do not invent a calendar
-check or carry checked confirmation forward after changing its underlying input.
-Keep historical snapshots as evidence; recheck within 24 hours before suggesting
-a new time, and re-evaluate if participants, duration or zone changed.
-
-The native planner compares merged available/offered windows, respects known
-conflicts and buffers, and presents at most three proposed options. Choosing one
-still requires exact native save and agreement; it does not send an invitation.
-Assistants preserve the full current meeting through the proposal-only workflow.
-Private availability windows must not enter cross-bundle attention or weekly
-outcome projections, invitation text or a public export without explicit review.
-
-Keep actions linked to the meeting outcome. External invitations, outreach,
-scheduled automations, notification rules and persistent layout changes each
-need their own current, exact user approval and a supported execution path.
-If execution is unavailable, report that boundary and provide the draft.
-
-Executive brief-delivery schedules are created, changed, paused, resumed and
-cancelled only by the direct user in native Workspace. They create a native
-inbox handoff to a still-unsaved brief or review; they do not create a canonical
-record, send externally or authorize an assistant action. A meaningful-change
-policy compares a bounded attention summary and first page, not inboxes,
-calendars, live markets or unshared work. Without a deployed background runner,
-due schedules are evaluated when the native Workspace is opened; say so plainly.
+External invitations, outreach, scheduled automations, notification rules and
+persistent layout changes each need their own current, exact user approval and
+a supported execution path. If execution is unavailable, report that boundary
+and provide the draft.
