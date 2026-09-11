@@ -34,9 +34,12 @@ bounded review-first text/Markdown/Word/text-PDF intake; resumable 20-item
 library staging with isolated file failures, editable type/source metadata,
 exact duplicate warnings and confirmed atomic import; canonical metadata;
 immutable proposals; native-only approval; source-preserving revision history;
-and an assistant proposal tool. It does not connect or mutate Wix. Representative
-full-library quality, link verification, read-only Wix evidence, client testing
-and real installed-host/provider acceptance remain open.
+an assistant proposal tool; and a provider-neutral readiness queue with exact-
+revision human review, user-observed public-link evidence, explicit blockers and
+an honest handoff record. It does not fetch a destination, publish, connect to or
+mutate Wix. Representative full-library quality, real-site link quality,
+authorized read-only Wix evidence, client testing and installed-host/provider
+acceptance remain open.
 Track all six bundles in [client shipment readiness](release/client-readiness.md).
 
 ## P4 — Ministry

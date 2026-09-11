@@ -10,7 +10,7 @@ not measured client value. This checklist prevents those substitutions.
 
 | Bundle | Implemented foundation | Required before client shipment |
 | --- | --- | --- |
-| Writer & Editor | Real native library, source-led review, secure review-first text/Markdown/Word/text-PDF intake, resumable 20-item private library staging with per-file failures, editable taxonomy fields, exact staged/existing duplicate signals, include/exclude review and one confirmed atomic import, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search, evidence-led related candidates, confirmed writing preferences, approval-backed preferred taxonomy and saved-revision publication packets | Representative full-library/document-quality migration; link evidence; authorized read-only Wix proof before any Wix mutation; representative-library and user-value pilot; installed-host and shared release acceptance |
+| Writer & Editor | Real native library, source-led review, secure review-first text/Markdown/Word/text-PDF intake, resumable 20-item private library staging with per-file failures, editable taxonomy fields, exact staged/existing duplicate signals, include/exclude review and one confirmed atomic import, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search, evidence-led related candidates, confirmed writing preferences, approval-backed preferred taxonomy and saved-revision publication packets, exact-revision publication readiness with human confirmations, dated user-observed public-link evidence and an explicit non-publication handoff | Representative full-library/document-quality migration; real client-site link quality and authorized read-only Wix proof before any Wix mutation; representative-library and user-value pilot; installed-host and shared release acceptance |
 | Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, secure review-first text/Markdown/Word/text-PDF archive intake, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; private server draft recovery across all three editors; six scoped connected tools | Representative theological/source evaluation; difficult-document and large-library ergonomics; installed-host, deployed backup/retention and first-use value acceptance; authorized optional Logos proof only for supported operations |
 | Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions, private server draft recovery across all four editors and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; installed-host and deployed backup/privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
 | Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, private server draft recovery across all four editors, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; large-library ergonomics; installed-host and deployed backup/retention acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
@@ -49,6 +49,9 @@ changes, or automatic website publishing.
   with preview-before-apply for Writer resources and Ministry archives.
 - [x] Provide resumable, tenant-private Writer library staging with bounded
   per-file failures, exact duplicate review and one confirmed atomic import.
+- [x] Provide a provider-neutral Writer publication queue with exact-revision
+  review, explicit human confirmations, dated user-observed public-link evidence,
+  derived blockers, stale-evidence handling and a non-publication handoff record.
 - [ ] Pilot with a small authorized, representative resource/project dataset.
 - [ ] Observe an unaided first useful outcome for each bundle; record corrections,
   source coverage, abandonment, repeated use, and measured time saved.
@@ -69,6 +72,42 @@ paid infrastructure, publish marketplace listings, or connect client accounts.
 Both source repositories are intentionally public during development under the
 current launch plan; the bundle repository is expected to become private at
 launch. Backend entitlements—not repository visibility—must enforce paid capabilities.
+
+## P21 publication readiness checkpoint
+
+The portable contract now defines one provider-neutral queue item for one exact
+saved Writer revision. Readiness is derived from current source state, unresolved
+proposals, required publication fields, three explicit human confirmations, a
+public-looking HTTPS destination and a current user-observed link result. A URL is
+never treated as verified merely because it was saved. Link observations become
+stale after 30 days or when the revision or destination changes.
+
+The public Workspace branch implements a private native queue with optimistic
+versions, immutable request identities, lost-response replay, audit revisions and
+link-evidence history. Readiness is recalculated inside every ready/handoff write.
+Rebasing to a newer resource resets confirmations; broken or access-limited
+evidence blocks progress; removal leaves a recoverable tombstone. OAuth-shaped
+assistants, anonymous users, revoked entitlements and other tenants cannot read,
+write, attest or replay the direct user's queue decisions.
+
+The interface carries a reviewed resource from its saved publication packet to a
+destination plan, deliberate human checks, a dated observation, a ready decision
+and an explicitly recorded handoff. It never fetches the URL, opens a provider on
+the server, publishes content or labels a handoff as publication.
+
+Portable validation passes 217 tests in 21 files. A fresh local database replay
+applies all 44 migrations, and the complete bundle database matrix passes 1,490
+assertions across 29 suites, including 87 P21 assertions. Host validation passes
+350 tests in 41 files, 33 schema-policy checks and 295 runtime-boundary checks.
+The optimized host exposes 59 pages/routes. The complete Writer browser matrix
+passes 28 desktop/mobile Chrome tests across six files with zero retries; the
+focused P21 run passes both viewports and its screenshots pass visual review.
+The dependency audit reports zero vulnerabilities.
+
+This closes the generic native readiness and user-observed link-evidence workflow,
+not the release. No real client destination, Wix account, installed host, hosted
+privacy/recovery/support path, payment enforcement or representative value pilot
+was exercised. Overall status remains **NOT READY TO SHIP**.
 
 ## P20 resumable Writer library checkpoint
 
@@ -94,7 +133,7 @@ passes mixed success/failure extraction, reload recovery, exact duplicate review
 explicit exclusion and a deliberately lost commit-response replay.
 
 This closes the generic native bulk-staging implementation, not the release.
-Representative client documents, measured unaided value, complete link/Wix
+Representative client documents, measured unaided value, real client-site/Wix
 evidence, installed-host behavior, hosted privacy/recovery/support, provider and
 commercial enforcement gates remain open. Overall status remains **NOT READY TO
 SHIP**.

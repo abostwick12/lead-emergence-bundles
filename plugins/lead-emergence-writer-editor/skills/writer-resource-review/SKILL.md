@@ -84,6 +84,16 @@ identifiers to outward-facing copy. If the resource changed, reread it before
 preparing a new packet. Workspace provides native text and structured downloads;
 do not claim a local file or external publication unless that action occurred.
 
+Workspace also has a native publication-readiness queue. The connected
+assistant cannot read or change that queue, attest that a link was opened, or
+record a handoff for the user. When ongoing readiness tracking would help,
+direct the user to prepare the saved packet on the resource and add that exact
+revision to Publication queue in Workspace. There the user can record a public
+HTTPS destination, dated link observation, accuracy/quotation review, voice
+review, rights confirmation, and an exact-revision handoff. Treat unchecked,
+stale, and error evidence as blockers. A queue stage or handoff record is never
+proof that a site was published or that Wix is connected.
+
 Review only the dimensions useful for the request:
 
 - clarity, structure, accuracy, consistency, and voice;

@@ -53,7 +53,9 @@ failed link evidence.
 
 ## Remaining release work
 
-This contract does not prove a host implementation, real client link quality,
-Wix read access, publication permissions, installed-host behavior, hosted
-privacy/recovery, representative value or commercial readiness. Those gates
-remain separate and must not be inferred from schema validation.
+The Workspace reference host implements this contract on its public
+`codex2/bundle-experience-integration` branch with fictional loopback acceptance.
+That implementation does not prove real client link quality, Wix read access,
+publication permissions, installed-host behavior, hosted privacy/recovery,
+representative value or commercial readiness. Those gates remain separate and
+must not be inferred from local schema or browser validation.
