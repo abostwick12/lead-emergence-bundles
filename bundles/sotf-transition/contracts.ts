@@ -1,5 +1,14 @@
 import { z } from "zod";
 
+export const SOTF_OPERATING_LOOP = [
+  "conversation",
+  "decision",
+  "action",
+  "evidence",
+  "learning",
+  "better_next_decision"
+] as const;
+
 export const transitionEvidenceSchema = z.object({
   id: z.string().trim().min(1),
   observation: z.string().trim().min(1),

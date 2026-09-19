@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { reviewTransitionLoop } from "../bundles/sotf-transition/contracts";
+import { reviewTransitionLoop, SOTF_OPERATING_LOOP } from "../bundles/sotf-transition/contracts";
 import { loadArtifacts } from "./fixtures";
 
 describe("SOTF bundle", () => {
@@ -34,6 +34,14 @@ describe("SOTF bundle", () => {
   });
 
   it("defines the transition operating loop without a host implementation", () => {
+    expect(SOTF_OPERATING_LOOP).toEqual([
+      "conversation",
+      "decision",
+      "action",
+      "evidence",
+      "learning",
+      "better_next_decision"
+    ]);
     expect(artifact.manifest.workflows.map((item) => item.id)).toEqual([
       "sotf.workflow.clarify_direction",
       "sotf.workflow.assess_opportunity",
