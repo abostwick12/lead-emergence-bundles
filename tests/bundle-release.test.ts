@@ -5,6 +5,7 @@ import {
   bundleArtifactDigest,
   bundleReleaseSchema,
   createBundleRelease,
+  releaseChannelSchema,
   type BundleReleaseArtifact,
   type BundleReleaseMetadata
 } from "@lead-emergence/bundle-release";
@@ -33,6 +34,15 @@ function sotf100(): BundleReleaseArtifact {
 }
 
 describe("Bundle release catalog", () => {
+  it("accepts only the three explicit release channels", () => {
+    expect(["development", "beta", "stable"].map((item) => releaseChannelSchema.parse(item))).toEqual([
+      "development",
+      "beta",
+      "stable"
+    ]);
+    expect(releaseChannelSchema.safeParse("production").success).toBe(false);
+  });
+
   it("records the SOTF 1.0.0 baseline against the source revision containing its artifact", () => {
     const recorded = bundleReleaseSchema.parse(JSON.parse(readFileSync(
       "bundles/sotf-transition/releases/1.0.0.json",
@@ -60,6 +70,18 @@ describe("Bundle release catalog", () => {
     expect(catalog.register(release100, artifact100)).toEqual(release100);
     expect(catalog.register(release101, artifact101)).toEqual(release101);
     expect(catalog.list("sotf_transition").map((item) => item.version)).toEqual(["1.0.0", "1.0.1"]);
+    expect(catalog.get("sotf_transition", "1.0.0")?.release).toEqual(release100);
+    expect(catalog.get("sotf_transition", "1.0.1")?.release).toEqual(release101);
+  });
+
+  it("rejects malformed artifacts before they enter release inventory", () => {
+    const catalog = new BundleReleaseCatalog();
+    const artifact = sotf100();
+    const release = createBundleRelease(artifact, baseMetadata);
+    const malformed = structuredClone(artifact);
+    malformed.uiManifest.bundleKey = "executive";
+    expect(() => catalog.register(release, malformed)).toThrow(/keys must match/);
+    expect(catalog.list("sotf_transition")).toEqual([]);
   });
 
   it("handles an exact duplicate deterministically and rejects version reuse with different bytes", () => {
