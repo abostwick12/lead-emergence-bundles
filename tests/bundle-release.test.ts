@@ -1,6 +1,9 @@
+import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import {
   BundleReleaseCatalog,
+  bundleArtifactDigest,
+  bundleReleaseSchema,
   createBundleRelease,
   type BundleReleaseArtifact,
   type BundleReleaseMetadata
@@ -30,6 +33,20 @@ function sotf100(): BundleReleaseArtifact {
 }
 
 describe("Bundle release catalog", () => {
+  it("records the SOTF 1.0.0 baseline against the source revision containing its artifact", () => {
+    const recorded = bundleReleaseSchema.parse(JSON.parse(readFileSync(
+      "bundles/sotf-transition/releases/1.0.0.json",
+      "utf8"
+    )));
+    expect(recorded).toMatchObject({
+      bundleKey: "sotf_transition",
+      version: "1.0.0",
+      sourceRevision: "100f503f492df359357e2e83a74d55681fb62249",
+      validation: { state: "passed", deterministic: true }
+    });
+    expect(recorded.artifactDigest).toBe(bundleArtifactDigest(sotf100()));
+  });
+
   it("keeps multiple immutable releases for one logical bundle key", () => {
     const catalog = new BundleReleaseCatalog();
     const artifact100 = sotf100();
