@@ -68,7 +68,8 @@ describe("entitlement-derived bundle composition", () => {
       "Writing",
       "Ministry",
       "Nonprofit",
-      "Investing"
+      "Investing",
+      "SOTF"
     ]);
   });
 

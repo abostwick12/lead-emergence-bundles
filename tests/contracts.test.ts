@@ -3,7 +3,7 @@ import { BundleRegistry } from "@lead-emergence/bundle-registry";
 import { loadArtifacts } from "./fixtures";
 
 describe("Bundle Contract", () => {
-  it("validates all six independent bundle and UI artifacts", () => {
+  it("validates all seven independent bundle and UI artifacts", () => {
     const artifacts = loadArtifacts();
     expect(artifacts.map((item) => item.manifest.identity.key)).toEqual([
       "executive",
@@ -11,7 +11,8 @@ describe("Bundle Contract", () => {
       "ministry",
       "nonprofit_founder",
       "investor",
-      "workspace_experience"
+      "workspace_experience",
+      "sotf_transition"
     ]);
     for (const artifact of artifacts) {
       expect(artifact.manifest.schemaVersion).toBe("1.0");
@@ -23,7 +24,7 @@ describe("Bundle Contract", () => {
   it("registers UI references only when capabilities, workflows, attention, and actions exist", () => {
     const registry = new BundleRegistry();
     for (const artifact of loadArtifacts()) registry.register(artifact);
-    expect(registry.list()).toHaveLength(6);
+    expect(registry.list()).toHaveLength(7);
   });
 
   it("keeps presentation in a separate declarative artifact", () => {

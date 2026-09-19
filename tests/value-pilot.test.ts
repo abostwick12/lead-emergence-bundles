@@ -42,7 +42,7 @@ describe("bundle value pilot contract", () => {
       promise: "A useful outcome.", firstRunOutcome: "One useful outcome.", targetMinutes: 10,
       successSignals: [{ id: `${bundleKey}.signal.complete`, description: "A user-reported useful result." }],
       qualityGates: requiredGates, workspaceRoute: "/workspace", available: true });
-    const keys = ["executive", "writer_editor", "ministry", "nonprofit_founder", "investor", "workspace_experience"];
+    const keys = ["executive", "writer_editor", "ministry", "nonprofit_founder", "investor", "workspace_experience", "sotf_transition"];
     expect(valuePilotDashboard.safeParse({ schemaVersion: "1.0", generatedAt: "2026-09-10T12:08:00Z",
       definitions: keys.map(definition), sessions: [base] }).success).toBe(true);
     expect(valuePilotDashboard.safeParse({ schemaVersion: "1.0", generatedAt: "2026-09-10T12:08:00Z",

@@ -46,6 +46,13 @@ export const appRequirementSchema = z.object({
   status: z.enum(["planned", "available", "requires_authorization"])
 }).strict();
 
+export const hostPrerequisiteSchema = z.object({
+  id: capabilityIdSchema,
+  minimumContractVersion: semverSchema,
+  required: z.boolean(),
+  purpose: z.string().trim().min(1).max(500)
+}).strict();
+
 export const automationDefinitionSchema = z.object({
   id: capabilityIdSchema,
   workflowId: capabilityIdSchema,
@@ -89,6 +96,7 @@ export const bundleManifestSchema = z.object({
   workflows: z.array(workflowDefinitionSchema),
   providerRequirements: z.array(providerRequirementSchema),
   appRequirements: z.array(appRequirementSchema),
+  hostPrerequisites: z.array(hostPrerequisiteSchema).default([]),
   permissions: z.object({
     dataScopes: z.array(z.string().trim().min(1).max(100)),
     contextScopes: z.array(z.string().trim().min(1).max(100)),
@@ -138,6 +146,10 @@ export const bundleManifestSchema = z.object({
     if (!workflowIds.has(automation.workflowId)) {
       context.addIssue({ code: "custom", message: `Automation ${automation.id} references unknown workflow ${automation.workflowId}` });
     }
+  }
+  const prerequisiteIds = bundle.hostPrerequisites.map((item) => item.id);
+  if (new Set(prerequisiteIds).size !== prerequisiteIds.length) {
+    context.addIssue({ code: "custom", message: "Every host prerequisite id must be unique" });
   }
 });
 

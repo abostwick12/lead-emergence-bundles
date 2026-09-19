@@ -6,7 +6,8 @@
 verified identity
   -> server-mapped tenant and workspace
   -> entitlement snapshot
-  -> bundle registry
+  -> logical bundle registry
+  -> host release resolver (not implemented in this slice)
   -> capability registry
   -> workflow, provider, provenance, and policy gates
   -> declarative UI manifests
@@ -44,7 +45,11 @@ snake-case form. Filesystem and plugin names use lower kebab-case.
   quick actions, search providers, command actions, notifications, empty states,
   and settings without referencing React components.
 - The Bundle Registry resolves only active, time-valid assignments from a
-  server-bound entitlement snapshot.
+  server-bound entitlement snapshot. Entitlements identify logical bundle keys;
+  they do not select artifact versions.
+- The Bundle Release Catalog stores immutable, content-addressed versions and
+  explicit `development`, `beta`, and `stable` channel state. It does not read
+  entitlements, persist a Workspace pointer, or authorize host execution.
 - The Capability Registry rejects duplicate capability IDs and returns only
   capabilities belonging to entitled bundles.
 - The policy layer enforces tenant, workspace, domain, provider, and
@@ -86,3 +91,6 @@ next entitlement resolution; no application deployment is required.
 
 AI can propose layout changes. Only user-confirmed preferences may persistently
 change pins, hidden items, ordering, or the default workspace.
+
+See [Bundle release resolution](bundle-release-resolution.md) for the boundary
+between logical entitlement and deployable release selection.

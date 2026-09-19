@@ -1,0 +1,27 @@
+{
+  "name": "lead-emergence-sotf",
+  "version": "1.0.0",
+  "description": "Evidence-grounded transition direction, opportunity assessment, and learning loops.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": ["transition", "career", "opportunities", "learning"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lead Emergence SOTF",
+    "shortDescription": "Turn transition uncertainty into a grounded next move.",
+    "longDescription": "Clarify direction, assess opportunities, prepare conversations, and review transition learning without inventing host access or durable facts.",
+    "developerName": "Lead Emergence",
+    "category": "Productivity",
+    "capabilities": ["Read", "Propose"],
+    "defaultPrompt": [
+      "Help me clarify my transition direction.",
+      "Assess this opportunity against my current hypothesis.",
+      "Prepare my evidence-grounded transition brief."
+    ],
+    "brandColor": "#173B3F"
+  }
+}

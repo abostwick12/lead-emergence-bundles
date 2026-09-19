@@ -17,7 +17,7 @@ const completed = (bundleKey: keyof typeof representativePilotKitByBundle, index
 describe("representative bundle pilot kits", () => {
   it("defines one bounded synthetic scenario for every bundle manifest", () => {
     const bundleArtifacts = loadArtifacts();
-    expect(representativePilotKits).toHaveLength(6);
+    expect(representativePilotKits).toHaveLength(7);
     expect(new Set(representativePilotKits.map(kit => kit.bundleKey))).toEqual(new Set(bundleArtifacts.map(item => item.manifest.identity.key)));
     for (const artifact of bundleArtifacts) {
       const kit = representativePilotKitByBundle[artifact.manifest.identity.key as keyof typeof representativePilotKitByBundle];
