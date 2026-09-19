@@ -1,0 +1,11 @@
+node_modules/
+coverage/
+dist/
+.validator-deps/
+.validator-deps-local/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store

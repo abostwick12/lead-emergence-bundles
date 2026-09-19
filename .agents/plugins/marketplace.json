@@ -1,0 +1,80 @@
+{
+  "name": "lead-emergence-bundles",
+  "interface": {
+    "displayName": "Lead Emergence Bundles"
+  },
+  "plugins": [
+    {
+      "name": "lead-emergence-executive",
+      "source": {
+        "source": "local",
+        "path": "./plugins/lead-emergence-executive"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-writer-editor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/lead-emergence-writer-editor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-ministry",
+      "source": {
+        "source": "local",
+        "path": "./plugins/lead-emergence-ministry"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-nonprofit-founder",
+      "source": {
+        "source": "local",
+        "path": "./plugins/lead-emergence-nonprofit-founder"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-investor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/lead-emergence-investor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-workspace-experience",
+      "source": {
+        "source": "local",
+        "path": "./plugins/lead-emergence-workspace-experience"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

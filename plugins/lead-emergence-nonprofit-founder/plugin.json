@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lead-emergence-nonprofit-founder",
+  "version": "0.2.0",
+  "description": "Source-aware nonprofit formation, governance, partnership, and launch workflows.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": ["nonprofit", "founder", "governance", "partnerships", "fundraising"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Lead Emergence Nonprofit Founder",
+        "shortDescription": "Turn a nonprofit idea into defensible next moves.",
+        "longDescription": "Prepare founder roadmaps, partner follow-ups, and source-first research while staying outside clinical and legal decision-making.",
+        "developerName": "Lead Emergence",
+        "category": "Productivity",
+        "capabilities": ["Read", "Propose"],
+        "defaultPrompt": [
+          "Build my nonprofit founder roadmap.",
+          "Review our partner follow-ups.",
+          "Research this nonprofit requirement."
+        ],
+        "brandColor": "#2F6F63"
+      }
+    }
+  }
+}

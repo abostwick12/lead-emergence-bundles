@@ -1,0 +1,640 @@
+# Client shipment readiness
+
+Updated 2026-09-11. Overall status: **NOT READY TO SHIP**.
+
+A valid bundle manifest or skill is not a working client release. A local test
+is not an installed ChatGPT/Codex connection, and a synthetic timing result is
+not measured client value. This checklist prevents those substitutions.
+
+## Bundle acceptance map
+
+| Bundle | Implemented foundation | Required before client shipment |
+| --- | --- | --- |
+| Writer & Editor | Real native library, source-led review, secure review-first text/Markdown/Word/text-PDF intake, resumable 20-item private library staging with per-file failures, editable taxonomy fields, exact staged/existing duplicate signals, include/exclude review and one confirmed atomic import, immutable proposals, explicit user approval, source/metadata revision history, proposal-only MCP flow, private draft recovery, full-text search, evidence-led related candidates, confirmed writing preferences, approval-backed preferred taxonomy and saved-revision publication packets, exact-revision publication readiness with human confirmations, dated user-observed public-link evidence and an explicit non-publication handoff | Representative full-library/document-quality migration; real client-site link quality and authorized read-only Wix proof before any Wix mutation; representative-library and user-value pilot; installed-host and shared release acceptance |
+| Ministry | Independent private theological profile, source-layered research projects, citation-linked notes, teaching outlines, secure review-first text/Markdown/Word/text-PDF archive intake, native proposal comparison/approval, original-version recovery, searchable prior teaching and saved-revision bibliography handoff; private server draft recovery across all three editors; six scoped connected tools | Representative theological/source evaluation; difficult-document and large-library ergonomics; installed-host, deployed backup/retention and first-use value acceptance; authorized optional Logos proof only for supported operations |
+| Nonprofit Founder | Native roadmaps with dependencies, administrative partner/volunteer/donor follow-up, meetings/actions, source-first research records, saved handoffs, recoverable proposals/revisions, private server draft recovery across all four editors and thirteen scoped connected tools | Representative regulatory/grant source-quality evaluation; unaided first-use/value and large-project ergonomics; installed-host and deployed backup/privacy/retention acceptance; real provider proof before outreach/calendar actions; free text is not PHI detection |
+| Investor | Independent native watchlists, theses, filing reviews and market briefs; linked supporting/challenging claims, date/lag warnings, catalysts, explicit scenarios, recoverable proposals/versions, private server draft recovery across all four editors, saved handoffs and fourteen scoped connected tools | Representative source/thesis-quality and unaided value evaluation; large-library ergonomics; installed-host and deployed backup/retention acceptance; live SEC success (one actual public request was declined); no personal account requirement or trading |
+| Executive | Five native editors with private server draft recovery; recoverable proposals/versions and saved handoffs; separately confirmed record/task controls; paged attention and source discovery; exact-child navigation; recorded weekly outcomes; resumable user-reviewed availability planning; twenty scoped connected tools | Approved scheduled-delivery lifecycle (native current-condition inbox implemented); grouped attention; authorized provider proof before booking; installed-host, representative utility and deployed backup/retention acceptance |
+| Workspace Experience | Ordinary sixth-bundle assignment; capability-filtered composition; confirmed pin/hide/order/starting-workspace controls; preview, version recovery, stale-tab and exact-retry protection; dormant choices across revocation; grounded assistant layout context and immutable proposals with native-only preview/accept/reject, drift protection and no assistant decision tool; native-only persistence independent of editor authority; sixteen native-only saved-work search scopes; ten implemented quick actions and a keyboard palette; 22 native-only record/task attention scopes, complete filtered counts and exact source/task links; confirmed Home attention widget; native grant/vault evidence center, unfinished-consent visibility and exact-reviewed disconnect with safe retries; eight native notification types with source-linked current conditions, complete counts and private read/dismiss/snooze/type preferences; shared private recovery contract for 16 domain editors; private content-free first-value checks for all six bundle promises | Actual representative value/time-saved pilot; installed/deployed backup, privacy, retention and support acceptance |
+
+Build the remaining native work without waiting on optional provider accounts.
+Do not replace missing integrations with fabricated data or claim planned tools
+are available. No clinical record system, trades, hidden persistent layout
+changes, or automatic website publishing.
+
+## Shared release gates
+
+- [x] Bundle Contract 1.0 and UI Manifest Contract 1.0 validate for all six bundles.
+- [x] Reusable contracts stay outside Workspace; host imports a pinned allowlist.
+- [x] Writer identity, entitlement, revocation and other-tenant boundaries tested.
+- [x] Writer import → proposal → comparison → approval → reload/history tested in
+  desktop and mobile-emulated Chrome against an optimized local app.
+- [x] Actual loopback OAuth/PKCE/MCP: assistant proposal succeeds; approval fails
+  even via direct RPC; revoked connection and bundle access fail closed.
+- [x] Writer reload/lost-response recovery, two-tab conflicts, explicit stale-draft
+  comparison and approval-backed related metadata pass in optimized desktop/mobile.
+- [x] Unfinished drafts denied to real OAuth assistant credentials even via direct RPC.
+- [x] Implement all six promised native workflows and their domain-private storage.
+- [x] Protect unfinished native work with explicit private recovery across Writer
+  and all 16 Ministry, Nonprofit, Investor and Executive editor kinds.
+- [x] Provide a privacy-safe first-value measurement path for every bundle that
+  fixes the baseline before work and labels user reports honestly.
+- [x] Define one comparable representative-pilot kit per bundle with fictional
+  rehearsal data, unaided scripts, quality rubrics, safety checks, and a
+  structured controlled-beta decision rule.
+- [x] Prove negative cross-domain operations for every implemented bundle pair,
+  including Workspace Experience's native-only aggregate boundary and
+  Executive's explicit metadata-only exception.
+- [x] Provide bounded, signature-checked, non-retained Word and text-PDF intake
+  with preview-before-apply for Writer resources and Ministry archives.
+- [x] Provide resumable, tenant-private Writer library staging with bounded
+  per-file failures, exact duplicate review and one confirmed atomic import.
+- [x] Provide a provider-neutral Writer publication queue with exact-revision
+  review, explicit human confirmations, dated user-observed public-link evidence,
+  derived blockers, stale-evidence handling and a non-publication handoff record.
+- [x] Let an admitted assistant read only active layout metadata and create an
+  immutable grounded recommendation while keeping preview, acceptance,
+  rejection and persistence exclusively in the native Workspace.
+- [ ] Pilot with a small authorized, representative resource/project dataset.
+- [ ] Observe an unaided first useful outcome for each bundle; record corrections,
+  source coverage, abandonment, repeated use, and measured time saved.
+- [x] Validate public-branch Codex install, discovery, routing, changed-version
+  refresh, cache replacement and removal with fictional, non-client data.
+- [ ] Validate approved non-production Entry/sign-in/consent and the actual
+  installed ChatGPT invocation, update, removal and reconnect experience.
+- [ ] Verify every enabled external provider against a real authorized connection;
+  distinguish missing, disconnected, expired, revoked and unavailable states.
+- [ ] Exercise deployed recovery, rollback, privacy/export/retention, support,
+  entitlement operations, payment enforcement and monitoring.
+- [ ] Obtain the required hosted migration/deployment approvals from the proper owner.
+- [ ] Make the final shipment decision from evidence, not this checklist alone.
+
+## Release constraints
+
+Only the owned integration/source branches may be published under current
+approval. Do not merge main, deploy production, apply hosted migrations, create
+paid infrastructure, publish marketplace listings, or connect client accounts.
+Both source repositories are intentionally public during development under the
+current launch plan; the bundle repository is expected to become private at
+launch. Backend entitlements—not repository visibility—must enforce paid capabilities.
+
+## P26 installed Sol quality checkpoint
+
+All six skills-only packages were installed together from the public feature ref
+and invoked in fresh, ephemeral, read-only Sol sessions against their fictional
+pilot packets. The final artifacts passed all observable checks: 23 of 24 rubric
+items and 17 of 18 safety checks. The two not-observable Workspace checks require
+real navigation and keyboard interaction. This same-model-family synthetic
+review is neither representative evidence nor a shipment decision.
+
+The exercise corrected two real defects. Executive's 8,241-character entrypoint
+was truncated by the installed host, so conditional weekly, meeting and delivery
+details moved to an on-demand reference; a new 7,500-byte packaging guard covers
+all six skills. The Executive pilot also gained an explicit named-zone scenario
+clock after a mixed-date packet caused unsupported ordering. Executive package
+0.2.2 produced the corrected evidence-linked brief without selected-skill
+truncation.
+
+Public marketplace refreshes adopted the deliberate 0.2.0 to 0.2.1 to 0.2.2
+changes. The old Executive cache was absent and every 0.2.1 installed file
+matched the refreshed snapshot by SHA-256. No client account, Workspace
+entitlement, provider, external action or public-directory submission was used.
+See [the installed Sol quality rehearsal](installed-sol-quality-rehearsal.md).
+Overall status remains **NOT READY TO SHIP** pending representative use,
+installed ChatGPT presentation and deployed acceptance. A controlled Plus
+session exposed the Plugins navigation entry, but the in-app browser could not
+load the directory and the admin URL did not expose marketplace import. No
+GitHub authorization or ChatGPT installation occurred.
+
+## P22 grounded layout proposal checkpoint
+
+Workspace Experience 0.5.0 now gives a connected assistant a deliberately small
+layout surface: it can read currently admitted navigation/widgets, available
+starting workspaces, current states and exact layout/access revisions. Dormant
+preferences remain only a count, so an unavailable bundle identity is never
+disclosed. The assistant can store a bounded recommendation only when every
+operation targets that active catalog and includes a clear reason grounded in a
+user-stated priority, current layout or enabled capability. Inference alone is
+not sufficient.
+
+The public Workspace branch independently validates and applies each operation
+inside the database. Proposals are immutable and exact-retry safe, become stale
+after layout or access drift, and preserve dormant choices. The assistant has no
+approval, rejection or layout-save tool. Only the direct native user can see the
+plain-language changes, preview the exact resulting layout, confirm acceptance
+or reject it. A manually edited preview leaves the proposal path and uses the
+ordinary user-owned save flow. Recent decisions remain available without
+crowding the active review surface.
+
+Portable validation passes 227 tests in 22 files. A fresh local database replay
+applies all 45 migrations, and the complete database matrix passes 1,569
+assertions across 30 suites, including 79 P22 assertions. Host validation passes
+353 tests in 42 files, strict type checking and lint. The optimized host exposes
+59 pages/routes. Actual loopback OAuth/PKCE/MCP acceptance passes four boundary
+groups, including filtered context, immutable proposal replay and native-only
+layout persistence. The connected assistant-to-native browser journey passes
+four desktop/mobile Chrome cases for preview, uncertain-response replay, stale
+blocking and rejection; the existing optimized native layout matrix passes all
+14 desktop/mobile cases. Focused screenshots pass visual and overflow review.
+
+This closes the provider-free local layout-proposal implementation, not the
+release. No installed ChatGPT/Codex host, representative client outcome,
+automatic recommendation-quality study, hosted recovery/privacy/support path,
+provider account or payment enforcement was exercised. Overall status remains
+**NOT READY TO SHIP**.
+
+## P21 publication readiness checkpoint
+
+The portable contract now defines one provider-neutral queue item for one exact
+saved Writer revision. Readiness is derived from current source state, unresolved
+proposals, required publication fields, three explicit human confirmations, a
+public-looking HTTPS destination and a current user-observed link result. A URL is
+never treated as verified merely because it was saved. Link observations become
+stale after 30 days or when the revision or destination changes.
+
+The public Workspace branch implements a private native queue with optimistic
+versions, immutable request identities, lost-response replay, audit revisions and
+link-evidence history. Readiness is recalculated inside every ready/handoff write.
+Rebasing to a newer resource resets confirmations; broken or access-limited
+evidence blocks progress; removal leaves a recoverable tombstone. OAuth-shaped
+assistants, anonymous users, revoked entitlements and other tenants cannot read,
+write, attest or replay the direct user's queue decisions.
+
+The interface carries a reviewed resource from its saved publication packet to a
+destination plan, deliberate human checks, a dated observation, a ready decision
+and an explicitly recorded handoff. It never fetches the URL, opens a provider on
+the server, publishes content or labels a handoff as publication.
+
+Portable validation passes 217 tests in 21 files. A fresh local database replay
+applies all 44 migrations, and the complete bundle database matrix passes 1,490
+assertions across 29 suites, including 87 P21 assertions. Host validation passes
+350 tests in 41 files, 33 schema-policy checks and 295 runtime-boundary checks.
+The optimized host exposes 59 pages/routes. The complete Writer browser matrix
+passes 28 desktop/mobile Chrome tests across six files with zero retries; the
+focused P21 run passes both viewports and its screenshots pass visual review.
+The dependency audit reports zero vulnerabilities.
+
+This closes the generic native readiness and user-observed link-evidence workflow,
+not the release. No real client destination, Wix account, installed host, hosted
+privacy/recovery/support path, payment enforcement or representative value pilot
+was exercised. Overall status remains **NOT READY TO SHIP**.
+
+## P20 resumable Writer library checkpoint
+
+The portable contract now bounds a 20-item, 500,000-character staging list and
+validates optimistic snapshots, exact duplicate evidence, freshness tokens and
+unique atomic-import receipts. Item identities are canonicalized and strict
+receipt consistency prevents ambiguous initial, review and replay states.
+
+The public Workspace branch implements native-only private staging without
+retaining original files. Three-at-a-time extraction isolates per-file failures;
+successful items remain editable and autosaved. Reload recovery, stale-version
+protection, exact request replay and content-free tombstones prevent silent loss
+or resurrection. Duplicate review distinguishes staged from existing exact
+title/text matches, makes no semantic claim, and is recalculated inside the
+confirmed transaction. Excluded items wait; included items are all imported or
+none are.
+
+Portable validation passes 205 tests in 20 files. A fresh local database replay
+applies all 43 migrations, and the complete bundle database matrix passes 1,403
+assertions across 28 suites, including 67 P20 assertions. The optimized host
+build exposes 58 pages/routes. Focused desktop and mobile Chrome acceptance
+passes mixed success/failure extraction, reload recovery, exact duplicate review,
+explicit exclusion and a deliberately lost commit-response replay.
+
+This closes the generic native bulk-staging implementation, not the release.
+Representative client documents, measured unaided value, real client-site/Wix
+evidence, installed-host behavior, hosted privacy/recovery/support, provider and
+commercial enforcement gates remain open. Overall status remains **NOT READY TO
+SHIP**.
+
+## P19 secure rich-document intake checkpoint
+
+The portable platform now publishes one reusable intake contract for text,
+Markdown, Word and text-based PDF sources. It fixes file, request, extracted-text,
+PDF-page and DOCX expansion limits; rejects path/control-character filenames and
+incompatible type declarations; and validates a plain-text-only extraction
+receipt with a SHA-256 digest and explicit `originalRetained: false` state.
+
+The Workspace host authenticates before reading the bounded multipart body and
+authorizes one fixed native destination before parsing. Writer requires current
+manage and review capabilities; Ministry requires current archive capability.
+OAuth-shaped assistants, anonymous callers, other owners and revoked
+entitlements fail closed. DOCX central-directory checks run before raw-text
+extraction. PDF extraction uses a Node-only parser path, page bounds and a clear
+scanned-document/OCR fallback. Neither parser output nor the UI imports HTML,
+images, formatting, embedded actions or attachments.
+
+Both destinations present filename/counts, a text preview, limitations and an
+explicit use/replace action. Applying text changes only the protected native
+draft; the normal canonical save and revision controls remain separate. This
+closes secure single-document intake for the two implemented destinations. It
+does not complete bulk library migration, representative document-quality
+testing, installed-host proof, deployed privacy/recovery, provider or commercial
+gates. Overall status remains **NOT READY TO SHIP**.
+
+## P18 cross-domain isolation proof checkpoint
+
+An independent rollback-only PostgreSQL oracle now exercises the five private
+domain stores as a complete ordered-pair matrix. One fictional owner holds all
+six bundle entitlements, so a denial cannot be attributed to a missing product.
+Canonical reads, revision history and private-marker search return only the
+expected domain. Same-domain records owned by another fictional user follow the
+same unavailable path. Anonymous callers lack execution authority, and neither
+anonymous nor authenticated roles can directly select, insert, update or delete
+the private tables; RLS remains enabled on every store.
+
+An OAuth-shaped assistant session can read the owner's admitted record through
+each domain's canonical function, but every cross-domain identifier fails. It
+cannot invoke Workspace Experience's native-only saved-work search or attention
+surfaces. Revoking the assistant connection closes all five reads, and revoking
+the source bundle closes the corresponding native and Executive reference paths.
+Executive begins with no cross-domain authority; after explicit user confirmation
+it receives only fixed metadata for exact permitted records and only the two
+implemented expanded task contracts. The oracle confirms private source markers
+never enter that projection and rejects unsupported task capabilities.
+
+The new suite passes 184 assertions. The complete retained local database run
+passes 1,325 assertions across 26 suites, with every fixture rolled back. This
+closes the implemented cross-domain negative-operation gate, including the sixth
+bundle's aggregate boundary; it does not constitute a representative pilot,
+installed-host proof, hosted deployment, provider connection or client shipment.
+Overall status remains **NOT READY TO SHIP**.
+
+## P16 first-value measurement checkpoint
+
+All six manifest promises can now be evaluated through one portable, content-free
+pilot contract. The host presents only currently admitted starts, fixes the
+usual-process estimate before work, measures elapsed time on the server, records
+bounded ratings and declared signal IDs, and preserves explicit stop reasons.
+Results distinguish measured elapsed time from user-reported baseline, ratings
+and trust answers. A completed card says that one session is not representative
+proof.
+
+Private native tables and RPCs admit no prompt, source excerpt, output, notes,
+contact data or provider data. Another owner, anonymous caller, OAuth assistant,
+revoked bundle, stale version, changed retry, extra prose, contradictory outcome,
+unknown signal and duplicate signal fail closed. Exact start, finish and stop
+responses remain safely replayable. Completed history remains visible after a
+bundle change, while new starts require current entitlement.
+
+Portable validation passes 183 tests in 18 files. Host proof passes 322 unit
+tests in 37 files, 32 schema-policy contracts, 275 runtime boundaries, type
+checking, lint and the optimized 57-page build. A fresh local replay applies all
+42 migrations; database proof passes 1,141 assertions across 25 isolated suites,
+including 80 value-pilot assertions. Optimized desktop/mobile acceptance passes
+five value-check cases with one intentional mobile duplicate of desktop-only
+transport fault injection skipped.
+
+This makes the real representative pilot measurable; it does not perform that
+pilot. No actual client dataset, unaided client session, installed ChatGPT/Codex
+package, hosted environment or provider was used. Overall status remains
+**NOT READY TO SHIP**.
+
+## P15 private native editor recovery checkpoint
+
+All 16 Ministry, Nonprofit, Investor and Executive editor kinds now use a shared
+private recovery contract. Direct native sessions can protect bounded incomplete
+work, while canonical domain validation and explicit confirmation remain required
+for an official revision. Drafts are separate per domain, owner, workspace, kind
+and new/existing record. Anonymous, OAuth/client, cross-owner, cross-workspace and
+wrong-kind operations fail closed.
+
+The host autosaves to private server tables without browser storage, exposes
+explicit restore/discard/copy and stale-source review, and commits the canonical
+domain save plus draft tombstone atomically. Exact request hashes, optimistic
+versions and per-target locks protect uncertain retries and competing tabs.
+Executive recovery retains unapplied repeated-hour and availability input without
+turning it into a saved meeting. Background autosave no longer disables editing
+or swallows a user’s official-save request.
+
+Final portable validation passes 180 tests in 17 files plus six plugin and six
+skill validators. Host proof passes 318 unit tests, 32 schema-policy contracts,
+272 runtime boundaries, type checking, lint and the optimized 56-page build.
+Database proof passes 1,061 assertions across 24 suites, including 265 recovery
+assertions; all 41 migrations also replayed fresh during P15 with zero retained
+users. One uninterrupted final connected run passed 202 tests across desktop and
+mobile in 41.1 minutes with four documented fixture/design skips and zero retries.
+
+This closes the local shared working-draft implementation gap, not the commercial
+release. Representative value, installed ChatGPT/Codex behavior, hosted migration,
+deployed backup/recovery/privacy/retention/support, enabled-provider proof and
+entitlement/payment enforcement remain required. Overall status remains
+**NOT READY TO SHIP**.
+
+## P14 native notification checkpoint
+
+The native inbox surfaces eight selected current conditions across the six
+bundles. Owner/source admission is rechecked on every read and write. Private
+acknowledgements and type preferences support read, dismiss, restore, 24-hour
+snooze and mute without changing source work. Exact reviewed requests and a
+serialized choices version protect retries and stale tabs. Source resolution or
+revocation removes inaccessible current updates. This is not email, push,
+background monitoring, scheduled delivery or a historical event log.
+
+Portable validation passes 157 tests plus six plugin and six skill validators.
+Host proof includes 313 unit tests, 32 schema contracts, 796 local database
+assertions and all 40 migrations replayed fresh. The broad browser run passed
+190 tests (two separate SOTF harness cases skipped); after an isolated keyboard-
+focus correction, all 14 notification workflows passed again on the final
+optimized build. Four actual local OAuth/MCP groups verify the native-only
+boundary and resolution of an unfinished-access cue. No installed-client or
+hosted acceptance is implied.
+
+See [the portable notification boundary](../architecture/native-notifications.md)
+and the public host branch's P14 acceptance ledger for current test outcomes.
+A valid manifest, local browser pass or fictional scale corpus does not establish
+representative user value or installed/deployed client readiness.
+
+## P13 native connection checkpoint
+
+The existing Connections route now checks actual Workspace grants and
+registration, incomplete consent, current plan/admission gates and independent
+vault/release evidence. It never equates a saved label with a working provider.
+All owned assistant records are paged with complete counts. Google-family
+disconnect impact is explicit; user-confirmed revision checks and idempotent
+receipts protect retries and newly changed access. Native privacy controls remain
+available after plan loss. Assistant setup no longer writes merely on page open.
+
+Portable validation: 152 tests; six plugin and six skill validators.
+Host backend: 308 unit tests, 32 schema contracts and 703 database assertions;
+all 39 migrations also replayed fresh with zero retained users.
+Actual isolated OAuth/PKCE/MCP acceptance passes five groups, including unfinished
+consent, registration, native-only boundaries and revoked-token rejection.
+Desktop/mobile connection-flow acceptance passes; detailed run and presentation
+evidence is maintained in the public host's P13 acceptance document.
+
+This does not complete notification lifecycle, installed-host acceptance,
+representative user-value testing or approved deployed release/recovery gates.
+Overall status remains **NOT READY TO SHIP**. See
+[connection contract and boundaries](../architecture/native-connections.md).
+
+## P12 native shared attention checkpoint
+
+Workspace Experience 0.4.0 adds the user's own source-linked attention page and
+confirmed Home widget: thirteen record and nine task scopes, complete counts,
+source/priority filters and current-authority paging. It requires no Executive
+assignment and does not expand any assistant's source-sharing permission.
+Actual all-six OAuth credentials are denied at both HTTP and direct RPC.
+
+Portable proof: 147 tests, typecheck, six plugin and six skill validations.
+Host proof includes 36 migrations replayed on a fresh isolated database and
+664 security assertions on fresh and upgraded databases. See
+`docs/bundles/workspace-experience-native-attention.md` and the host's
+`docs/testing/workspace-attention-acceptance.md` for the complete final ledger.
+The connection/notification center and other shipment gates remain open.
+
+## P11 discovery checkpoint
+
+Workspace Experience 0.3.0 now provides native-user-only saved-work search and
+concrete quick-action consumers. Portable source: 134 tests and six plugin/six
+skill validations. A fresh local Workspace database replays all 33 migrations
+and passes 650 security assertions. Actual all-six OAuth credentials cannot
+access native shared search through either HTTP or direct RPC.
+
+See `docs/bundles/workspace-experience-native-search.md` and the Workspace
+`docs/testing/workspace-search-acceptance.md` for the final browser/publication
+ledger and limitations. This does not complete the remaining six-bundle
+shipment gates or establish measured client value.
+
+## P11a large-library search checkpoint
+
+The native host now prepares saved-text previews only for the selected page.
+With 15,000 fictional owner records and 500 other-owner controls, all eleven
+before/after response fingerprints match (excluding retrieval timestamps).
+The broad first-page median moved from 707.5 ms to 174.2 ms locally; this is
+not a production SLA or representative client-value result. The same 16
+native scopes and model-denial boundary remain in place.
+
+All 34 migrations replay from a new named local database; 650 security
+assertions pass on fresh and upgraded databases. No portable contract or
+manifest version changes in P11a. See the host
+`docs/testing/workspace-search-scale-acceptance.md` for final browser,
+publication, raw timing and remaining-gate evidence.
+
+## Earlier milestone evidence
+
+Writer P4 recovery/discovery is documented in Workspace at
+`docs/architecture/writer-recovery-and-discovery.md` and
+`docs/testing/test-evidence.md`. Workspace has 145 unit tests; 312 local
+PostgreSQL assertions across ten suites; nine API/OAuth/MCP groups; ten revision
+groups; seven draft/discovery groups; and 16 optimized desktop/mobile browser
+tests. All successful operations use fictional accounts and the real isolated
+database. Save failures and lost responses are deliberately injected.
+
+All 22 migrations replayed locally. The hosted-only Gate A preflight references
+shared ministry tables intentionally absent from this isolated database; it
+does not constitute deployed proof and must be run by the authorized owner
+in its intended environment. Source validation remains six plugins/six skills
+plus 20 reusable-platform tests. No installed-host or representative-client
+value claim is made.
+
+P5 adds `writer.profile` and read-only publication preparation to Writer manifest
+0.3.0. Current confirmed writing context is shareable with an authorized Writer
+assistant; profile confirmation and private recovery history remain native-only.
+Publication packets exclude unfinished drafts, profile notes and stored
+file/provider identifiers, but users must review canonical text for private
+content before sharing. No source fetch or website publishing is implied.
+
+See Workspace `docs/architecture/writer-preferences-and-publication.md` and the
+P5 section of `docs/testing/test-evidence.md` for final verification outcomes.
+This is a native implementation checkpoint, not a shipment authorization.
+
+P5 verification: 23 fresh local migrations; 161 Workspace unit tests; 312 local
+PostgreSQL assertions; eleven API/OAuth/MCP groups; ten revision, seven discovery
+and six preparation groups; 24 optimized desktop/mobile browser tests. Initial
+selector and back-link accessibility issues were corrected. Local loading times
+varied substantially; slow-network timeout recovery, first-use polish and
+representative responsiveness/value testing remain release gates.
+
+P6 adds Ministry manifest 0.2.0, client-owned domain contracts and six scoped
+connected tools through Workspace. Current local proof: 24 fresh migrations,
+174 Workspace unit tests, 32 schema/policy tests, 330 PostgreSQL assertions,
+ten Ministry API/OAuth/MCP groups and the complete existing Writer regression.
+All 34 final optimized desktop/mobile browser cases pass, including explicit
+bundle consent disclosure. Four synthetic Ministry success screenshots were
+inspected. Reusable source has 28 tests and six plugin/six skill validations.
+
+See Workspace docs/architecture/ministry-native-workspace.md and the P6 section
+of docs/testing/test-evidence.md. The profile starts unset; native confirmation
+does not promote inferred positions, and prior sermons do not establish current
+belief. Optional libraries, installed hosts, representative research quality,
+large-library ergonomics, first-use value, Ministry crash/autosave recovery and
+deployed privacy/retention remain open.
+
+P7 implements the Nonprofit native slice and its clinical-scope controls, source
+provenance, proposal-only assistant workflows and direct-user approval/history.
+Current proof includes twenty-five fresh local migrations, 185 Workspace unit
+tests, 32 schema/policy tests, 357 PostgreSQL assertions, eleven Nonprofit and ten
+Ministry connected groups, and the full Writer API regression. All 46 final
+optimized desktop/mobile browser cases pass (twelve Nonprofit, ten Ministry,
+24 Writer). Exact evidence and publication receipts are in the P7 checkpoint.
+Reusable source now has 36 tests and six plugin/six skill validations.
+
+The source-URL safety fix also hardens Ministry against blank and malformed input.
+Administrative-only confirmations do not perform PHI detection, and saved source
+records do not constitute live research or legal verification. No client data,
+hosted migration, installed-plugin update or external provider action occurred.
+The subsequent P8 Investor implementation is described below. Executive
+orchestration and the remaining Workspace Experience work are next. All-six
+shipment readiness remains NOT READY TO SHIP.
+
+P9a adds Executive's contract/persistence foundation, not its finished native
+experience. Seven real native RPC groups and 67 Executive database assertions
+pass after a fresh 27-migration replay; the complete database regression is now
+488 assertions across fourteen suites. Reusable source has 64 tests including
+seventeen Executive cases; the existing Workspace has 217 passing unit tests.
+The host has not enabled Executive navigation or tools and remains pinned to its
+P8 runtime export. Source references are permission-checked live, sharing starts
+empty, and full private source bodies are excluded from the projection. Complete
+attention, UI/HTTP/MCP and automation before claiming Executive readiness.
+
+P8 implements the Investor native research slice, four independent record kinds,
+evidence/catalyst/scenario rules, private revisions and native-only decisions.
+Local proof: 26 fresh migrations; 217 Workspace unit tests; 32 schema/policy
+tests; 421 PostgreSQL assertions across thirteen suites; eleven Investor connected
+groups and the full existing Writer/Ministry/Nonprofit regression. All 60 optimized
+desktop/mobile cases pass without retries (fourteen Investor plus the existing 46).
+Source validation has 47 tests and six plugin/six skill checks. See Workspace
+docs/architecture/investor-native-workspace.md and its P8 evidence ledger.
+
+The actual public SEC lookup was declined with HTTP 403; the app returned an
+honest unavailable state without findings, retry or evasion. A fixture-based UI
+import is not live-provider proof. Optional Finances remains metadata-only and
+unconnected. No personal account, installed host, hosted migration or client
+research was accessed. Investor confirmation labels are now at least 15 pixels,
+and compact claim summaries expose review state. All fourteen Investor optimized
+desktop/mobile cases passed again after that refinement; four final synthetic
+screenshots were inspected. Shared UX acceptance must still check secondary
+sticky controls with the mobile header. Executive and remaining Experience
+implementation are next; all-six
+shipment readiness remains NOT READY TO SHIP.
+
+P9b now enables Executive's five native editors, source controls, record-level
+attention and seventeen focused HTTP MCP tools through the shared host. Final
+fictional local proof: 28 fresh migrations; seven native and ten Executive
+connected groups; 495 PostgreSQL assertions across fifteen suites; 250 Workspace
+unit tests; 32 schema/policy tests; and all 76 optimized desktop/mobile journeys
+(sixteen Executive plus the existing sixty). The full connected regression of
+the other four bundles also passes. Source remains 64 tests and six plugin/six
+skill validations; Workspace verifies its 26-file export at source
+ff7d7c29a1e856818d828f6fa821718642463c20.
+
+See Workspace's P9b evidence ledger and Executive implementation/runbook for
+precise boundaries and corrected test attempts. Source sharing is explicit and
+default-off, source bodies remain excluded, and withdrawal/revocation is checked
+live. Attention currently covers parent records, not nested tasks or complete
+weekly activity. Scheduling UI, approved recurring work, meaningful-change
+notifications, remaining shared Experience/recovery and representative/deployed
+acceptance are still open. The full goal remains active; none of the six bundles
+is yet cleared for client shipment.
+
+P9c adds separately confirmed task-metadata-v1 permission, exact task references,
+22-scope paged attention and full title-only source discovery. Legacy record
+grants stay six-field and never expand automatically; task grants require the
+selected parent record source and current entitlement. Nineteen scoped tools
+retain only five proposal writes. Brief preparation preserves live links without
+copying task metadata into durable prose.
+
+Final fictional local proof: 29 fresh migrations; seven Executive foundation
+and seven task native groups; twelve actual HTTP/OAuth/PKCE/MCP groups; 542
+PostgreSQL assertions across sixteen suites; 254 Workspace units; 32 schema tests;
+all 80 optimized desktop/mobile cases pass without retries (20 Executive plus
+60 existing cases, final completion in 11.1 minutes). All other connected bundle regressions pass.
+Source has 71 tests plus six plugin/six skill validations. All 27 exported files
+match source revision 28d6b4cb876a37709e899526f7087a596b3aec67 exactly.
+
+Four final synthetic task-link/task-attention card images were visually reviewed.
+Remaining: full-period weekly outcomes, explicit availability scheduling,
+approved recurring/notification lifecycle, exact-child navigation and redundant
+cue grouping, crash recovery, shared Experience consumers/preferences and
+representative/deployed/installed-host release gates. All six remain NOT READY
+TO SHIP. Source publication is not production deployment or client acceptance.
+
+P9d/P9e/P9f now implement exact task navigation, recorded weekly outcomes and
+resumable user-reviewed availability planning (Executive 0.5.0). Docker was
+already working on recheck; no engine repair or database reset was performed.
+The retained 29-migration fictional database restored, then migrations 30/31
+applied successfully. This is upgrade proof, not a fresh 31-migration replay.
+
+Current real isolated proof: 588 PostgreSQL assertions in 18 rollback-only
+suites; eight Executive foundation, seven task and five weekly native groups;
+thirteen actual Executive HTTP/OAuth/PKCE/MCP groups; all other connected
+regressions (79 connected groups total). Source: 105 tests, six plugin/six skill
+validations. Host: 281 units, 32 schema checks, 251 boundaries, typecheck, lint
+and optimized build. All 28 transformed exports/hashes match source
+f9f4614afb947ada637ba170ceb7890ac91ad495.
+
+Ten account-free component-browser cases pass, without a fake API or database.
+The initial full browser run found an ambiguous nonprofit heading selector and
+a real Investor hidden-Catalysts navigation bug; both were corrected. All 28
+corrected exact-task navigation cases pass. All 116 optimized
+desktop/mobile all-bundle journeys pass in 5.7 minutes, zero retries. After the
+final mobile spacing refinement, all 28 affected cases passed again, with actual
+sticky-header clearance checks and visual review. Read Workspace's P9f ledger
+for final outcomes and limitations.
+
+Availability stays private to admitted Executive meeting reads/proposals,
+saved downloads and native history; attention/weekly metadata excludes it.
+Reopening does not refresh checks, proposals never claim booking/agreement,
+and native exact confirmation remains required. Source skill guidance now
+follows the real retained-availability and user-check workflow.
+
+The next implementation slice is shared Workspace Experience controls/consumers
+for all bundles, followed by remaining recurring/notification, ingestion,
+recovery and representative/deployed/installed-host gates. No client/provider
+account, hosted deployment, marketplace publication or commercial launch is
+implied. All six remain NOT READY TO SHIP.
+
+## P10 — user-owned Workspace Experience layout
+
+Workspace Experience 0.2.0 is the sixth ordinary assigned native bundle.
+User-confirmed pins, hidden items, ordering, starting workspace, preview,
+version recovery, exact retries, stale-tab protection and dormant access
+choices are implemented. A layout save keeps domain editor authority
+unchanged. Actual OAuth clients cannot read or write native preferences.
+
+Source: 120 tests, typecheck, six plugin and six skill validators. Host: 290
+units, 32 schema checks, 256 boundaries, typecheck, lint and optimized build
+with 53 static pages. The retained fictional database upgraded to migration
+32 without reset; 628 PostgreSQL assertions across 19 suites pass. This is not
+fresh replay of all 32 migrations.
+
+Real connected proof: 12 layout HTTP/RPC groups, three all-six OAuth/MCP
+boundary groups and 13 Executive connected regression groups pass. All 130
+optimized desktop/mobile journeys pass in 8.6 minutes with zero retries.
+A further two-viewport focused run checks refreshed hidden-link removal and
+ordering before final screenshots. All 31 source exports/hash checks match
+ad6c41da1d3b822b459ebb27e55113cc3e10ee80.
+
+The Workspace Designer skill was aligned with actual native confirmation and
+recovery; it cannot claim model-side persistence. Remaining shared work:
+scoped search, useful commands/quick actions, grounded advisory layout
+proposals, connection/notification consumers, recurring lifecycle, ingestion
+and recovery gaps. Representative value, installed-host, deployed/commercial
+and approved migration gates remain required. **All six remain NOT READY TO
+SHIP.** See Workspace's `docs/testing/workspace-layout-acceptance.md`.
+
+## P24 — portable plugin packaging
+
+All six distribution adapters now use root Agent Plugins 1.0.0 manifests and
+retain matching Codex compatibility manifests. Package version 0.2.0 identifies
+this packaging migration; it does not change bundle entitlement versions or
+claim a hosted runtime. Automated policy requires one marketplace entry per
+bundle, canonical/fallback metadata parity, valid portable names, root skill
+discovery, starter prompts and the deliberate absence of MCP/app declarations.
+
+The six compatibility packages pass the bundled plugin validator. Repository
+typecheck and all 231 tests in 23 files pass, including the portable marketplace
+checks. Codex CLI 0.153.4 imported the public feature ref, installed and enabled
+all six 0.2.0 packages, matched every three-file cache to the Git snapshot,
+exposed all six skills in a fresh Sol session, routed six fictional domain cases
+correctly, rejected one unrelated control and removed all package/marketplace
+discovery in a final fresh session. The prior local plugin state was restored.
+
+This remains bounded installed-Codex proof. ChatGPT's plugin-directory surface,
+a changed-version update, representative output quality, hosted operation and
+client acceptance remain open. Public-directory submission, provider connection,
+client accounts, hosted deployment and commercial launch were not performed.
+**All six remain NOT READY TO SHIP.** See
+[plugin packaging readiness](plugin-packaging-readiness.md).

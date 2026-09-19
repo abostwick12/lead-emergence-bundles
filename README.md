@@ -1,2 +1,53 @@
-# lead-emergence-bundles
-Reusable capability bundles, plugins, contracts, and runtime primitives for Lead Emergence.
+# Lead Emergence Bundle Platform
+
+Reusable capability bundles for Lead Emergence. This repository owns bundle
+contracts, OpenAI plugin packages, workflow definitions, shared policy and
+provenance primitives, and the composition runtime. It does **not** contain the
+Lead Emergence Workspace web application or client-private configuration.
+
+## Product boundary
+
+- `abostwick12/lead-emergence-workspace` remains the authenticated system of
+  record and the primary web experience.
+- This repository provides portable, versioned bundle definitions and the
+  official plugin packaging used by ChatGPT and Codex.
+- Bundle assignment is backend data. A UI or tool is available only when the
+  same server-authorized entitlement source admits it.
+- Functional bundles contribute declarative UI metadata; the Workspace
+  Experience composer renders it inside Lead Emergence.
+
+## Current contents
+
+- Six independently discoverable portable plugin packages under `plugins/`,
+  each with a compatibility fallback and one focused skill.
+- Versioned Bundle and UI Manifest contracts.
+- Bundle and capability registries with deterministic composition.
+- Fail-closed identity, entitlement, provider, domain, and mutation policy
+  primitives.
+- Shared provenance and epistemic-state controls.
+- Private native editor recovery shapes for all 16 Ministry, Nonprofit,
+  Investor, and Executive record kinds; Writer keeps its specialized recovery.
+- A privacy-safe first-value pilot contract that records the user's baseline
+  before work begins and keeps measured elapsed time separate from user ratings.
+- One reusable representative-pilot kit per bundle with fictional rehearsal
+  data, an unaided script, quality rubric, safety checks, and decision thresholds.
+- Architecture decisions and the P0 discovery record under `docs/`.
+
+## Local validation
+
+```text
+npm install
+npm run check
+```
+
+Plugin packages and their included skills are additionally validated with
+OpenAI's installed plugin and skill validators. No provider, hosted backend, or
+production system is contacted by the test suite.
+
+Local implementation is not a commercial release. See
+[client shipment readiness](docs/release/client-readiness.md) for the current
+evidence and the remaining representative, installed-host, deployed, provider,
+payment and support gates.
+
+Pilot operators should also use the
+[representative pilot protocol](docs/release/representative-pilots.md).
