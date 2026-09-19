@@ -51,7 +51,7 @@ describe("Bundle release catalog", () => {
     expect(recorded).toMatchObject({
       bundleKey: "sotf_transition",
       version: "1.0.0",
-      sourceRevision: "100f503f492df359357e2e83a74d55681fb62249",
+      sourceRevision: "70f6d14f25b391ea319080e6701e5fe74d1785a5",
       validation: { state: "passed", deterministic: true }
     });
     expect(recorded.artifactDigest).toBe(bundleArtifactDigest(sotf100()));
