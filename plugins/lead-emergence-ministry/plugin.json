@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lead-emergence-ministry",
+  "version": "0.2.0",
+  "description": "Source-layered biblical, theological, sermon, and teaching research.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": ["ministry", "biblical-research", "sermon", "teaching"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Lead Emergence Ministry",
+        "shortDescription": "Build source-aware ministry research and teaching.",
+        "longDescription": "Separate biblical text, scholarship, traditions, prior user writing, and AI synthesis while preparing ministry research.",
+        "developerName": "Lead Emergence",
+        "category": "Productivity",
+        "capabilities": ["Read", "Propose"],
+        "defaultPrompt": [
+          "Research this passage in explicit source layers.",
+          "Help prepare a sermon without assuming my beliefs.",
+          "Compare these theological sources."
+        ],
+        "brandColor": "#5B527A"
+      }
+    }
+  }
+}
