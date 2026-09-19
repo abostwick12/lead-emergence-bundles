@@ -6,6 +6,7 @@ export const domainSchema = z.enum([
   "ministry",
   "nonprofit",
   "investing",
+  "career",
   "workspace"
 ]);
 

@@ -1,7 +1,8 @@
 import { z } from "zod";
 
 export const valuePilotBundleKeys = [
-  "executive", "writer_editor", "ministry", "nonprofit_founder", "investor", "workspace_experience"
+  "executive", "writer_editor", "ministry", "nonprofit_founder", "investor", "workspace_experience",
+  "sotf_transition"
 ] as const;
 export const valuePilotBundleKey = z.enum(valuePilotBundleKeys);
 const requestId = z.string().uuid();

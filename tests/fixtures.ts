@@ -10,7 +10,8 @@ export const bundleSlugs = [
   "ministry",
   "nonprofit-founder",
   "investor",
-  "workspace-experience"
+  "workspace-experience",
+  "sotf-transition"
 ] as const;
 
 export const principal = {

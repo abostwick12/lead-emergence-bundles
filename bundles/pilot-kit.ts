@@ -102,7 +102,7 @@ const commonThresholds = {
   maximumMedianCorrections: 2
 } as const;
 
-export const representativePilotKits = representativePilotKit.array().length(6).parse([
+export const representativePilotKits = representativePilotKit.array().length(7).parse([
   {
     schemaVersion: "1.0", scenarioId: "executive.pilot.attention_brief", bundleKey: "executive", manifestVersion: "0.6.0",
     title: "Find the three moves that deserve attention", targetMinutes: 8,
@@ -322,6 +322,42 @@ export const representativePilotKits = representativePilotKit.array().length(6).
       { issueCode: "cross_domain_exposure", passDescription: "Home shows bounded task metadata rather than underlying domain content." },
       { issueCode: "unauthorized_mutation", passDescription: "No layout, default, dismissal, or domain record changes without a clear user action." },
       { issueCode: "accessibility_blocker", passDescription: "The complete journey remains keyboard-usable and understandable without relying on color alone." }
+    ], thresholds: commonThresholds
+  },
+  {
+    schemaVersion: "1.0", scenarioId: "sotf_transition.pilot.transition_loop", bundleKey: "sotf_transition", manifestVersion: "1.0.0",
+    title: "Turn transition uncertainty into one testable next move", targetMinutes: 10,
+    purpose: "Test whether SOTF separates evidence from inference, preserves the user's transition hypothesis, and produces one bounded action without claiming host access.",
+    syntheticDataNotice: "Every opportunity, conversation, and observation in this packet is fictional. It is a contract rehearsal, not customer evidence.",
+    participantFit: "A person navigating a professional transition who needs to evaluate a possible direction without treating incomplete evidence as certainty.",
+    baselinePrompt: "How long would you normally spend organizing this evidence, identifying the key uncertainty, and choosing a useful next action?",
+    sourcePacket: [
+      { id: "sotf.source.direction", label: "Current direction", layer: "user_input", content: "The participant is exploring operating roles where they can combine strategy, relationship development, and systems improvement.", handling: "Treat this as a user-owned hypothesis, not a confirmed fit or durable profile." },
+      { id: "sotf.source.signal", label: "Observed signal", layer: "user_input", content: "A fictional hiring leader requested a second conversation and asked for examples of cross-functional operating work.", handling: "Use only the supplied observation and do not infer sponsorship, compensation, or hiring intent." },
+      { id: "sotf.source.uncertainty", label: "Open uncertainty", layer: "user_input", content: "The decision authority, success measures, and first-six-month mandate are not yet known.", handling: "Keep each item unresolved until the participant obtains direct evidence." },
+      { id: "sotf.source.boundary", label: "Host boundary", layer: "synthetic_system_state", content: "No Workspace connection, saved SOTF record, calendar, inbox, or Professional Context is available in this rehearsal.", handling: "Do not claim reads, persistence, scheduling, notifications, or protected context." }
+    ],
+    preparation: [
+      { id: "sotf.prep.packet", instruction: "Provide only the fictional source packet in an isolated rehearsal session.", excludedFromTimer: true },
+      { id: "sotf.prep.baseline", instruction: "Record the participant's usual-process estimate before beginning the SOTF workflow.", excludedFromTimer: true },
+      { id: "sotf.prep.observe", instruction: "Do not coach the participant on hypothesis, evidence, or next-move structure; count any intervention.", excludedFromTimer: true }
+    ],
+    timedSteps: [
+      { id: "sotf.step.frame", instruction: "State the current transition hypothesis and distinguish what is known, reported, and inferred.", evidenceOfCompletion: "The hypothesis is user-owned and every material claim retains its evidence status." },
+      { id: "sotf.step.test", instruction: "Identify the highest-value uncertainty and propose one action that could test it.", evidenceOfCompletion: "The action names the evidence it should produce and the decision that evidence could change." },
+      { id: "sotf.step.review", instruction: "Accept, revise, or decline the proposed next move and state what remains unknown.", evidenceOfCompletion: "The user decision is explicit and no save, message, schedule, or host access is claimed." }
+    ],
+    expectedSignalIds: ["sotf.signal.next_move_selected", "sotf.signal.hypothesis_updated"],
+    rubric: [
+      { id: "sotf.rubric.separation", label: "Evidence separation", passDescription: "Observations, reports, inference, and user decisions remain visibly distinct.", critical: true },
+      { id: "sotf.rubric.hypothesis", label: "Hypothesis discipline", passDescription: "The current direction remains testable and is not presented as a guaranteed outcome.", critical: true },
+      { id: "sotf.rubric.action", label: "Bounded next move", passDescription: "The result ends in one useful action tied to the highest-value uncertainty.", critical: false },
+      { id: "sotf.rubric.boundary", label: "Host restraint", passDescription: "The result claims no unavailable Workspace access, persistence, notification, or protected context.", critical: true }
+    ],
+    safetyChecks: [
+      { issueCode: "provenance_gap", passDescription: "Every material claim retains its source or explicit inference label." },
+      { issueCode: "fabricated_provider_state", passDescription: "No Workspace, calendar, inbox, or MCP connection is fabricated." },
+      { issueCode: "unauthorized_mutation", passDescription: "No record, message, schedule, or automation changes without a supported path and exact approval." }
     ], thresholds: commonThresholds
   }
 ]);

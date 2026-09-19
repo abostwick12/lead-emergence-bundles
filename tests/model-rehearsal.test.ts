@@ -35,14 +35,17 @@ const completeRun = () => {
 };
 
 describe("installed model rehearsal evidence", () => {
-  it("validates one bounded installed-Sol result for every bundle without claiming shipment", () => {
+  it("preserves the six historical installed-Sol results without fabricating a SOTF run", () => {
     const records = JSON.parse(readFileSync(join(process.cwd(), "docs", "release", "evidence",
       "installed-sol-2026-09-11.json"), "utf8")) as unknown[];
     const results = records.map(record => {
       const run = installedModelRehearsalRun.parse(record);
       return assessInstalledModelRehearsal(representativePilotKitByBundle[run.bundleKey], run);
     });
-    expect(new Set(results.map(result => result.bundleKey))).toEqual(new Set(Object.keys(representativePilotKitByBundle)));
+    expect(new Set(results.map(result => result.bundleKey))).toEqual(new Set(
+      Object.keys(representativePilotKitByBundle).filter((bundleKey) => bundleKey !== "sotf_transition")
+    ));
+    expect(results.map((result) => result.bundleKey)).not.toContain("sotf_transition");
     expect(results).toHaveLength(6);
     expect(results.every(result => result.decision === "bounded_pass_with_host_limitations")).toBe(true);
     expect(results.reduce((sum, result) => sum + result.passedRubrics, 0)).toBe(23);
