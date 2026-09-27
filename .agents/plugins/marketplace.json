@@ -75,6 +75,54 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-notion-morning-brief",
+      "source": { "source": "local", "path": "./plugins/lead-emergence-notion-morning-brief" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-notion-weekly-prep",
+      "source": { "source": "local", "path": "./plugins/lead-emergence-notion-weekly-prep" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-notion-meeting-processor",
+      "source": { "source": "local", "path": "./plugins/lead-emergence-notion-meeting-processor" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-notion-networking-follow-up",
+      "source": { "source": "local", "path": "./plugins/lead-emergence-notion-networking-follow-up" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-notion-opportunity-intelligence",
+      "source": { "source": "local", "path": "./plugins/lead-emergence-notion-opportunity-intelligence" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-notion-coaching-cycle-review",
+      "source": { "source": "local", "path": "./plugins/lead-emergence-notion-coaching-cycle-review" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-notion-career-transition-brief",
+      "source": { "source": "local", "path": "./plugins/lead-emergence-notion-career-transition-brief" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    },
+    {
+      "name": "lead-emergence-notion-coaching-transcript-collector",
+      "source": { "source": "local", "path": "./plugins/lead-emergence-notion-coaching-transcript-collector" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
     }
   ]
 }

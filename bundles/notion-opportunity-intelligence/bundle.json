@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0",
+  "identity": {
+    "key": "notion_aut_5_opportunity_intelligence",
+    "version": "0.1.0",
+    "displayName": "Opportunity Intelligence",
+    "description": "An evidence-based opportunity assessment with fit, unknowns, changes, and a practical next step. Available as a standalone Notion workflow item or through a customer's package.",
+    "kind": "functional"
+  },
+  "experience": {
+    "promise": "An evidence-based opportunity assessment with fit, unknowns, changes, and a practical next step.",
+    "firstRunOutcome": "An evidence-based opportunity assessment with fit, unknowns, changes, and a practical next step.",
+    "timeToFirstValueMinutes": 10,
+    "successSignals": [
+      {
+        "id": "notion.opportunity_intelligence.signal.reviewed",
+        "description": "The customer reviews the evidence and decides whether to use or save a proposed next step."
+      }
+    ],
+    "qualityGates": {
+      "evidenceRequired": true,
+      "provenanceRequired": true,
+      "mutationConfirmationRequired": true
+    }
+  },
+  "capabilities": [
+    {
+      "id": "notion.opportunity_intelligence",
+      "version": "0.1.0",
+      "description": "An evidence-based opportunity assessment with fit, unknowns, changes, and a practical next step.",
+      "domain": "workspace",
+      "operations": [
+        "read",
+        "propose"
+      ],
+      "taskMetadataShareable": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "notion.skill.notion_opportunity_intelligence",
+      "path": "./plugins/lead-emergence-notion-opportunity-intelligence/skills/notion-opportunity-intelligence/",
+      "capabilityIds": [
+        "notion.opportunity_intelligence"
+      ],
+      "triggers": [
+        "run opportunity intelligence",
+        "help me with opportunity intelligence"
+      ],
+      "outcome": "An evidence-based opportunity assessment with fit, unknowns, changes, and a practical next step."
+    }
+  ],
+  "workflows": [
+    {
+      "id": "notion.workflow.opportunity_intelligence",
+      "version": "0.1.0",
+      "name": "Opportunity Intelligence",
+      "capabilityIds": [
+        "notion.opportunity_intelligence"
+      ],
+      "providerRequirementIds": [],
+      "inputScopes": [
+        "notion:selected_opportunities",
+        "notion:customer_confirmed_criteria",
+        "notion:selected_career_context",
+        "sources:customer_authorized_public_research"
+      ],
+      "outputScopes": [
+        "notion:opportunity_assessment_proposal"
+      ],
+      "mode": "propose",
+      "evidenceRequired": true,
+      "targetUserMinutes": 10
+    }
+  ],
+  "providerRequirements": [],
+  "appRequirements": [
+    {
+      "id": "notion",
+      "required": true,
+      "purpose": "Use only the customer's selected Notion pages and databases; save nothing without approval.",
+      "status": "requires_authorization"
+    }
+  ],
+  "permissions": {
+    "dataScopes": [
+      "notion:selected_opportunities",
+      "notion:customer_confirmed_criteria",
+      "notion:selected_career_context",
+      "sources:customer_authorized_public_research"
+    ],
+    "contextScopes": [
+      "customer:explicitly_selected_preferences_and_goals"
+    ],
+    "crossDomainAccess": []
+  },
+  "automations": [
+    {
+      "id": "notion.automation.opportunity_intelligence",
+      "workflowId": "notion.workflow.opportunity_intelligence",
+      "triggerKinds": [
+        "manual"
+      ],
+      "notificationPolicy": "meaningful_change",
+      "requiresUserApproval": true
+    }
+  ],
+  "attentionTypes": [],
+  "uiManifestPath": "./bundles/notion-opportunity-intelligence/ui-manifest.json",
+  "distribution": {
+    "pluginName": "lead-emergence-notion-opportunity-intelligence",
+    "marketplacePath": "./.agents/plugins/marketplace.json"
+  }
+}

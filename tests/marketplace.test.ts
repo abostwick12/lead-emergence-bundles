@@ -59,7 +59,7 @@ describe("OpenAI repo marketplace", () => {
   it("uses the verified repo marketplace path and required metadata", () => {
     expect(marketplace.name).toBe("lead-emergence-bundles");
     expect(marketplace.interface.displayName).toBe("Lead Emergence Bundles");
-    expect(marketplace.plugins).toHaveLength(6);
+    expect(marketplace.plugins).toHaveLength(14);
     for (const entry of marketplace.plugins) {
       expect(entry.source.source).toBe("local");
       expect(entry.source.path).toMatch(/^\.\/plugins\//);

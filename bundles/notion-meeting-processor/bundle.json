@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0",
+  "identity": {
+    "key": "notion_aut_3_meeting_processor",
+    "version": "0.1.0",
+    "displayName": "Meeting Processor",
+    "description": "A source-linked extraction of decisions, commitments, follow-ups, and relationship or opportunity changes from selected meetings. Available as a standalone Notion workflow item or through a customer's package.",
+    "kind": "functional"
+  },
+  "experience": {
+    "promise": "A source-linked extraction of decisions, commitments, follow-ups, and relationship or opportunity changes from selected meetings.",
+    "firstRunOutcome": "A source-linked extraction of decisions, commitments, follow-ups, and relationship or opportunity changes from selected meetings.",
+    "timeToFirstValueMinutes": 10,
+    "successSignals": [
+      {
+        "id": "notion.meeting_processor.signal.reviewed",
+        "description": "The customer reviews the evidence and decides whether to use or save a proposed next step."
+      }
+    ],
+    "qualityGates": {
+      "evidenceRequired": true,
+      "provenanceRequired": true,
+      "mutationConfirmationRequired": true
+    }
+  },
+  "capabilities": [
+    {
+      "id": "notion.meeting_processor",
+      "version": "0.1.0",
+      "description": "A source-linked extraction of decisions, commitments, follow-ups, and relationship or opportunity changes from selected meetings.",
+      "domain": "workspace",
+      "operations": [
+        "read",
+        "propose"
+      ],
+      "taskMetadataShareable": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "notion.skill.notion_meeting_processor",
+      "path": "./plugins/lead-emergence-notion-meeting-processor/skills/notion-meeting-processor/",
+      "capabilityIds": [
+        "notion.meeting_processor"
+      ],
+      "triggers": [
+        "run meeting processor",
+        "help me with meeting processor"
+      ],
+      "outcome": "A source-linked extraction of decisions, commitments, follow-ups, and relationship or opportunity changes from selected meetings."
+    }
+  ],
+  "workflows": [
+    {
+      "id": "notion.workflow.meeting_processor",
+      "version": "0.1.0",
+      "name": "Meeting Processor",
+      "capabilityIds": [
+        "notion.meeting_processor"
+      ],
+      "providerRequirementIds": [],
+      "inputScopes": [
+        "notion:selected_interactions",
+        "customer:explicitly_selected_meeting_notes_or_transcripts"
+      ],
+      "outputScopes": [
+        "notion:interaction_update_proposals",
+        "notion:follow_up_proposals"
+      ],
+      "mode": "propose",
+      "evidenceRequired": true,
+      "targetUserMinutes": 10
+    }
+  ],
+  "providerRequirements": [],
+  "appRequirements": [
+    {
+      "id": "notion",
+      "required": true,
+      "purpose": "Use only the customer's selected Notion pages and databases; save nothing without approval.",
+      "status": "requires_authorization"
+    }
+  ],
+  "permissions": {
+    "dataScopes": [
+      "notion:selected_interactions",
+      "customer:explicitly_selected_meeting_notes_or_transcripts"
+    ],
+    "contextScopes": [
+      "customer:explicitly_selected_preferences_and_goals"
+    ],
+    "crossDomainAccess": []
+  },
+  "automations": [
+    {
+      "id": "notion.automation.meeting_processor",
+      "workflowId": "notion.workflow.meeting_processor",
+      "triggerKinds": [
+        "manual"
+      ],
+      "notificationPolicy": "meaningful_change",
+      "requiresUserApproval": true
+    }
+  ],
+  "attentionTypes": [],
+  "uiManifestPath": "./bundles/notion-meeting-processor/ui-manifest.json",
+  "distribution": {
+    "pluginName": "lead-emergence-notion-meeting-processor",
+    "marketplacePath": "./.agents/plugins/marketplace.json"
+  }
+}

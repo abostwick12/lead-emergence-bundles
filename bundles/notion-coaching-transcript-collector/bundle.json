@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0",
+  "identity": {
+    "key": "notion_aut_16_coaching_transcript_collector",
+    "version": "0.1.0",
+    "displayName": "Coaching Transcript Collector",
+    "description": "An opt-in, source-linked archive proposal for selected coaching transcripts, with duplicate and privacy checks. Available as a standalone Notion workflow item or through a customer's package.",
+    "kind": "functional"
+  },
+  "experience": {
+    "promise": "An opt-in, source-linked archive proposal for selected coaching transcripts, with duplicate and privacy checks.",
+    "firstRunOutcome": "An opt-in, source-linked archive proposal for selected coaching transcripts, with duplicate and privacy checks.",
+    "timeToFirstValueMinutes": 10,
+    "successSignals": [
+      {
+        "id": "notion.coaching_transcript_collector.signal.reviewed",
+        "description": "The customer reviews the evidence and decides whether to use or save a proposed next step."
+      }
+    ],
+    "qualityGates": {
+      "evidenceRequired": true,
+      "provenanceRequired": true,
+      "mutationConfirmationRequired": true
+    }
+  },
+  "capabilities": [
+    {
+      "id": "notion.coaching_transcript_collector",
+      "version": "0.1.0",
+      "description": "An opt-in, source-linked archive proposal for selected coaching transcripts, with duplicate and privacy checks.",
+      "domain": "workspace",
+      "operations": [
+        "read",
+        "propose"
+      ],
+      "taskMetadataShareable": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "notion.skill.notion_coaching_transcript_collector",
+      "path": "./plugins/lead-emergence-notion-coaching-transcript-collector/skills/notion-coaching-transcript-collector/",
+      "capabilityIds": [
+        "notion.coaching_transcript_collector"
+      ],
+      "triggers": [
+        "run coaching transcript collector",
+        "help me with coaching transcript collector"
+      ],
+      "outcome": "An opt-in, source-linked archive proposal for selected coaching transcripts, with duplicate and privacy checks."
+    }
+  ],
+  "workflows": [
+    {
+      "id": "notion.workflow.coaching_transcript_collector",
+      "version": "0.1.0",
+      "name": "Coaching Transcript Collector",
+      "capabilityIds": [
+        "notion.coaching_transcript_collector"
+      ],
+      "providerRequirementIds": [],
+      "inputScopes": [
+        "customer:explicitly_selected_email_or_transcript_sources",
+        "notion:customer_selected_transcript_archive"
+      ],
+      "outputScopes": [
+        "notion:transcript_archive_proposals"
+      ],
+      "mode": "propose",
+      "evidenceRequired": true,
+      "targetUserMinutes": 10
+    }
+  ],
+  "providerRequirements": [],
+  "appRequirements": [
+    {
+      "id": "notion",
+      "required": true,
+      "purpose": "Use only the customer's selected Notion pages and databases; save nothing without approval.",
+      "status": "requires_authorization"
+    }
+  ],
+  "permissions": {
+    "dataScopes": [
+      "customer:explicitly_selected_email_or_transcript_sources",
+      "notion:customer_selected_transcript_archive"
+    ],
+    "contextScopes": [
+      "customer:explicitly_selected_preferences_and_goals"
+    ],
+    "crossDomainAccess": []
+  },
+  "automations": [
+    {
+      "id": "notion.automation.coaching_transcript_collector",
+      "workflowId": "notion.workflow.coaching_transcript_collector",
+      "triggerKinds": [
+        "manual"
+      ],
+      "notificationPolicy": "user_action",
+      "requiresUserApproval": true
+    }
+  ],
+  "attentionTypes": [],
+  "uiManifestPath": "./bundles/notion-coaching-transcript-collector/ui-manifest.json",
+  "distribution": {
+    "pluginName": "lead-emergence-notion-coaching-transcript-collector",
+    "marketplacePath": "./.agents/plugins/marketplace.json"
+  }
+}

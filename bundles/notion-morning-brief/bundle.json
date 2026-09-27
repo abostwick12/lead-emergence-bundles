@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0",
+  "identity": {
+    "key": "notion_aut_1_morning_brief",
+    "version": "0.1.0",
+    "displayName": "Morning Brief",
+    "description": "A concise, prioritized brief grounded in the customer's selected Notion records and connected sources. Available as a standalone Notion workflow item or through a customer's package.",
+    "kind": "functional"
+  },
+  "experience": {
+    "promise": "A concise, prioritized brief grounded in the customer's selected Notion records and connected sources.",
+    "firstRunOutcome": "A concise, prioritized brief grounded in the customer's selected Notion records and connected sources.",
+    "timeToFirstValueMinutes": 10,
+    "successSignals": [
+      {
+        "id": "notion.morning_brief.signal.reviewed",
+        "description": "The customer reviews the evidence and decides whether to use or save a proposed next step."
+      }
+    ],
+    "qualityGates": {
+      "evidenceRequired": true,
+      "provenanceRequired": true,
+      "mutationConfirmationRequired": true
+    }
+  },
+  "capabilities": [
+    {
+      "id": "notion.morning_brief",
+      "version": "0.1.0",
+      "description": "A concise, prioritized brief grounded in the customer's selected Notion records and connected sources.",
+      "domain": "workspace",
+      "operations": [
+        "read",
+        "propose"
+      ],
+      "taskMetadataShareable": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "notion.skill.notion_morning_brief",
+      "path": "./plugins/lead-emergence-notion-morning-brief/skills/notion-morning-brief/",
+      "capabilityIds": [
+        "notion.morning_brief"
+      ],
+      "triggers": [
+        "run morning brief",
+        "help me with morning brief"
+      ],
+      "outcome": "A concise, prioritized brief grounded in the customer's selected Notion records and connected sources."
+    }
+  ],
+  "workflows": [
+    {
+      "id": "notion.workflow.morning_brief",
+      "version": "0.1.0",
+      "name": "Morning Brief",
+      "capabilityIds": [
+        "notion.morning_brief"
+      ],
+      "providerRequirementIds": [],
+      "inputScopes": [
+        "notion:selected_work_items",
+        "notion:selected_people",
+        "notion:selected_opportunities",
+        "notion:selected_interactions",
+        "connected:calendar_and_communications_when_authorized"
+      ],
+      "outputScopes": [
+        "notion:brief_proposal"
+      ],
+      "mode": "propose",
+      "evidenceRequired": true,
+      "targetUserMinutes": 10
+    }
+  ],
+  "providerRequirements": [],
+  "appRequirements": [
+    {
+      "id": "notion",
+      "required": true,
+      "purpose": "Use only the customer's selected Notion pages and databases; save nothing without approval.",
+      "status": "requires_authorization"
+    }
+  ],
+  "permissions": {
+    "dataScopes": [
+      "notion:selected_work_items",
+      "notion:selected_people",
+      "notion:selected_opportunities",
+      "notion:selected_interactions",
+      "connected:calendar_and_communications_when_authorized"
+    ],
+    "contextScopes": [
+      "customer:explicitly_selected_preferences_and_goals"
+    ],
+    "crossDomainAccess": []
+  },
+  "automations": [
+    {
+      "id": "notion.automation.morning_brief",
+      "workflowId": "notion.workflow.morning_brief",
+      "triggerKinds": [
+        "manual"
+      ],
+      "notificationPolicy": "meaningful_change",
+      "requiresUserApproval": true
+    }
+  ],
+  "attentionTypes": [],
+  "uiManifestPath": "./bundles/notion-morning-brief/ui-manifest.json",
+  "distribution": {
+    "pluginName": "lead-emergence-notion-morning-brief",
+    "marketplacePath": "./.agents/plugins/marketplace.json"
+  }
+}

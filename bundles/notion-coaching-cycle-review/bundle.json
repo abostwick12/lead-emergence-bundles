@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0",
+  "identity": {
+    "key": "notion_aut_6_coaching_cycle_review",
+    "version": "0.1.0",
+    "displayName": "Coaching Progress Review",
+    "description": "A source-grounded review that turns customer-approved coaching material into proposed decisions, actions, and progress signals. Available as a standalone Notion workflow item or through a customer's package.",
+    "kind": "functional"
+  },
+  "experience": {
+    "promise": "A source-grounded review that turns customer-approved coaching material into proposed decisions, actions, and progress signals.",
+    "firstRunOutcome": "A source-grounded review that turns customer-approved coaching material into proposed decisions, actions, and progress signals.",
+    "timeToFirstValueMinutes": 10,
+    "successSignals": [
+      {
+        "id": "notion.coaching_cycle_review.signal.reviewed",
+        "description": "The customer reviews the evidence and decides whether to use or save a proposed next step."
+      }
+    ],
+    "qualityGates": {
+      "evidenceRequired": true,
+      "provenanceRequired": true,
+      "mutationConfirmationRequired": true
+    }
+  },
+  "capabilities": [
+    {
+      "id": "notion.coaching_cycle_review",
+      "version": "0.1.0",
+      "description": "A source-grounded review that turns customer-approved coaching material into proposed decisions, actions, and progress signals.",
+      "domain": "workspace",
+      "operations": [
+        "read",
+        "propose"
+      ],
+      "taskMetadataShareable": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "notion.skill.notion_coaching_cycle_review",
+      "path": "./plugins/lead-emergence-notion-coaching-cycle-review/skills/notion-coaching-cycle-review/",
+      "capabilityIds": [
+        "notion.coaching_cycle_review"
+      ],
+      "triggers": [
+        "run coaching progress review",
+        "help me with coaching progress review"
+      ],
+      "outcome": "A source-grounded review that turns customer-approved coaching material into proposed decisions, actions, and progress signals."
+    }
+  ],
+  "workflows": [
+    {
+      "id": "notion.workflow.coaching_cycle_review",
+      "version": "0.1.0",
+      "name": "Coaching Progress Review",
+      "capabilityIds": [
+        "notion.coaching_cycle_review"
+      ],
+      "providerRequirementIds": [],
+      "inputScopes": [
+        "notion:selected_interactions",
+        "notion:selected_work_items",
+        "notion:selected_assets",
+        "notion:customer_selected_program_milestones"
+      ],
+      "outputScopes": [
+        "notion:coaching_review_proposal",
+        "notion:work_item_proposals"
+      ],
+      "mode": "propose",
+      "evidenceRequired": true,
+      "targetUserMinutes": 10
+    }
+  ],
+  "providerRequirements": [],
+  "appRequirements": [
+    {
+      "id": "notion",
+      "required": true,
+      "purpose": "Use only the customer's selected Notion pages and databases; save nothing without approval.",
+      "status": "requires_authorization"
+    }
+  ],
+  "permissions": {
+    "dataScopes": [
+      "notion:selected_interactions",
+      "notion:selected_work_items",
+      "notion:selected_assets",
+      "notion:customer_selected_program_milestones"
+    ],
+    "contextScopes": [
+      "customer:explicitly_selected_preferences_and_goals"
+    ],
+    "crossDomainAccess": []
+  },
+  "automations": [
+    {
+      "id": "notion.automation.coaching_cycle_review",
+      "workflowId": "notion.workflow.coaching_cycle_review",
+      "triggerKinds": [
+        "manual"
+      ],
+      "notificationPolicy": "meaningful_change",
+      "requiresUserApproval": true
+    }
+  ],
+  "attentionTypes": [],
+  "uiManifestPath": "./bundles/notion-coaching-cycle-review/ui-manifest.json",
+  "distribution": {
+    "pluginName": "lead-emergence-notion-coaching-cycle-review",
+    "marketplacePath": "./.agents/plugins/marketplace.json"
+  }
+}

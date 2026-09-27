@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0",
+  "identity": {
+    "key": "notion_aut_15_career_transition_brief",
+    "version": "0.1.0",
+    "displayName": "Career Transition Brief",
+    "description": "A company-first career brief combining the customer's selected opportunity records with dated, public research and interview preparation. Available as a standalone Notion workflow item or through a customer's package.",
+    "kind": "functional"
+  },
+  "experience": {
+    "promise": "A company-first career brief combining the customer's selected opportunity records with dated, public research and interview preparation.",
+    "firstRunOutcome": "A company-first career brief combining the customer's selected opportunity records with dated, public research and interview preparation.",
+    "timeToFirstValueMinutes": 10,
+    "successSignals": [
+      {
+        "id": "notion.career_transition_brief.signal.reviewed",
+        "description": "The customer reviews the evidence and decides whether to use or save a proposed next step."
+      }
+    ],
+    "qualityGates": {
+      "evidenceRequired": true,
+      "provenanceRequired": true,
+      "mutationConfirmationRequired": true
+    }
+  },
+  "capabilities": [
+    {
+      "id": "notion.career_transition_brief",
+      "version": "0.1.0",
+      "description": "A company-first career brief combining the customer's selected opportunity records with dated, public research and interview preparation.",
+      "domain": "workspace",
+      "operations": [
+        "read",
+        "propose"
+      ],
+      "taskMetadataShareable": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "notion.skill.notion_career_transition_brief",
+      "path": "./plugins/lead-emergence-notion-career-transition-brief/skills/notion-career-transition-brief/",
+      "capabilityIds": [
+        "notion.career_transition_brief"
+      ],
+      "triggers": [
+        "run career transition brief",
+        "help me with career transition brief"
+      ],
+      "outcome": "A company-first career brief combining the customer's selected opportunity records with dated, public research and interview preparation."
+    }
+  ],
+  "workflows": [
+    {
+      "id": "notion.workflow.career_transition_brief",
+      "version": "0.1.0",
+      "name": "Career Transition Brief",
+      "capabilityIds": [
+        "notion.career_transition_brief"
+      ],
+      "providerRequirementIds": [],
+      "inputScopes": [
+        "notion:selected_opportunities",
+        "notion:selected_work_items",
+        "notion:selected_people_and_interactions",
+        "notion:customer_confirmed_career_context",
+        "public:company_and_role_research"
+      ],
+      "outputScopes": [
+        "career_transition_brief",
+        "interview_prep_proposal"
+      ],
+      "mode": "propose",
+      "evidenceRequired": true,
+      "targetUserMinutes": 10
+    }
+  ],
+  "providerRequirements": [],
+  "appRequirements": [
+    {
+      "id": "notion",
+      "required": true,
+      "purpose": "Use only the customer's selected Notion pages and databases; save nothing without approval.",
+      "status": "requires_authorization"
+    }
+  ],
+  "permissions": {
+    "dataScopes": [
+      "notion:selected_opportunities",
+      "notion:selected_work_items",
+      "notion:selected_people_and_interactions",
+      "notion:customer_confirmed_career_context",
+      "public:company_and_role_research"
+    ],
+    "contextScopes": [
+      "customer:explicitly_selected_preferences_and_goals"
+    ],
+    "crossDomainAccess": []
+  },
+  "automations": [
+    {
+      "id": "notion.automation.career_transition_brief",
+      "workflowId": "notion.workflow.career_transition_brief",
+      "triggerKinds": [
+        "manual"
+      ],
+      "notificationPolicy": "completion",
+      "requiresUserApproval": true
+    }
+  ],
+  "attentionTypes": [],
+  "uiManifestPath": "./bundles/notion-career-transition-brief/ui-manifest.json",
+  "distribution": {
+    "pluginName": "lead-emergence-notion-career-transition-brief",
+    "marketplacePath": "./.agents/plugins/marketplace.json"
+  }
+}

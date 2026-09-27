@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lead-emergence-notion-coaching-transcript-collector",
+  "version": "0.1.0",
+  "description": "An opt-in, source-linked archive proposal for selected coaching transcripts, with duplicate and privacy checks.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": [
+    "lead-emergence",
+    "notion",
+    "workflow",
+    "automation",
+    "notion-coaching-transcript-collector"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Lead Emergence Coaching Transcript Collector",
+        "shortDescription": "An opt-in, source-linked archive proposal for selected coaching transcripts, wit",
+        "longDescription": "An opt-in, source-linked archive proposal for selected coaching transcripts, with duplicate and privacy checks.",
+        "developerName": "Lead Emergence",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Propose"
+        ],
+        "defaultPrompt": [
+          "Run my coaching transcript collector.",
+          "Prepare a reviewable proposal for my selected Notion records."
+        ],
+        "brandColor": "#173B3F"
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "lead-emergence-notion-meeting-processor",
+  "version": "0.1.0",
+  "description": "A source-linked extraction of decisions, commitments, follow-ups, and relationship or opportunity changes from selected meetings.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": [
+    "lead-emergence",
+    "notion",
+    "workflow",
+    "automation",
+    "notion-meeting-processor"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lead Emergence Meeting Processor",
+    "shortDescription": "A source-linked extraction of decisions, commitments, follow-ups, and relationsh",
+    "longDescription": "A source-linked extraction of decisions, commitments, follow-ups, and relationship or opportunity changes from selected meetings.",
+    "developerName": "Lead Emergence",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Propose"
+    ],
+    "defaultPrompt": [
+      "Run my meeting processor.",
+      "Prepare a reviewable proposal for my selected Notion records."
+    ],
+    "brandColor": "#173B3F"
+  }
+}
