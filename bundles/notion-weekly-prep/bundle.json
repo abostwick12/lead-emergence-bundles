@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0",
+  "identity": {
+    "key": "notion_aut_2_weekly_prep",
+    "version": "0.1.0",
+    "displayName": "Weekly Prep",
+    "description": "A focused weekly plan that reconciles completed, stalled, waiting, and new work without silently changing priorities. Available as a standalone Notion workflow item or through a customer's package.",
+    "kind": "functional"
+  },
+  "experience": {
+    "promise": "A focused weekly plan that reconciles completed, stalled, waiting, and new work without silently changing priorities.",
+    "firstRunOutcome": "A focused weekly plan that reconciles completed, stalled, waiting, and new work without silently changing priorities.",
+    "timeToFirstValueMinutes": 10,
+    "successSignals": [
+      {
+        "id": "notion.weekly_prep.signal.reviewed",
+        "description": "The customer reviews the evidence and decides whether to use or save a proposed next step."
+      }
+    ],
+    "qualityGates": {
+      "evidenceRequired": true,
+      "provenanceRequired": true,
+      "mutationConfirmationRequired": true
+    }
+  },
+  "capabilities": [
+    {
+      "id": "notion.weekly_prep",
+      "version": "0.1.0",
+      "description": "A focused weekly plan that reconciles completed, stalled, waiting, and new work without silently changing priorities.",
+      "domain": "workspace",
+      "operations": [
+        "read",
+        "propose"
+      ],
+      "taskMetadataShareable": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "notion.skill.notion_weekly_prep",
+      "path": "./plugins/lead-emergence-notion-weekly-prep/skills/notion-weekly-prep/",
+      "capabilityIds": [
+        "notion.weekly_prep"
+      ],
+      "triggers": [
+        "run weekly prep",
+        "help me with weekly prep"
+      ],
+      "outcome": "A focused weekly plan that reconciles completed, stalled, waiting, and new work without silently changing priorities."
+    }
+  ],
+  "workflows": [
+    {
+      "id": "notion.workflow.weekly_prep",
+      "version": "0.1.0",
+      "name": "Weekly Prep",
+      "capabilityIds": [
+        "notion.weekly_prep"
+      ],
+      "providerRequirementIds": [],
+      "inputScopes": [
+        "notion:selected_work_items",
+        "notion:selected_opportunities",
+        "notion:selected_people",
+        "notion:selected_interactions",
+        "notion:customer_confirmed_priorities"
+      ],
+      "outputScopes": [
+        "notion:weekly_plan_proposal"
+      ],
+      "mode": "propose",
+      "evidenceRequired": true,
+      "targetUserMinutes": 10
+    }
+  ],
+  "providerRequirements": [],
+  "appRequirements": [
+    {
+      "id": "notion",
+      "required": true,
+      "purpose": "Use only the customer's selected Notion pages and databases; save nothing without approval.",
+      "status": "requires_authorization"
+    }
+  ],
+  "permissions": {
+    "dataScopes": [
+      "notion:selected_work_items",
+      "notion:selected_opportunities",
+      "notion:selected_people",
+      "notion:selected_interactions",
+      "notion:customer_confirmed_priorities"
+    ],
+    "contextScopes": [
+      "customer:explicitly_selected_preferences_and_goals"
+    ],
+    "crossDomainAccess": []
+  },
+  "automations": [
+    {
+      "id": "notion.automation.weekly_prep",
+      "workflowId": "notion.workflow.weekly_prep",
+      "triggerKinds": [
+        "manual"
+      ],
+      "notificationPolicy": "user_action",
+      "requiresUserApproval": true
+    }
+  ],
+  "attentionTypes": [],
+  "uiManifestPath": "./bundles/notion-weekly-prep/ui-manifest.json",
+  "distribution": {
+    "pluginName": "lead-emergence-notion-weekly-prep",
+    "marketplacePath": "./.agents/plugins/marketplace.json"
+  }
+}

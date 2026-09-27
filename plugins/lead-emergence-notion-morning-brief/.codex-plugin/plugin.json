@@ -1,0 +1,35 @@
+{
+  "name": "lead-emergence-notion-morning-brief",
+  "version": "0.1.0",
+  "description": "A concise, prioritized brief grounded in the customer's selected Notion records and connected sources.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": [
+    "lead-emergence",
+    "notion",
+    "workflow",
+    "automation",
+    "notion-morning-brief"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lead Emergence Morning Brief",
+    "shortDescription": "A concise, prioritized brief grounded in the customer's selected Notion records ",
+    "longDescription": "A concise, prioritized brief grounded in the customer's selected Notion records and connected sources.",
+    "developerName": "Lead Emergence",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Propose"
+    ],
+    "defaultPrompt": [
+      "Run my morning brief.",
+      "Prepare a reviewable proposal for my selected Notion records."
+    ],
+    "brandColor": "#173B3F"
+  }
+}

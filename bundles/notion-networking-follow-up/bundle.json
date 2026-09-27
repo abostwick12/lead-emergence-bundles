@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0",
+  "identity": {
+    "key": "notion_aut_4_networking_follow_up",
+    "version": "0.1.0",
+    "displayName": "Networking Follow-up",
+    "description": "A low-noise view of promised follow-ups and relationships that need attention, with drafts the customer can review. Available as a standalone Notion workflow item or through a customer's package.",
+    "kind": "functional"
+  },
+  "experience": {
+    "promise": "A low-noise view of promised follow-ups and relationships that need attention, with drafts the customer can review.",
+    "firstRunOutcome": "A low-noise view of promised follow-ups and relationships that need attention, with drafts the customer can review.",
+    "timeToFirstValueMinutes": 10,
+    "successSignals": [
+      {
+        "id": "notion.networking_follow_up.signal.reviewed",
+        "description": "The customer reviews the evidence and decides whether to use or save a proposed next step."
+      }
+    ],
+    "qualityGates": {
+      "evidenceRequired": true,
+      "provenanceRequired": true,
+      "mutationConfirmationRequired": true
+    }
+  },
+  "capabilities": [
+    {
+      "id": "notion.networking_follow_up",
+      "version": "0.1.0",
+      "description": "A low-noise view of promised follow-ups and relationships that need attention, with drafts the customer can review.",
+      "domain": "workspace",
+      "operations": [
+        "read",
+        "propose"
+      ],
+      "taskMetadataShareable": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "notion.skill.notion_networking_follow_up",
+      "path": "./plugins/lead-emergence-notion-networking-follow-up/skills/notion-networking-follow-up/",
+      "capabilityIds": [
+        "notion.networking_follow_up"
+      ],
+      "triggers": [
+        "run networking follow-up",
+        "help me with networking follow-up"
+      ],
+      "outcome": "A low-noise view of promised follow-ups and relationships that need attention, with drafts the customer can review."
+    }
+  ],
+  "workflows": [
+    {
+      "id": "notion.workflow.networking_follow_up",
+      "version": "0.1.0",
+      "name": "Networking Follow-up",
+      "capabilityIds": [
+        "notion.networking_follow_up"
+      ],
+      "providerRequirementIds": [],
+      "inputScopes": [
+        "notion:selected_people",
+        "notion:selected_interactions",
+        "notion:selected_work_items",
+        "customer:approved_follow_up_preferences"
+      ],
+      "outputScopes": [
+        "notion:follow_up_proposals",
+        "drafts:outreach"
+      ],
+      "mode": "propose",
+      "evidenceRequired": true,
+      "targetUserMinutes": 10
+    }
+  ],
+  "providerRequirements": [],
+  "appRequirements": [
+    {
+      "id": "notion",
+      "required": true,
+      "purpose": "Use only the customer's selected Notion pages and databases; save nothing without approval.",
+      "status": "requires_authorization"
+    }
+  ],
+  "permissions": {
+    "dataScopes": [
+      "notion:selected_people",
+      "notion:selected_interactions",
+      "notion:selected_work_items",
+      "customer:approved_follow_up_preferences"
+    ],
+    "contextScopes": [
+      "customer:explicitly_selected_preferences_and_goals"
+    ],
+    "crossDomainAccess": []
+  },
+  "automations": [
+    {
+      "id": "notion.automation.networking_follow_up",
+      "workflowId": "notion.workflow.networking_follow_up",
+      "triggerKinds": [
+        "manual"
+      ],
+      "notificationPolicy": "user_action",
+      "requiresUserApproval": true
+    }
+  ],
+  "attentionTypes": [],
+  "uiManifestPath": "./bundles/notion-networking-follow-up/ui-manifest.json",
+  "distribution": {
+    "pluginName": "lead-emergence-notion-networking-follow-up",
+    "marketplacePath": "./.agents/plugins/marketplace.json"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "lead-emergence-notion-opportunity-intelligence",
+  "version": "0.1.0",
+  "description": "An evidence-based opportunity assessment with fit, unknowns, changes, and a practical next step.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": [
+    "lead-emergence",
+    "notion",
+    "workflow",
+    "automation",
+    "notion-opportunity-intelligence"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lead Emergence Opportunity Intelligence",
+    "shortDescription": "An evidence-based opportunity assessment with fit, unknowns, changes, and a prac",
+    "longDescription": "An evidence-based opportunity assessment with fit, unknowns, changes, and a practical next step.",
+    "developerName": "Lead Emergence",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Propose"
+    ],
+    "defaultPrompt": [
+      "Run my opportunity intelligence.",
+      "Prepare a reviewable proposal for my selected Notion records."
+    ],
+    "brandColor": "#173B3F"
+  }
+}

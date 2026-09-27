@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lead-emergence-notion-networking-follow-up",
+  "version": "0.1.0",
+  "description": "A low-noise view of promised follow-ups and relationships that need attention, with drafts the customer can review.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": [
+    "lead-emergence",
+    "notion",
+    "workflow",
+    "automation",
+    "notion-networking-follow-up"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Lead Emergence Networking Follow-up",
+        "shortDescription": "A low-noise view of promised follow-ups and relationships that need attention, w",
+        "longDescription": "A low-noise view of promised follow-ups and relationships that need attention, with drafts the customer can review.",
+        "developerName": "Lead Emergence",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Propose"
+        ],
+        "defaultPrompt": [
+          "Run my networking follow-up.",
+          "Prepare a reviewable proposal for my selected Notion records."
+        ],
+        "brandColor": "#173B3F"
+      }
+    }
+  }
+}

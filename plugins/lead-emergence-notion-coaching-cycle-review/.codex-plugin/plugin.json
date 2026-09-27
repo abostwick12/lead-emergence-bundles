@@ -1,0 +1,35 @@
+{
+  "name": "lead-emergence-notion-coaching-cycle-review",
+  "version": "0.1.0",
+  "description": "A source-grounded review that turns customer-approved coaching material into proposed decisions, actions, and progress signals.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": [
+    "lead-emergence",
+    "notion",
+    "workflow",
+    "automation",
+    "notion-coaching-cycle-review"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lead Emergence Coaching Progress Review",
+    "shortDescription": "A source-grounded review that turns customer-approved coaching material into pro",
+    "longDescription": "A source-grounded review that turns customer-approved coaching material into proposed decisions, actions, and progress signals.",
+    "developerName": "Lead Emergence",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Propose"
+    ],
+    "defaultPrompt": [
+      "Run my coaching progress review.",
+      "Prepare a reviewable proposal for my selected Notion records."
+    ],
+    "brandColor": "#173B3F"
+  }
+}

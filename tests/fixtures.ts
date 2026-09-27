@@ -10,7 +10,15 @@ export const bundleSlugs = [
   "ministry",
   "nonprofit-founder",
   "investor",
-  "workspace-experience"
+  "workspace-experience",
+  "notion-morning-brief",
+  "notion-weekly-prep",
+  "notion-meeting-processor",
+  "notion-networking-follow-up",
+  "notion-opportunity-intelligence",
+  "notion-coaching-cycle-review",
+  "notion-career-transition-brief",
+  "notion-coaching-transcript-collector"
 ] as const;
 
 export const principal = {

@@ -1,0 +1,35 @@
+{
+  "name": "lead-emergence-notion-career-transition-brief",
+  "version": "0.1.0",
+  "description": "A company-first career brief combining the customer's selected opportunity records with dated, public research and interview preparation.",
+  "author": {
+    "name": "Lead Emergence",
+    "url": "https://github.com/abostwick12"
+  },
+  "homepage": "https://github.com/abostwick12/lead-emergence-bundles",
+  "repository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "keywords": [
+    "lead-emergence",
+    "notion",
+    "workflow",
+    "automation",
+    "notion-career-transition-brief"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lead Emergence Career Transition Brief",
+    "shortDescription": "A company-first career brief combining the customer's selected opportunity recor",
+    "longDescription": "A company-first career brief combining the customer's selected opportunity records with dated, public research and interview preparation.",
+    "developerName": "Lead Emergence",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Propose"
+    ],
+    "defaultPrompt": [
+      "Run my career transition brief.",
+      "Prepare a reviewable proposal for my selected Notion records."
+    ],
+    "brandColor": "#173B3F"
+  }
+}
