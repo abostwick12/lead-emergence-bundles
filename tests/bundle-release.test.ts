@@ -66,6 +66,30 @@ describe("Bundle release catalog", () => {
     expect(syntheticSotf101(sotf100())).toEqual(sotf101());
   });
 
+  it("records the real SOTF 1.0.1 patch without losing the immutable baseline", () => {
+    const release100 = bundleReleaseSchema.parse(JSON.parse(readFileSync(
+      "bundles/sotf-transition/releases/1.0.0.json", "utf8"
+    )));
+    const release101 = bundleReleaseSchema.parse(JSON.parse(readFileSync(
+      "bundles/sotf-transition/releases/1.0.1.json", "utf8"
+    )));
+    expect(release101).toMatchObject({
+      bundleKey: "sotf_transition",
+      version: "1.0.1",
+      sourceRevision: "e8f14615405ec3222c19dc358334003e5df60b19",
+      compatibility: release100.compatibility
+    });
+    expect(release101.artifactDigest).toBe(bundleArtifactDigest(sotf101()));
+
+    const catalog = new BundleReleaseCatalog();
+    catalog.register(release100, sotf100());
+    catalog.register(release101, sotf101());
+    expect(catalog.list("sotf_transition").map((release) => release.version)).toEqual(["1.0.0", "1.0.1"]);
+    catalog.promote("sotf_transition", "stable", "1.0.0", "1.0.0");
+    expect(catalog.promote("sotf_transition", "stable", "1.0.1", "1.0.0")).toEqual(release101);
+    expect(catalog.get("sotf_transition", "1.0.0")?.release).toEqual(release100);
+  });
+
   it("keeps multiple immutable releases for one logical bundle key", () => {
     const catalog = new BundleReleaseCatalog();
     const artifact100 = sotf100();
