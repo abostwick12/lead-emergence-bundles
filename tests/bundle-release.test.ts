@@ -29,8 +29,16 @@ const baseMetadata: BundleReleaseMetadata = {
   }
 };
 
-function sotf100(): BundleReleaseArtifact {
+function sotf101(): BundleReleaseArtifact {
   return loadArtifacts().find((item) => item.manifest.identity.key === "sotf_transition")!;
+}
+
+function sotf100(): BundleReleaseArtifact {
+  const artifact = structuredClone(sotf101());
+  artifact.manifest.identity.version = "1.0.0";
+  for (const capability of artifact.manifest.capabilities) capability.version = "1.0.0";
+  for (const workflow of artifact.manifest.workflows) workflow.version = "1.0.0";
+  return artifact;
 }
 
 describe("Bundle release catalog", () => {
@@ -55,6 +63,7 @@ describe("Bundle release catalog", () => {
       validation: { state: "passed", deterministic: true }
     });
     expect(recorded.artifactDigest).toBe(bundleArtifactDigest(sotf100()));
+    expect(syntheticSotf101(sotf100())).toEqual(sotf101());
   });
 
   it("keeps multiple immutable releases for one logical bundle key", () => {

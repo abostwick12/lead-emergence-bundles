@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "lead-emergence-sotf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Evidence-grounded transition direction, opportunity assessment, and learning loops.",
   "author": {
     "name": "Lead Emergence",

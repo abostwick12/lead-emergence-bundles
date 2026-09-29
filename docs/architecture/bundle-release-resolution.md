@@ -46,9 +46,10 @@ explicit; registration alone never promotes a release.
 
 ## Current boundary and next slice
 
-SOTF 1.0.0 is the first canonical release baseline. A synthetic 1.0.1 artifact
-exists only in tests to prove coexistence and compatible patch promotion; it is
-not a customer release or a product change.
+SOTF 1.0.0 remains the immutable release baseline. SOTF 1.0.1 is a compatible
+packaging patch that adds the portable Workspace MCP connection. Registration
+does not promote either release to a customer channel or change the product
+capabilities.
 
 This repository does not own a Workspace release pointer, per-client pin,
 resolver cache, rollback controller, database migration, or host adapter. The
