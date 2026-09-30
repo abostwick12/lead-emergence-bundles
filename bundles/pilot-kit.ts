@@ -325,7 +325,7 @@ export const representativePilotKits = representativePilotKit.array().length(7).
     ], thresholds: commonThresholds
   },
   {
-    schemaVersion: "1.0", scenarioId: "sotf_transition.pilot.transition_loop", bundleKey: "sotf_transition", manifestVersion: "1.0.0",
+    schemaVersion: "1.0", scenarioId: "sotf_transition.pilot.transition_loop", bundleKey: "sotf_transition", manifestVersion: "1.0.1",
     title: "Turn transition uncertainty into one testable next move", targetMinutes: 10,
     purpose: "Test whether SOTF separates evidence from inference, preserves the user's transition hypothesis, and produces one bounded action without claiming host access.",
     syntheticDataNotice: "Every opportunity, conversation, and observation in this packet is fictional. It is a contract rehearsal, not customer evidence.",

@@ -1,0 +1,19 @@
+{
+  "bundleKey": "sotf_transition",
+  "version": "1.0.1",
+  "artifactDigest": "sha256:d15db7e56d3e8f95b94013f9d67b0d8a10426e2b716c22637e5c8bb9757b7019",
+  "sourceRepository": "https://github.com/abostwick12/lead-emergence-bundles",
+  "sourceRevision": "e8f14615405ec3222c19dc358334003e5df60b19",
+  "compatibility": {
+    "bundleContractMajor": 1,
+    "minimumWorkspaceHostContract": "1.0.0",
+    "persistedStateCompatible": true,
+    "hostAdapterCompatible": true
+  },
+  "validation": {
+    "state": "passed",
+    "deterministic": true,
+    "validatorVersion": "1.0.0",
+    "validatedAt": "2026-09-29T23:11:21.161Z"
+  }
+}

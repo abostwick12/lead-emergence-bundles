@@ -129,7 +129,7 @@ describe("OpenAI repo marketplace", () => {
       expect(compatibility.apps).toBeUndefined();
       expect(compatibility.mcpServers).toBeUndefined();
       expect(existsSync(join(pluginRoot, "skills"))).toBe(true);
-      expect(existsSync(join(pluginRoot, "mcp.json"))).toBe(false);
+      expect(existsSync(join(pluginRoot, "mcp.json"))).toBe(entry.name === "lead-emergence-sotf");
       expect(existsSync(join(pluginRoot, ".mcp.json"))).toBe(false);
       expect(existsSync(join(pluginRoot, ".app.json"))).toBe(false);
     }

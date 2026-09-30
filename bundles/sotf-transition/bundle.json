@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "identity": {
     "key": "sotf_transition",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName": "SOTF Bundle",
     "description": "A structured transition operating loop for clarifying direction, testing opportunities, preparing consequential conversations, and learning from evidence.",
     "kind": "functional"
@@ -30,7 +30,7 @@
   "capabilities": [
     {
       "id": "career",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Frame transition direction, opportunities, decisions, experiments, and next moves.",
       "domain": "career",
       "operations": ["read", "propose"],
@@ -38,7 +38,7 @@
     },
     {
       "id": "daily_brief",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Prepare a bounded daily transition brief from authorized current evidence.",
       "domain": "career",
       "operations": ["read", "propose", "notify"],
@@ -46,7 +46,7 @@
     },
     {
       "id": "memory",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Propose durable transition facts and learning while keeping inference distinct from confirmed memory.",
       "domain": "career",
       "operations": ["read", "propose"],
@@ -54,7 +54,7 @@
     },
     {
       "id": "workspace_mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Describe host-mediated transition reads and proposals without embedding a provider or authorization implementation.",
       "domain": "career",
       "operations": ["read", "propose", "execute"],
@@ -62,7 +62,7 @@
     },
     {
       "id": "agentic_workflows",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Define reviewable recurring transition workflows with explicit user control.",
       "domain": "career",
       "operations": ["read", "propose", "automate"],
@@ -85,7 +85,7 @@
   "workflows": [
     {
       "id": "sotf.workflow.clarify_direction",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Clarify transition direction",
       "capabilityIds": ["career", "memory"],
       "providerRequirementIds": [],
@@ -97,7 +97,7 @@
     },
     {
       "id": "sotf.workflow.assess_opportunity",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Assess an opportunity",
       "capabilityIds": ["career", "workspace_mcp"],
       "providerRequirementIds": [],
@@ -109,7 +109,7 @@
     },
     {
       "id": "sotf.workflow.prepare_conversation",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Prepare a consequential conversation",
       "capabilityIds": ["career", "workspace_mcp"],
       "providerRequirementIds": [],
@@ -121,7 +121,7 @@
     },
     {
       "id": "sotf.workflow.daily_brief",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Prepare a daily transition brief",
       "capabilityIds": ["daily_brief", "career"],
       "providerRequirementIds": [],
@@ -133,7 +133,7 @@
     },
     {
       "id": "sotf.workflow.weekly_learning",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Review weekly transition learning",
       "capabilityIds": ["career", "memory", "agentic_workflows"],
       "providerRequirementIds": [],
