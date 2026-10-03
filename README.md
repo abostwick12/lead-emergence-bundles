@@ -18,8 +18,10 @@ Lead Emergence Workspace web application or client-private configuration.
 
 ## Current contents
 
-- Six independently discoverable portable plugin packages under `plugins/`,
-  each with a compatibility fallback and one focused skill.
+- Seven independently discoverable portable plugin packages under `plugins/`.
+  The six general packages use skills-only distribution; the SOTF package
+  additionally declares the canonical Workspace MCP connection. Installation
+  does not grant Workspace entitlement or authorize provider services.
 - Versioned Bundle and UI Manifest contracts.
 - Bundle and capability registries with deterministic composition.
 - Fail-closed identity, entitlement, provider, domain, and mutation policy
@@ -32,6 +34,8 @@ Lead Emergence Workspace web application or client-private configuration.
 - One reusable representative-pilot kit per bundle with fictional rehearsal
   data, an unaided script, quality rubric, safety checks, and decision thresholds.
 - Architecture decisions and the P0 discovery record under `docs/`.
+
+Current Individual Workspace/SOTF launch gates live in the [canonical roadmap](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/ROADMAP.md). Package contents, local checks, installed-host behavior and production acceptance are separate evidence.
 
 ## Local validation
 

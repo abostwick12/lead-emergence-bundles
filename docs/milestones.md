@@ -1,5 +1,8 @@
 # Milestone plan
 
+> **Scope clarification - October 3, 2026:** Historical bundle-platform milestones below are not the current Individual Workspace/SOTF launch phase. Use the canonical roadmap for release order and remaining gates; these milestones do not close installed-host or production acceptance.
+> Current launch authority: [canonical roadmap](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/ROADMAP.md).
+
 ## P0 — Platform discovery
 
 Complete in this branch: official OpenAI findings, Workspace read-only
