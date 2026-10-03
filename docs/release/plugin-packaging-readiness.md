@@ -1,5 +1,8 @@
 # Plugin packaging readiness
 
+> **Scope clarification - October 3, 2026:** The September 11 checkpoint below covers the six general skills-only packages. It does not describe the subsequently added SOTF package, whose committed MCP declaration targets Workspace. Neither package installation nor a connected badge proves provider access or real-data functionality.
+> Current launch authority: [canonical roadmap](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/ROADMAP.md).
+
 Checkpoint: 2026-09-11
 
 ## Outcome

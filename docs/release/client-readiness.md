@@ -1,5 +1,8 @@
 # Client shipment readiness
 
+> **Scope clarification - October 3, 2026:** This September 11 checklist describes the six general bundles. Individual Workspace/SOTF release acceptance is tracked separately in the canonical roadmap; the empty customer release allowlist still does not establish a shipped client release.
+> Current launch authority: [canonical roadmap](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/ROADMAP.md).
+
 Updated 2026-09-11. Overall status: **NOT READY TO SHIP**.
 
 A valid bundle manifest or skill is not a working client release. A local test
