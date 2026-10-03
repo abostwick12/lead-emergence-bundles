@@ -9,7 +9,8 @@ import {
   type BundleReleaseArtifact,
   type BundleReleaseMetadata
 } from "@lead-emergence/bundle-release";
-import { loadArtifacts } from "./fixtures";
+import { parseBundleManifest } from "@lead-emergence/bundle-contract";
+import { uiManifestSchema } from "@lead-emergence/ui-manifest";
 import { syntheticSotf101 } from "./fixtures/sotf-release-1.0.1";
 
 const baseMetadata: BundleReleaseMetadata = {
@@ -30,8 +31,16 @@ const baseMetadata: BundleReleaseMetadata = {
 };
 
 function sotf101(): BundleReleaseArtifact {
-  // Keep historical release proofs pinned when the unreleased package advances.
-  return syntheticSotf101(loadArtifacts().find((item) => item.manifest.identity.key === "sotf_transition")!);
+  // Exact manifest/UI bytes from released source e8f14615405ec3222c19dc358334003e5df60b19.
+  // Never derive historical release evidence from the current candidate.
+  return {
+    manifest: parseBundleManifest(JSON.parse(readFileSync(
+      "tests/fixtures/historical-sotf-1.0.1/bundle.json", "utf8"
+    ))),
+    uiManifest: uiManifestSchema.parse(JSON.parse(readFileSync(
+      "tests/fixtures/historical-sotf-1.0.1/ui-manifest.json", "utf8"
+    )))
+  };
 }
 
 function sotf100(): BundleReleaseArtifact {
