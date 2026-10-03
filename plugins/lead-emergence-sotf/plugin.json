@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "lead-emergence-sotf",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Evidence-grounded transition direction, opportunity assessment, and learning loops.",
   "author": {
     "name": "Lead Emergence",
@@ -15,14 +15,14 @@
       "interface": {
         "displayName": "Lead Emergence SOTF",
         "shortDescription": "Turn transition uncertainty into a grounded next move.",
-        "longDescription": "Clarify direction, assess opportunities, prepare conversations, and review transition learning without inventing host access or durable facts.",
+        "longDescription": "Resume authorized transition work, plan networking, prepare conversations and scheduling, and review learning with client-owned host apps and verified Workspace continuity.",
         "developerName": "Lead Emergence",
         "category": "Productivity",
         "capabilities": ["Read", "Propose"],
         "defaultPrompt": [
           "Help me clarify my transition direction.",
           "Assess this opportunity against my current hypothesis.",
-          "Prepare my evidence-grounded transition brief."
+          "Prepare my next networking conversation from my saved transition work."
         ],
         "brandColor": "#173B3F"
       }
