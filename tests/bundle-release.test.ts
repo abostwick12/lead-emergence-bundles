@@ -30,7 +30,8 @@ const baseMetadata: BundleReleaseMetadata = {
 };
 
 function sotf101(): BundleReleaseArtifact {
-  return loadArtifacts().find((item) => item.manifest.identity.key === "sotf_transition")!;
+  // Keep historical release proofs pinned when the unreleased package advances.
+  return syntheticSotf101(loadArtifacts().find((item) => item.manifest.identity.key === "sotf_transition")!);
 }
 
 function sotf100(): BundleReleaseArtifact {

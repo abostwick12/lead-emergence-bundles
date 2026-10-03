@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "identity": {
     "key": "sotf_transition",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "displayName": "SOTF Bundle",
     "description": "A structured transition operating loop for clarifying direction, testing opportunities, preparing consequential conversations, and learning from evidence.",
     "kind": "functional"
