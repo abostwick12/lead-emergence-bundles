@@ -8,7 +8,7 @@ describe("SOTF bundle", () => {
   it("is the seventh canonical bundle with the exact approved capabilities", () => {
     expect(artifact.manifest.identity).toMatchObject({
       key: "sotf_transition",
-      version: "1.0.1",
+      version: "1.0.2",
       displayName: "SOTF Bundle"
     });
     expect(artifact.manifest.capabilities.map((item) => item.id)).toEqual([
