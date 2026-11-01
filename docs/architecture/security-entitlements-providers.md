@@ -41,6 +41,14 @@ workspace coordinate them without erasing the boundary.
 
 ## Provider composition
 
+These provider contracts govern integrations and operations admitted by
+Workspace policy. They do not establish that Workspace owns or can inspect a
+service connection configured in the client's ChatGPT account. Gmail, Slack,
+Calendar or another host connection must be managed through the client's
+supported ChatGPT flow. Workspace resource authorization and entitlement to
+applicable proprietary skills/workflows remain separate checks. See the
+[canonical connection and entitlement model](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/CONNECTION_AUTHORIZATION_ENTITLEMENT_MODEL.md).
+
 Provider requirements declare authorization method, exact scopes, permitted
 operations, and a human-readable data boundary. Connections are admitted only
 when connected, unexpired, non-revoked, for the same subject, and sufficient in

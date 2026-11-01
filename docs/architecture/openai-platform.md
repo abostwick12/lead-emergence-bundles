@@ -65,6 +65,17 @@ No OpenAI protocol, model runtime, package connection or installed-host claim ch
 - Read-only and propose operations are distinct from execute operations.
   Execution requires a current operation-specific user approval.
 
+## Connection and entitlement model — 2026-11-01
+
+For client setup and recovery, distinguish the client's third-party ChatGPT
+connections from the separate Lead Emergence Workspace authorization and from
+subscription entitlement to applicable proprietary skills/workflows. The
+client manages service credentials and permissions in their ChatGPT account;
+Workspace governs access to its own resources. A listed or installed package
+does not prove entitlement, available provider permissions or successful
+execution. See the [canonical connection and entitlement
+model](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/CONNECTION_AUTHORIZATION_ENTITLEMENT_MODEL.md).
+
 ## Open questions deferred to the relevant milestone
 
 - The registered OpenAI app ID for the production Workspace MCP.

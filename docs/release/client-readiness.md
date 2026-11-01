@@ -2,6 +2,7 @@
 
 > **Scope clarification - October 3, 2026:** This September 11 checklist describes the six general bundles. Individual Workspace/SOTF release acceptance is tracked separately in the canonical roadmap; the empty customer release allowlist still does not establish a shipped client release.
 > Current launch authority: [canonical roadmap](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/ROADMAP.md).
+> Connection setup and recovery policy: [canonical connection and entitlement model](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/CONNECTION_AUTHORIZATION_ENTITLEMENT_MODEL.md). Host connection, Workspace authorization, applicable subscription entitlement, package discovery and successful workflow execution are separate evidence states.
 
 Updated 2026-09-11. Overall status: **NOT READY TO SHIP**.
 
