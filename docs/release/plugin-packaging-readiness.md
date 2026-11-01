@@ -32,6 +32,13 @@ The repository marketplace remains an authoring and team-distribution catalog.
 It is not a universal-directory publication, paid entitlement mechanism or
 client installation record.
 
+The client's ChatGPT connections to Gmail, Slack, Calendar and other services
+are managed in that ChatGPT account. Workspace authorization for Workspace
+resources and subscription entitlement to applicable proprietary
+skills/workflows are separate. Package discovery or installation proves none
+of these states or successful execution. See the [canonical connection and
+entitlement model](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/CONNECTION_AUTHORIZATION_ENTITLEMENT_MODEL.md).
+
 ## Automated acceptance
 
 - All six compatibility packages pass the bundled plugin validator.

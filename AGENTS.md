@@ -28,6 +28,11 @@ Emergence Workspace application or production data.
   exports here.
 - Never treat a model-supplied client or tenant identifier as authorization.
 - Provider authentication and server-side entitlement checks fail closed.
+- Clients manage third-party service connections and permissions in their own
+  ChatGPT accounts. Keep that separate from authorization to Workspace
+  resources and entitlement to proprietary skills/workflows under existing
+  access rules; see the [canonical
+  connection and entitlement model](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/CONNECTION_AUTHORIZATION_ENTITLEMENT_MODEL.md).
 - Keep functional capability separate from declarative presentation metadata.
 - Do not add client-specific conditionals to product code.
 

@@ -13,6 +13,13 @@ Lead Emergence Workspace web application or client-private configuration.
   official plugin packaging used by ChatGPT and Codex.
 - Bundle assignment is backend data. A UI or tool is available only when the
   same server-authorized entitlement source admits it.
+- Clients manage third-party service connections, credentials, permissions,
+  reconnection and revocation in their own ChatGPT accounts. A separate supported
+  Workspace connection authorizes Workspace resources; entitlement to
+  proprietary skills and workflows follows existing access rules, including
+  applicable exceptions. Installation or discovery establishes neither
+  entitlement nor successful execution. See the
+  [canonical connection and entitlement model](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/CONNECTION_AUTHORIZATION_ENTITLEMENT_MODEL.md).
 - Functional bundles contribute declarative UI metadata; the Workspace
   Experience composer renders it inside Lead Emergence.
 

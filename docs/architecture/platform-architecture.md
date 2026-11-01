@@ -14,11 +14,15 @@ verified identity
   -> Workspace Experience composer
 ~~~
 
-The Workspace backend is authoritative for identity, tenant membership,
-entitlements, provider grants, client configuration, and data. This repository
-is authoritative for versioned bundle definitions and portable workflow/UI
-contracts. Neither a plugin installation nor a client-supplied identifier is
-authorization.
+The Workspace backend is authoritative for its identity, tenant membership,
+entitlements, Workspace resource authorization, client configuration, and
+durable data. A client's third-party service connections and permissions are
+managed in the client's ChatGPT account; they are not Workspace credentials or
+Workspace health signals. This repository is authoritative for versioned
+bundle definitions and portable workflow/UI contracts. Neither a plugin
+installation nor a client-supplied identifier is authorization. See the
+[canonical connection and entitlement
+model](https://github.com/abostwick12/lead-emergence-control-plane/blob/main/docs/CONNECTION_AUTHORIZATION_ENTITLEMENT_MODEL.md).
 
 ## Repository model
 
